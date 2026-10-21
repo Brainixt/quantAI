@@ -41,7 +41,7 @@
       "distance_to_pivot_pct": 2.68
     },
     "entry_time": "2026-10-21T10:52:08.497003+05:30",
-    "last_updated": "2026-10-21T10:57:10.166227+05:30"
+    "last_updated": "2026-10-21T10:58:14.922410+05:30"
   },
   "nifty50": {
     "price": "22979.0500",
@@ -49,6 +49,6 @@
     "change_percent": "0.3900",
     "direction": "NA"
   },
-  "timestamp": "2026-10-21T10:57:10.166227+05:30",
+  "timestamp": "2026-10-21T10:58:14.922410+05:30",
   "total_completed_picks": 0
 }
