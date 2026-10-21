@@ -5,7 +5,7 @@
     "direction": "LONG",
     "mode": "DELIVERY",
     "entry_price": 2250.6,
-    "current_price": 2248.4,
+    "current_price": 2247.6,
     "target_price": 2347.15,
     "sl_price": 2201.09,
     "target_pct": 4.29,
@@ -13,7 +13,7 @@
     "rr_ratio": 1.95,
     "sl_method": "Pivot S1 Support (2.20%)",
     "target_method": "Pivot R1 Resistance (4.29% | 1:1.9 R:R)",
-    "pnl_pct": -0.1,
+    "pnl_pct": -0.13,
     "buy_score": 70.6,
     "confidence": 84.9,
     "signal": "STRONG BUY",
@@ -48,14 +48,14 @@
       "distance_to_pivot_pct": -1.4
     },
     "entry_time": "2026-10-21T11:14:51.332073+05:30",
-    "last_updated": "2026-10-21T12:00:42.305012+05:30"
+    "last_updated": "2026-10-21T12:01:49.267275+05:30"
   },
   "nifty50": {
-    "price": "22821.7000",
-    "change": "-67.2500",
-    "change_percent": "-0.2900",
+    "price": "22808.6000",
+    "change": "-80.3500",
+    "change_percent": "-0.3500",
     "direction": "NA"
   },
-  "timestamp": "2026-10-21T12:00:42.305012+05:30",
+  "timestamp": "2026-10-21T12:01:49.403392+05:30",
   "total_completed_picks": 0
 }
