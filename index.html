@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>QuantAI — Autonomous NSE F&amp;O Single Stock Picker</title>
+  <meta name="description" content="QuantAI: Institutional-grade quantitative algorithmic stock picker for NSE F&O. One active share, strict Target & Stop Loss execution, 1-minute continuous scan.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/quantai.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Global Header -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="brand-logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#logo-grad)"/>
+            <path d="M7 19L12 13L16 17L21 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="21" cy="9" r="2.5" fill="#10B981" stroke="#FFFFFF" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F46E5"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <div class="brand-row">
+            <span class="brand-title">QuantAI</span>
+            <span class="version-tag">v2.4 Quant Engine</span>
+          </div>
+          <span class="brand-subtitle">Autonomous NSE F&amp;O Precision Picker</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="nifty-ticker" id="niftyTicker">
+          <span class="ticker-label">NIFTY 50</span>
+          <span class="ticker-val" id="niftyPrice">--</span>
+          <span class="ticker-chg" id="niftyChange">--</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="status-pill" id="engineStatusPill">
+          <span class="pulse-indicator"></span>
+          <span id="engineStatusText">1-Min Quant Loop Active</span>
+        </div>
+        <div class="cycle-pill">
+          <span class="cycle-icon">⏱️</span>
+          <span class="cycle-label">Next Scan:</span>
+          <span class="cycle-countdown" id="cycleCountdown">60s</span>
+        </div>
+        <div class="clock-pill" id="clockDisplay">--:--:-- IST</div>
+      </div>
+    </header>
+
+    <!-- Notice Bar: Display Only, No Trade/No Message Execution -->
+    <div class="info-banner">
+      <div class="banner-badge">CONTRACT RULES</div>
+      <div class="banner-text">
+        <strong>Single-Share Invariant:</strong> Exactly 1 active stock monitored at any time • <strong>No premature exit:</strong> Held strictly until Target (+2.0%) or SL (-1.0%) trigger • <strong>Immediate rollover:</strong> Fresh best quant pick engaged instantly upon exit • <strong>Display only:</strong> Pure signal analytics (Zero order placement, Zero SMS/Email/Messages).
+      </div>
+    </div>
+
+    <!-- Active Pick Spotlight Section -->
+    <section class="active-pick-container" id="activePickSection">
+      <div class="section-top-bar">
+        <div class="section-title-wrap">
+          <span class="live-dot"></span>
+          <h2 class="section-title">CURRENT ACTIVE PICK</h2>
+          <span class="active-badge" id="activeStateBadge">LOCKED IN POSITION</span>
+        </div>
+        <div class="active-meta-wrap">
+          <span class="active-since-text">Entry Time: <strong id="heroEntryTime">--</strong></span>
+          <span class="holding-time-badge" id="heroDuration">0m</span>
+        </div>
+      </div>
+
+      <!-- Main Spotlight Card -->
+      <div class="spotlight-card" id="spotlightCard">
+        
+        <!-- Left: Stock Identity & Quant Conviction -->
+        <div class="spotlight-left">
+          <div class="stock-headline">
+            <div class="symbol-row">
+              <h1 class="stock-symbol" id="heroSymbol">LOADING...</h1>
+              <span class="direction-badge" id="heroDirection">LONG</span>
+              <span class="risk-badge" id="heroRisk">LOW RISK</span>
+            </div>
+            <div class="company-name" id="heroCompany">Fetching optimal quantitative selection...</div>
+          </div>
+
+          <div class="quant-score-matrix">
+            <div class="score-card">
+              <span class="score-label">Quant Conviction</span>
+              <div class="score-value-wrap">
+                <span class="score-num" id="heroBuyScore">--</span>
+                <span class="score-denom">/100</span>
+              </div>
+              <div class="score-meter-bar">
+                <div class="score-meter-fill" id="heroScoreFill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="score-card">
+              <span class="score-label">Stat Confidence</span>
+              <div class="score-value-wrap">
+                <span class="score-num" id="heroConfidence">--</span>
+                <span class="score-denom">%</span>
+              </div>
+              <span class="score-subtext" id="heroConfidenceSub">Pillar Confluence</span>
+            </div>
+
+            <div class="score-card">
+              <span class="score-label">Derivatives Signal</span>
+              <div class="score-value-wrap">
+                <span class="signal-tag" id="heroDerivativeSig">LONG BUILDUP</span>
+              </div>
+              <span class="score-subtext" id="heroOiDelta">OI Flow +0.0%</span>
+            </div>
+          </div>
+
+          <!-- Signal Rationales / Factors -->
+          <div class="factors-container">
+            <span class="factors-heading">Institutional Drivers &amp; Analytics</span>
+            <div class="factors-chips" id="heroFactors">
+              <span class="factor-chip">Loading quantitative pillars...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Real-time Price, Target, SL & Interactive Gauge -->
+        <div class="spotlight-right">
+          
+          <!-- Key Levels 4-Grid -->
+          <div class="levels-grid">
+            <div class="level-box entry-box">
+              <span class="box-title">ENTRY PRICE</span>
+              <span class="box-price" id="heroEntryPrice">₹ --</span>
+              <span class="box-sub">Initial Basis</span>
+            </div>
+            <div class="level-box live-box">
+              <span class="box-title">CURRENT SPOT</span>
+              <span class="box-price live-flash" id="heroCurrentPrice">₹ --</span>
+              <span class="box-sub" id="heroLivePnl">P&amp;L: --</span>
+            </div>
+            <div class="level-box target-box">
+              <span class="box-title">PROFIT TARGET</span>
+              <span class="box-price" id="heroTargetPrice">₹ --</span>
+              <span class="box-sub target-text" id="heroTargetSub">+2.00%</span>
+            </div>
+            <div class="level-box sl-box">
+              <span class="box-title">STOP LOSS</span>
+              <span class="box-price" id="heroSlPrice">₹ --</span>
+              <span class="box-sub sl-text" id="heroSlSub">-1.00%</span>
+            </div>
+          </div>
+
+          <!-- Position Trajectory Progress Track -->
+          <div class="gauge-container">
+            <div class="gauge-header">
+              <span class="gauge-tag sl-tag">Stop Loss (<span id="gaugeSlPrice">₹--</span>)</span>
+              <span class="gauge-tag entry-tag">Entry (<span id="gaugeEntryPrice">₹--</span>)</span>
+              <span class="gauge-tag target-tag">Target (<span id="gaugeTargetPrice">₹--</span>)</span>
+            </div>
+
+            <div class="gauge-track-wrap">
+              <div class="gauge-track">
+                <!-- Center Baseline Entry Marker -->
+                <div class="entry-mid-marker" title="Entry Baseline"></div>
+                <!-- Dynamic progress fill -->
+                <div class="gauge-fill" id="gaugeFill"></div>
+                <!-- Current Price Pin -->
+                <div class="gauge-pin" id="gaugePin" style="left: 50%;">
+                  <div class="pin-tooltip" id="pinTooltip">₹-- (0.00%)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gauge-footer">
+              <span class="dist-text sl-dist" id="distToSl">Gap to SL: --</span>
+              <span class="dist-status" id="distStatus">In Trade Range</span>
+              <span class="dist-text target-dist" id="distToTarget">Gap to Target: --</span>
+            </div>
+          </div>
+
+          <!-- Pivot Levels Ribbon -->
+          <div class="pivots-ribbon">
+            <span class="pivots-ribbon-title">Floor Pivots:</span>
+            <div class="pivot-cells" id="heroPivotsRibbon">
+              <span class="p-cell">S2: <strong id="pS2">--</strong></span>
+              <span class="p-cell">S1: <strong id="pS1">--</strong></span>
+              <span class="p-cell p-pivot">P: <strong id="pPP">--</strong></span>
+              <span class="p-cell">R1: <strong id="pR1">--</strong></span>
+              <span class="p-cell">R2: <strong id="pR2">--</strong></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Session Metrics Row -->
+    <section class="metrics-row">
+      <div class="metric-card">
+        <div class="metric-icon">🎯</div>
+        <div class="metric-data">
+          <span class="metric-val" id="statTotalPicks">0</span>
+          <span class="metric-label">Total Picks Executed</span>
+        </div>
+      </div>
+      <div class="metric-card success">
+        <div class="metric-icon">🏆</div>
+        <div class="metric-data">
+          <span class="metric-val" id="statTargetHits">0</span>
+          <span class="metric-label">Target Hits (+2%)</span>
+        </div>
+      </div>
+      <div class="metric-card danger">
+        <div class="metric-icon">🛡️</div>
+        <div class="metric-data">
+          <span class="metric-val" id="statSlHits">0</span>
+          <span class="metric-label">Stop Losses Hit (-1%)</span>
+        </div>
+      </div>
+      <div class="metric-card winrate">
+        <div class="metric-icon">📈</div>
+        <div class="metric-data">
+          <span class="metric-val" id="statWinRate">0.0%</span>
+          <span class="metric-label">Algorithm Accuracy</span>
+        </div>
+      </div>
+      <div class="metric-card pnl">
+        <div class="metric-icon">💰</div>
+        <div class="metric-data">
+          <span class="metric-val" id="statNetPnl">+0.00%</span>
+          <span class="metric-label">Net Realized P&amp;L</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pick History Log -->
+    <section class="history-container">
+      <div class="history-top">
+        <div class="history-title-group">
+          <span class="history-icon">📜</span>
+          <h3 class="history-title">Sequential Pick &amp; Exit Log</h3>
+          <span class="history-counter" id="historyCounter">(0 Completed)</span>
+        </div>
+        <div class="history-actions">
+          <button class="action-btn" id="refreshBtn" onclick="triggerManualRefresh()">🔄 Force Scan Now</button>
+          <button class="action-btn secondary" onclick="clearLocalHistory()">Clear History</button>
+        </div>
+      </div>
+
+      <div class="history-table-card">
+        <div class="table-responsive">
+          <table class="history-table" id="historyTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Share / Company</th>
+                <th>Direction</th>
+                <th>Entry Price</th>
+                <th>Exit Price</th>
+                <th>P&amp;L %</th>
+                <th>Exit Outcome</th>
+                <th>Duration</th>
+                <th>Exit Timestamp</th>
+              </tr>
+            </thead>
+            <tbody id="historyTbody">
+              <tr class="empty-row">
+                <td colspan="9">
+                  <div class="empty-state">
+                    <span class="empty-icon">⏳</span>
+                    <span class="empty-title">Active pick is currently in progress.</span>
+                    <span class="empty-sub">Once the active share triggers its Stop Loss or Profit Target, it will log here and the engine will immediately load the next best share.</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Disclaimer -->
+    <footer class="app-footer">
+      <p>
+        <strong>QuantAI Algorithm Note:</strong> This application continuously scans the 200+ NSE F&amp;O universe using quantitative multi-factor momentum, open interest buildup, and pivot mechanics from <code>Rishabh-F-O</code>. Exactly one stock is tracked until strict mathematical resolution. Designed exclusively for educational and quant modeling analysis.
+      </p>
+      <div class="footer-meta">
+        <span>Host: <code>brainixt.github.io/quantAI</code></span>
+        <span>Engine: Python Quant Prediction Engine</span>
+        <span>Update Frequency: Every 60 Seconds</span>
+      </div>
+    </footer>
+
+    <!-- Exit Resolution Modal Overlay -->
+    <div class="exit-modal-backdrop" id="exitModal" style="display: none;">
+      <div class="exit-modal-card">
+        <div class="exit-badge-icon" id="modalIcon">🎯</div>
+        <h3 class="modal-title" id="modalTitle">PROFIT TARGET HIT</h3>
+        <p class="modal-stock" id="modalStock">INFY</p>
+        <div class="modal-pnl" id="modalPnl">+2.04%</div>
+        <div class="modal-desc" id="modalDesc">Position resolved cleanly. Selecting next optimal quant share immediately...</div>
+        <div class="modal-countdown">
+          <span>Picking next share in</span>
+          <strong id="modalTimer">3</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- QuantAI Frontend Application Engine -->
+  <script src="js/quantai.js"></script>
+</body>
+</html>
