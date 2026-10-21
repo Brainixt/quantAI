@@ -5,7 +5,7 @@
     "direction": "LONG",
     "mode": "DELIVERY",
     "entry_price": 9153.5,
-    "current_price": 9125.5,
+    "current_price": 9132.0,
     "target_price": 10035.9,
     "sl_price": 8769.97,
     "target_pct": 9.64,
@@ -13,7 +13,7 @@
     "rr_ratio": 2.3,
     "sl_method": "Pivot S1 Structural Floor (4.19%)",
     "target_method": "Pivot R3 Breakout Runway (9.64% | 1:2.3 R:R)",
-    "pnl_pct": -0.31,
+    "pnl_pct": -0.23,
     "buy_score": 84.2,
     "confidence": 93.0,
     "signal": "STRONG BUY",
@@ -48,14 +48,14 @@
       "distance_to_pivot_pct": 0.02
     },
     "entry_time": "2026-10-21T11:00:04.773014+05:30",
-    "last_updated": "2026-10-21T11:05:44.401600+05:30"
+    "last_updated": "2026-10-21T11:06:31.615173+05:30"
   },
   "nifty50": {
-    "price": "22962.6500",
-    "change": "73.7000",
-    "change_percent": "0.3200",
+    "price": "22986.4500",
+    "change": "97.5000",
+    "change_percent": "0.4300",
     "direction": "NA"
   },
-  "timestamp": "2026-10-21T11:05:44.404570+05:30",
+  "timestamp": "2026-10-21T11:06:31.621186+05:30",
   "total_completed_picks": 0
 }
