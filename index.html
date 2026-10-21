@@ -4,16 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <title>QuantAI — Autonomous NSE F&amp;O Delivery Picker (Dynamic Algo)</title>
-  <meta name="description" content="QuantAI: Institutional-grade quantitative delivery stock picker for NSE F&O. One active share, dynamic Stop Loss & Target anchored to pivots and volatility, 1-minute continuous scan.">
-  
-  <!-- Fonts -->
+  <title>QuantAI — Autonomous Multi-Share Swing Engine (Max 5 Active)</title>
+  <meta name="description" content="QuantAI: Autonomous quantitative stock selection holding up to 5 active swing shares concurrently with dynamic ATR stop loss and profit targets.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="css/quantai.css">
 </head>
 <body>
@@ -22,44 +17,29 @@
     <!-- Top Global Header -->
     <header class="app-header">
       <div class="header-left">
-        <div class="brand-logo">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="28" height="28" rx="8" fill="url(#logo-grad)"/>
-            <path d="M7 19L12 13L16 17L21 9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="21" cy="9" r="2.5" fill="#10B981" stroke="#FFFFFF" stroke-width="1.5"/>
-            <defs>
-              <linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4F46E5"/>
-                <stop offset="1" stop-color="#06B6D4"/>
-              </linearGradient>
-            </defs>
-          </svg>
+        <div class="brand-row">
+          <span class="brand-title">QuantAI</span>
+          <span class="version-tag">Max 5 Swing Portfolio</span>
         </div>
-        <div class="brand-info">
-          <div class="brand-row">
-            <span class="brand-title">QuantAI</span>
-            <span class="version-tag">Delivery Algo Engine</span>
-          </div>
-          <span class="brand-subtitle">Autonomous NSE F&amp;O Delivery &amp; Swing Picker</span>
-        </div>
+        <span class="brand-subtitle">Autonomous Multi-Share Quantitative Engine</span>
       </div>
 
       <div class="header-center">
         <div class="nifty-ticker" id="niftyTicker">
           <span class="ticker-label">NIFTY 50</span>
-          <span class="ticker-val" id="niftyPrice">22,979.05</span>
-          <span class="ticker-chg up" id="niftyChange">+90.10 (+0.39%)</span>
+          <span class="ticker-val" id="niftyPrice">22,944.50</span>
+          <span class="ticker-chg up" id="niftyChange">+55.55 (+0.24%)</span>
         </div>
       </div>
 
       <div class="header-right">
         <div class="status-pill" id="engineStatusPill">
           <span class="pulse-indicator"></span>
-          <span id="engineStatusText">Live Delivery Active</span>
+          <span id="engineStatusText">5-Share Engine Active</span>
         </div>
         <div class="cycle-pill">
           <span class="cycle-icon">⏱️</span>
-          <span class="cycle-label">Next Scan:</span>
+          <span class="cycle-label">Scan Cycle:</span>
           <span class="cycle-countdown" id="cycleCountdown">60s</span>
         </div>
         <div class="clock-pill" id="clockDisplay">--:--:-- IST</div>
@@ -68,159 +48,286 @@
 
     <!-- Notice Bar: Delivery Invariant & Dynamic Algorithm -->
     <div class="info-banner">
-      <div class="banner-badge">DELIVERY ALGO CONTRACT</div>
+      <div class="banner-badge">SWING ALGO CONTRACT</div>
       <div class="banner-text">
-        <strong>Dynamic P&amp;L Algorithm:</strong> Stop Loss is volatility &amp; structural pivot-anchored (2.5% to 5.5% buffer) to avoid intraday noise stops • Profit Target is dynamically calibrated to expansion boundaries &amp; min 1:2.0+ R:R (5.0% to 14.0%) • <strong>Single-Share Invariant:</strong> Strictly 1 active delivery pick • <strong>Immediate rollover:</strong> Fresh best quant pick engaged instantly upon exit • <strong>Display only:</strong> Zero broker orders, Zero SMS/Email/Messages.
+        <strong>Active Portfolio Invariant:</strong> Maximum <strong>5 active shares</strong> at a time • <strong>Dynamic Swing Algorithm:</strong> Profit Target calibrated close to <strong>1.5% to 2.0%</strong> • Stop Loss maintained in <strong>0.5% to 1.5% range</strong> • Strict <strong>minimum 1:2.0 Risk-to-Reward ratio</strong> • <strong>Immediate Replacement:</strong> When any active share exits on Target or SL, the next qualifying share is engaged instantly • <strong>Display only:</strong> Zero broker orders, Zero SMS/Email/Messages.
       </div>
     </div>
 
-    <!-- Active Pick Spotlight Section -->
+    <!-- Active Portfolio Section (Up to 5 Shares) -->
     <section class="active-pick-container" id="activePickSection">
       <div class="section-top-bar">
         <div class="section-title-wrap">
           <span class="live-dot"></span>
-          <h2 class="section-title">ACTIVE DELIVERY PICK</h2>
-          <span class="active-badge" id="activeStateBadge">LOCKED IN DELIVERY POSITION</span>
+          <h2 class="section-title">ACTIVE SWING PORTFOLIO</h2>
+          <span class="active-badge" id="activeStateBadge">5 / 5 POSITIONS ACTIVE</span>
         </div>
         <div class="active-meta-wrap">
-          <span class="active-since-text">Entry Time: <strong id="heroEntryTime">11:00:04 AM</strong></span>
-          <span class="holding-time-badge" id="heroDuration">Active</span>
+          <span class="active-since-text">Status: <strong>Continuous 1-Min Monitor</strong></span>
+          <span class="holding-time-badge" id="portfolioRuleBadge">Max 5 Active Shares</span>
         </div>
       </div>
 
-      <!-- Main Spotlight Card (Pre-rendered for Zero Loading Flash) -->
-      <div class="spotlight-card" id="spotlightCard">
-        
-        <!-- Left: Stock Identity & Quant Conviction -->
-        <div class="spotlight-left">
-          <div class="stock-headline">
-            <div class="symbol-row">
-              <h1 class="stock-symbol" id="heroSymbol">MANKIND</h1>
-              <span class="direction-badge" id="heroDirection">LONG (SWING)</span>
-              <span class="risk-badge" id="heroRisk">LOW RISK</span>
-            </div>
-            <div class="company-name" id="heroCompany">Mankind Pharma Limited</div>
-          </div>
+      <!-- Active Portfolio Cards Grid (Pre-rendered for Zero Loading Flash) -->
+      <div class="active-portfolio-grid" id="activeGrid">
+        <!-- ACTIVE_PORTFOLIO_PLACEHOLDER -->
+<div class="active-portfolio-card">
+  <div class="card-top-header">
+    <div class="card-sym-group">
+      <span class="card-slot-badge">#1</span>
+      <span class="card-symbol">MANKIND</span>
+      <span class="badge badge-long">LONG SWING</span>
+      <span class="badge badge-score">SCORE 70.6</span>
+    </div>
+    <div class="card-pnl loss">
+      <span class="pnl-lbl">P&amp;L</span>
+      <span class="pnl-val">-0.07%</span>
+    </div>
+  </div>
 
-          <div class="quant-score-matrix">
-            <div class="score-card">
-              <span class="score-label">Swing Conviction</span>
-              <div class="score-value-wrap">
-                <span class="score-num" id="heroBuyScore">86.4</span>
-                <span class="score-denom">/100</span>
-              </div>
-              <div class="score-meter-bar">
-                <div class="score-meter-fill" id="heroScoreFill" style="width: 86%"></div>
-              </div>
-            </div>
+  <div class="card-company-name">Mankind Pharma</div>
 
-            <div class="score-card">
-              <span class="score-label">Stat Confidence</span>
-              <div class="score-value-wrap">
-                <span class="score-num" id="heroConfidence">91</span>
-                <span class="score-denom">%</span>
-              </div>
-              <span class="score-subtext" id="heroConfidenceSub">Multi-Horizon Confluence</span>
-            </div>
+  <div class="card-metrics-grid">
+    <div class="c-metric">
+      <span class="cm-label">Entry Price</span>
+      <span class="cm-value">₹2,250.60</span>
+    </div>
+    <div class="c-metric">
+      <span class="cm-label">Live Spot</span>
+      <span class="cm-value highlight">₹2,249.00</span>
+    </div>
+    <div class="c-metric danger">
+      <span class="cm-label">Dynamic SL (-0.95%)</span>
+      <span class="cm-value">₹2,229.22</span>
+    </div>
+    <div class="c-metric success">
+      <span class="cm-label">Dynamic Target (+1.95%)</span>
+      <span class="cm-value">₹2,294.49</span>
+    </div>
+  </div>
 
-            <div class="score-card">
-              <span class="score-label">Derivatives Posture</span>
-              <div class="score-value-wrap">
-                <span class="signal-tag" id="heroDerivativeSig">LONG BUILDUP</span>
-              </div>
-              <span class="score-subtext" id="heroOiDelta">Persistent Accumulation</span>
-            </div>
-          </div>
+  <div class="card-progress-wrap">
+    <div class="card-progress-labels">
+      <span class="lbl-sl">SL: ₹2,229.22</span>
+      <span class="lbl-curr">Spot: ₹2,249.00</span>
+      <span class="lbl-tgt">TGT: ₹2,294.49</span>
+    </div>
+    <div class="card-progress-bar">
+      <div class="card-progress-fill" style="width: 30.3%"></div>
+    </div>
+  </div>
 
-          <!-- Signal Rationales / Factors -->
-          <div class="factors-container">
-            <span class="factors-heading">Swing Rationales &amp; Quantitative Drivers</span>
-            <div class="factors-chips" id="heroFactors">
-              <span class="factor-chip">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
-                Strong structural technical posture above Floor Pivot
-              </span>
-              <span class="factor-chip">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
-                Superior Quality &amp; Growth profile (High Pharma Defense)
-              </span>
-              <span class="factor-chip">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
-                Calibrated Swing Risk-Reward: -2.20% SL vs +4.29% Target
-              </span>
-            </div>
-          </div>
-        </div>
+  <div class="card-footer-meta">
+    <span class="meta-tag">R:R 1:2.05</span>
+    <span class="meta-tag">Entry: 2026-10-21 11:14:51</span>
+    <span class="meta-tag status-locked">LOCKED UNTIL HIT</span>
+  </div>
+</div><div class="active-portfolio-card">
+  <div class="card-top-header">
+    <div class="card-sym-group">
+      <span class="card-slot-badge">#2</span>
+      <span class="card-symbol">PETRONET</span>
+      <span class="badge badge-long">LONG SWING</span>
+      <span class="badge badge-score">SCORE 95.0</span>
+    </div>
+    <div class="card-pnl profit">
+      <span class="pnl-lbl">P&amp;L</span>
+      <span class="pnl-val">+0.00%</span>
+    </div>
+  </div>
 
-        <!-- Right: Real-time Price, Target, SL & Interactive Gauge -->
-        <div class="spotlight-right">
-          
-          <!-- Key Levels 4-Grid -->
-          <div class="levels-grid">
-            <div class="level-box entry-box">
-              <span class="box-title">ENTRY BASIS</span>
-              <span class="box-price" id="heroEntryPrice">₹ 2,250.60</span>
-              <span class="box-sub">Spot at Entry</span>
-            </div>
-            <div class="level-box live-box">
-              <span class="box-title">CURRENT SPOT</span>
-              <span class="box-price live-flash" id="heroCurrentPrice">₹ 2,250.60</span>
-              <span class="box-sub" id="heroLivePnl" style="color: var(--success);">P&amp;L: +0.00%</span>
-            </div>
-            <div class="level-box target-box">
-              <span class="box-title">DYNAMIC TARGET</span>
-              <span class="box-price" id="heroTargetPrice">₹ 2,347.15</span>
-              <span class="box-sub target-text" id="heroTargetSub">+4.29% (1:1.95 R:R)</span>
-            </div>
-            <div class="level-box sl-box">
-              <span class="box-title">DYNAMIC STOP LOSS</span>
-              <span class="box-price" id="heroSlPrice">₹ 2,201.09</span>
-              <span class="box-sub sl-text" id="heroSlSub">-2.20% (Pivot Support)</span>
-            </div>
-          </div>
+  <div class="card-company-name">Petronet LNG</div>
 
-          <!-- Position Trajectory Progress Track -->
-          <div class="gauge-container">
-            <div class="gauge-header">
-              <span class="gauge-tag sl-tag">Dynamic SL (<span id="gaugeSlPrice">₹ 2,201.09</span>)</span>
-              <span class="gauge-tag entry-tag">Entry (<span id="gaugeEntryPrice">₹ 2,250.60</span>)</span>
-              <span class="gauge-tag target-tag">Dynamic Target (<span id="gaugeTargetPrice">₹ 2,347.15</span>)</span>
-            </div>
+  <div class="card-metrics-grid">
+    <div class="c-metric">
+      <span class="cm-label">Entry Price</span>
+      <span class="cm-value">₹297.75</span>
+    </div>
+    <div class="c-metric">
+      <span class="cm-label">Live Spot</span>
+      <span class="cm-value highlight">₹297.75</span>
+    </div>
+    <div class="c-metric danger">
+      <span class="cm-label">Dynamic SL (-0.60%)</span>
+      <span class="cm-value">₹295.96</span>
+    </div>
+    <div class="c-metric success">
+      <span class="cm-label">Dynamic Target (+1.50%)</span>
+      <span class="cm-value">₹302.22</span>
+    </div>
+  </div>
 
-            <div class="gauge-track-wrap">
-              <div class="gauge-track">
-                <!-- Center Baseline Entry Marker -->
-                <div class="entry-mid-marker" title="Entry Baseline"></div>
-                <!-- Dynamic progress fill -->
-                <div class="gauge-fill" id="gaugeFill"></div>
-                <!-- Current Price Pin -->
-                <div class="gauge-pin" id="gaugePin" style="left: 50%;">
-                  <div class="pin-tooltip" id="pinTooltip">₹ 2,250.60 (+0.00%)</div>
-                </div>
-              </div>
-            </div>
+  <div class="card-progress-wrap">
+    <div class="card-progress-labels">
+      <span class="lbl-sl">SL: ₹295.96</span>
+      <span class="lbl-curr">Spot: ₹297.75</span>
+      <span class="lbl-tgt">TGT: ₹302.22</span>
+    </div>
+    <div class="card-progress-bar">
+      <div class="card-progress-fill" style="width: 28.6%"></div>
+    </div>
+  </div>
 
-            <div class="gauge-footer">
-              <span class="dist-text sl-dist" id="distToSl">Buffer to SL: ₹49.51</span>
-              <span class="dist-status" id="distStatus">In Swing Trade Range</span>
-              <span class="dist-text target-dist" id="distToTarget">Gap to Target: ₹96.55</span>
-            </div>
-          </div>
+  <div class="card-footer-meta">
+    <span class="meta-tag">R:R 1:2.50</span>
+    <span class="meta-tag">Entry: 2026-10-21 15:10:14</span>
+    <span class="meta-tag status-locked">LOCKED UNTIL HIT</span>
+  </div>
+</div><div class="active-portfolio-card">
+  <div class="card-top-header">
+    <div class="card-sym-group">
+      <span class="card-slot-badge">#3</span>
+      <span class="card-symbol">DRREDDY</span>
+      <span class="badge badge-long">LONG SWING</span>
+      <span class="badge badge-score">SCORE 93.5</span>
+    </div>
+    <div class="card-pnl profit">
+      <span class="pnl-lbl">P&amp;L</span>
+      <span class="pnl-val">+0.00%</span>
+    </div>
+  </div>
 
-          <!-- Pivot Levels Ribbon -->
-          <div class="pivots-ribbon">
-            <span class="pivots-ribbon-title">Floor Pivots:</span>
-            <div class="pivot-cells" id="heroPivotsRibbon">
-              <span class="p-cell">S2: <strong id="pS2">8873.3</strong></span>
-              <span class="p-cell">S1: <strong id="pS1">8980.2</strong></span>
-              <span class="p-cell p-pivot">P: <strong id="pPP">9151.8</strong></span>
-              <span class="p-cell">R1: <strong id="pR1">9258.7</strong></span>
-              <span class="p-cell">R2: <strong id="pR2">9430.3</strong></span>
-            </div>
-          </div>
+  <div class="card-company-name">Dr Reddys Laboratories</div>
 
-        </div>
+  <div class="card-metrics-grid">
+    <div class="c-metric">
+      <span class="cm-label">Entry Price</span>
+      <span class="cm-value">₹1,240.80</span>
+    </div>
+    <div class="c-metric">
+      <span class="cm-label">Live Spot</span>
+      <span class="cm-value highlight">₹1,240.80</span>
+    </div>
+    <div class="c-metric danger">
+      <span class="cm-label">Dynamic SL (-0.60%)</span>
+      <span class="cm-value">₹1,233.36</span>
+    </div>
+    <div class="c-metric success">
+      <span class="cm-label">Dynamic Target (+1.50%)</span>
+      <span class="cm-value">₹1,259.41</span>
+    </div>
+  </div>
 
+  <div class="card-progress-wrap">
+    <div class="card-progress-labels">
+      <span class="lbl-sl">SL: ₹1,233.36</span>
+      <span class="lbl-curr">Spot: ₹1,240.80</span>
+      <span class="lbl-tgt">TGT: ₹1,259.41</span>
+    </div>
+    <div class="card-progress-bar">
+      <div class="card-progress-fill" style="width: 28.6%"></div>
+    </div>
+  </div>
+
+  <div class="card-footer-meta">
+    <span class="meta-tag">R:R 1:2.50</span>
+    <span class="meta-tag">Entry: 2026-10-21 15:10:14</span>
+    <span class="meta-tag status-locked">LOCKED UNTIL HIT</span>
+  </div>
+</div><div class="active-portfolio-card">
+  <div class="card-top-header">
+    <div class="card-sym-group">
+      <span class="card-slot-badge">#4</span>
+      <span class="card-symbol">RADICO</span>
+      <span class="badge badge-long">LONG SWING</span>
+      <span class="badge badge-score">SCORE 88.8</span>
+    </div>
+    <div class="card-pnl profit">
+      <span class="pnl-lbl">P&amp;L</span>
+      <span class="pnl-val">+0.00%</span>
+    </div>
+  </div>
+
+  <div class="card-company-name">Radico Khaitan</div>
+
+  <div class="card-metrics-grid">
+    <div class="c-metric">
+      <span class="cm-label">Entry Price</span>
+      <span class="cm-value">₹4,338.90</span>
+    </div>
+    <div class="c-metric">
+      <span class="cm-label">Live Spot</span>
+      <span class="cm-value highlight">₹4,338.90</span>
+    </div>
+    <div class="c-metric danger">
+      <span class="cm-label">Dynamic SL (-0.89%)</span>
+      <span class="cm-value">₹4,300.28</span>
+    </div>
+    <div class="c-metric success">
+      <span class="cm-label">Dynamic Target (+1.82%)</span>
+      <span class="cm-value">₹4,417.87</span>
+    </div>
+  </div>
+
+  <div class="card-progress-wrap">
+    <div class="card-progress-labels">
+      <span class="lbl-sl">SL: ₹4,300.28</span>
+      <span class="lbl-curr">Spot: ₹4,338.90</span>
+      <span class="lbl-tgt">TGT: ₹4,417.87</span>
+    </div>
+    <div class="card-progress-bar">
+      <div class="card-progress-fill" style="width: 32.8%"></div>
+    </div>
+  </div>
+
+  <div class="card-footer-meta">
+    <span class="meta-tag">R:R 1:2.04</span>
+    <span class="meta-tag">Entry: 2026-10-21 15:10:14</span>
+    <span class="meta-tag status-locked">LOCKED UNTIL HIT</span>
+  </div>
+</div><div class="active-portfolio-card">
+  <div class="card-top-header">
+    <div class="card-sym-group">
+      <span class="card-slot-badge">#5</span>
+      <span class="card-symbol">BANKBARODA</span>
+      <span class="badge badge-long">LONG SWING</span>
+      <span class="badge badge-score">SCORE 86.7</span>
+    </div>
+    <div class="card-pnl profit">
+      <span class="pnl-lbl">P&amp;L</span>
+      <span class="pnl-val">+0.00%</span>
+    </div>
+  </div>
+
+  <div class="card-company-name">Bank Of Baroda</div>
+
+  <div class="card-metrics-grid">
+    <div class="c-metric">
+      <span class="cm-label">Entry Price</span>
+      <span class="cm-value">₹237.92</span>
+    </div>
+    <div class="c-metric">
+      <span class="cm-label">Live Spot</span>
+      <span class="cm-value highlight">₹237.92</span>
+    </div>
+    <div class="c-metric danger">
+      <span class="cm-label">Dynamic SL (-0.95%)</span>
+      <span class="cm-value">₹235.66</span>
+    </div>
+    <div class="c-metric success">
+      <span class="cm-label">Dynamic Target (+1.95%)</span>
+      <span class="cm-value">₹242.56</span>
+    </div>
+  </div>
+
+  <div class="card-progress-wrap">
+    <div class="card-progress-labels">
+      <span class="lbl-sl">SL: ₹235.66</span>
+      <span class="lbl-curr">Spot: ₹237.92</span>
+      <span class="lbl-tgt">TGT: ₹242.56</span>
+    </div>
+    <div class="card-progress-bar">
+      <div class="card-progress-fill" style="width: 32.8%"></div>
+    </div>
+  </div>
+
+  <div class="card-footer-meta">
+    <span class="meta-tag">R:R 1:2.05</span>
+    <span class="meta-tag">Entry: 2026-10-21 15:10:14</span>
+    <span class="meta-tag status-locked">LOCKED UNTIL HIT</span>
+  </div>
+</div>
+<!-- /ACTIVE_PORTFOLIO_PLACEHOLDER -->
       </div>
     </section>
 
@@ -230,28 +337,28 @@
         <div class="metric-icon">🎯</div>
         <div class="metric-data">
           <span class="metric-val" id="statTotalPicks">0</span>
-          <span class="metric-label">Total Delivery Picks</span>
+          <span class="metric-label">Total Swing Trades</span>
         </div>
       </div>
       <div class="metric-card success">
         <div class="metric-icon">🏆</div>
         <div class="metric-data">
           <span class="metric-val" id="statTargetHits">0</span>
-          <span class="metric-label">Dynamic Target Hits</span>
+          <span class="metric-label">Target Hits (+1.5% - 2.0%)</span>
         </div>
       </div>
       <div class="metric-card danger">
         <div class="metric-icon">🛡️</div>
         <div class="metric-data">
           <span class="metric-val" id="statSlHits">0</span>
-          <span class="metric-label">Dynamic Stop Losses</span>
+          <span class="metric-label">Stop Losses (-0.6% - 0.95%)</span>
         </div>
       </div>
       <div class="metric-card winrate">
         <div class="metric-icon">📈</div>
         <div class="metric-data">
           <span class="metric-val" id="statWinRate">0.0%</span>
-          <span class="metric-label">Delivery Accuracy</span>
+          <span class="metric-label">Win Rate</span>
         </div>
       </div>
       <div class="metric-card pnl">
@@ -268,7 +375,7 @@
       <div class="history-top">
         <div class="history-title-group">
           <span class="history-icon">📜</span>
-          <h3 class="history-title">Sequential Pick &amp; Exit Log</h3>
+          <h3 class="history-title">Resolved Swing Trades Audit Log</h3>
           <span class="history-counter" id="historyCounter">(0 Completed)</span>
         </div>
         <div class="history-actions">
@@ -281,124 +388,354 @@
           <table class="history-table" id="historyTable">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Share / Company</th>
-                <th>Mode</th>
-                <th>Entry Price</th>
+                <th>Symbol</th>
+                <th>Outcome</th>
+                <th>Entry Basis</th>
                 <th>Exit Price</th>
-                <th>P&amp;L %</th>
-                <th>Exit Outcome</th>
-                <th>Duration</th>
+                <th>Realized P&amp;L</th>
+                <th>R:R Ratio</th>
                 <th>Exit Timestamp</th>
               </tr>
             </thead>
             <tbody id="historyTbody">
-              <tr class="empty-row">
-                <td colspan="9">
-                  <div class="empty-state">
-                    <span class="empty-icon">⏳</span>
-                    <span class="empty-title">Active delivery pick is currently in progress.</span>
-                    <span class="empty-sub">Once the active share triggers its Dynamic Stop Loss or Profit Target, it will log here and the engine will immediately load the next best delivery share.</span>
-                  </div>
-                </td>
-              </tr>
+              <!-- HISTORY_TABLE_PLACEHOLDER -->
+<tr><td colspan="7" class="text-center text-muted">No completed trades recorded yet. Audit log is permanent and immutable.</td></tr>
+<!-- /HISTORY_TABLE_PLACEHOLDER -->
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- Footer Disclaimer -->
+    <!-- Footer -->
     <footer class="app-footer">
-      <p>
-        <strong>QuantAI Delivery Algorithm Note:</strong> This application continuously scans the 200+ NSE F&amp;O universe using quantitative multi-factor momentum, multi-day open interest accumulation, and pivot mechanics from <code>Rishabh-F-O</code>. Exactly one stock is tracked until strict mathematical resolution. Designed exclusively for educational and quant modeling analysis.
-      </p>
-      <div class="footer-meta">
-        <span>Host: <code>brainixt.github.io/quantAI</code></span>
-        <span>Engine: Python Dynamic Delivery Picker</span>
-        <span>Update Frequency: Every 60 Seconds</span>
+      <div class="footer-content">
+        <span>QuantAI &bull; Autonomous Multi-Share Quantitative Swing Engine</span>
+        <span>Strict Invariant: Max 5 Concurrent Shares &bull; Target ~1.5%-2.0% &bull; SL 0.5%-1.5% &bull; Min 1:2.0 R:R &bull; Zero Impact to Rishabh-F-O</span>
       </div>
     </footer>
 
-    <!-- Exit Resolution Modal Overlay -->
-    <div class="exit-modal-backdrop" id="exitModal" style="display: none;">
-      <div class="exit-modal-card">
-        <div class="exit-badge-icon" id="modalIcon">🎯</div>
-        <h3 class="modal-title" id="modalTitle">DYNAMIC TARGET HIT</h3>
-        <p class="modal-stock" id="modalStock">DIVISLAB</p>
-        <div class="modal-pnl" id="modalPnl">+9.64%</div>
-        <div class="modal-desc" id="modalDesc">Delivery position resolved cleanly. Selecting next optimal quant share immediately...</div>
-        <div class="modal-countdown">
-          <span>Picking next delivery share in</span>
-          <strong id="modalTimer">3</strong>
-        </div>
-      </div>
-    </div>
-
   </div>
 
-  <!-- Pre-embedded active state for instantaneous rendering (Zero loading screen) -->
+  <!-- Embedded Initial State for Zero-Loading-Screen Instant Render -->
   <script id="quantStateEmbed">
     window.QUANT_INITIAL_STATE = {
-    "active_pick": {
-        "symbol": "MANKIND",
-        "company": "Mankind Pharma",
-        "direction": "LONG",
-        "mode": "DELIVERY",
-        "entry_price": 2250.6,
-        "current_price": 2250.6,
-        "target_price": 2347.15,
-        "sl_price": 2201.09,
-        "target_pct": 4.29,
-        "sl_pct": 2.2,
-        "rr_ratio": 1.95,
-        "sl_method": "Pivot S1 Support (2.20%)",
-        "target_method": "Pivot R1 Resistance (4.29% | 1:1.9 R:R)",
-        "pnl_pct": 0.0,
-        "buy_score": 70.6,
-        "confidence": 84.9,
-        "signal": "STRONG BUY",
-        "derivative_signal": "LONG",
-        "risk_level": "MODERATE",
-        "quality_score": 76.0,
-        "growth_score": 94.0,
-        "valuation_score": 35.0,
-        "factors": [
-            "Strong structural technical posture (Tech: 100/100)",
-            "Superior Quality & Growth profile (Q: 76, G: 94)",
-            "Healthy futures carry contango (+0.35% premium)",
-            "Substantial hurdle-free runway to R2 (+6.0%)"
-        ],
-        "pivots": {
-            "pivot": 2282.57,
-            "r1": 2319.13,
-            "s1": 2216.63,
-            "r2": 2385.07,
-            "s2": 2180.07,
-            "r3": 2421.63,
-            "s3": 2114.13,
-            "r4": 2524.13,
-            "s4": 2011.63,
-            "high": 2348.5,
-            "low": 2246.0,
-            "close": 2253.2,
-            "bias": "BEARISH",
-            "zone": "S1-P",
-            "nearest_level": "P",
-            "nearest_level_price": 2282.57,
-            "distance_to_pivot_pct": -1.4
-        },
-        "entry_time": "2026-10-21T11:14:51.332073+05:30",
-        "last_updated": "2026-10-21T11:16:06.275861+05:30"
+  "active_pick": {
+    "symbol": "MANKIND",
+    "company": "Mankind Pharma",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 2250.6,
+    "current_price": 2249.0,
+    "target_price": 2294.49,
+    "sl_price": 2229.22,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "sl_method": "Pivot S1 Support (2.20%)",
+    "target_method": "Pivot R1 Resistance (4.29% | 1:1.9 R:R)",
+    "pnl_pct": -0.07,
+    "buy_score": 70.6,
+    "confidence": 84.9,
+    "signal": "STRONG BUY",
+    "derivative_signal": "LONG",
+    "risk_level": "MODERATE",
+    "quality_score": 76.0,
+    "growth_score": 94.0,
+    "valuation_score": 35.0,
+    "factors": [
+      "Strong structural technical posture (Tech: 100/100)",
+      "Superior Quality & Growth profile (Q: 76, G: 94)",
+      "Healthy futures carry contango (+0.35% premium)",
+      "Substantial hurdle-free runway to R2 (+6.0%)"
+    ],
+    "pivots": {
+      "pivot": 2282.57,
+      "r1": 2319.13,
+      "s1": 2216.63,
+      "r2": 2385.07,
+      "s2": 2180.07,
+      "r3": 2421.63,
+      "s3": 2114.13,
+      "r4": 2524.13,
+      "s4": 2011.63,
+      "high": 2348.5,
+      "low": 2246.0,
+      "close": 2253.2,
+      "bias": "BEARISH",
+      "zone": "S1-P",
+      "nearest_level": "P",
+      "nearest_level_price": 2282.57,
+      "distance_to_pivot_pct": -1.4
     },
-    "nifty50": {
-        "price": "22944.5000",
-        "change": "55.5500",
-        "change_percent": "0.2400",
-        "direction": "NA"
+    "entry_time": "2026-10-21T11:14:51.332073+05:30",
+    "last_updated": "2026-10-21T15:10:53.887279+05:30"
+  },
+  "nifty50": {
+    "price": "22806.0500",
+    "change": "-82.9000",
+    "change_percent": "-0.3600",
+    "direction": "NA"
+  },
+  "timestamp": "2026-10-21T15:10:53.888279+05:30",
+  "total_completed_picks": 0,
+  "active_picks": [
+    {
+      "symbol": "MANKIND",
+      "company": "Mankind Pharma",
+      "direction": "LONG",
+      "mode": "DELIVERY",
+      "entry_price": 2250.6,
+      "current_price": 2249.0,
+      "target_price": 2294.49,
+      "sl_price": 2229.22,
+      "target_pct": 1.95,
+      "sl_pct": 0.95,
+      "rr_ratio": 2.05,
+      "sl_method": "Pivot S1 Support (2.20%)",
+      "target_method": "Pivot R1 Resistance (4.29% | 1:1.9 R:R)",
+      "pnl_pct": -0.07,
+      "buy_score": 70.6,
+      "confidence": 84.9,
+      "signal": "STRONG BUY",
+      "derivative_signal": "LONG",
+      "risk_level": "MODERATE",
+      "quality_score": 76.0,
+      "growth_score": 94.0,
+      "valuation_score": 35.0,
+      "factors": [
+        "Strong structural technical posture (Tech: 100/100)",
+        "Superior Quality & Growth profile (Q: 76, G: 94)",
+        "Healthy futures carry contango (+0.35% premium)",
+        "Substantial hurdle-free runway to R2 (+6.0%)"
+      ],
+      "pivots": {
+        "pivot": 2282.57,
+        "r1": 2319.13,
+        "s1": 2216.63,
+        "r2": 2385.07,
+        "s2": 2180.07,
+        "r3": 2421.63,
+        "s3": 2114.13,
+        "r4": 2524.13,
+        "s4": 2011.63,
+        "high": 2348.5,
+        "low": 2246.0,
+        "close": 2253.2,
+        "bias": "BEARISH",
+        "zone": "S1-P",
+        "nearest_level": "P",
+        "nearest_level_price": 2282.57,
+        "distance_to_pivot_pct": -1.4
+      },
+      "entry_time": "2026-10-21T11:14:51.332073+05:30",
+      "last_updated": "2026-10-21T15:10:53.887279+05:30"
     },
-    "timestamp": "2026-10-21T11:16:06.275861+05:30",
-    "total_completed_picks": 0
+    {
+      "symbol": "PETRONET",
+      "company": "Petronet LNG",
+      "direction": "LONG",
+      "mode": "DELIVERY",
+      "entry_price": 297.75,
+      "current_price": 297.75,
+      "target_price": 302.22,
+      "sl_price": 295.96,
+      "target_pct": 1.5,
+      "sl_pct": 0.6,
+      "rr_ratio": 2.5,
+      "sl_method": "Dynamic Swing SL (-0.60%)",
+      "target_method": "Dynamic Swing Target (+1.50% | 1:2.50 R:R)",
+      "pnl_pct": 0.0,
+      "buy_score": 76.0,
+      "composite_score": 95.0,
+      "confidence": 93.0,
+      "signal": "STRONG BUY",
+      "derivative_signal": "LONG",
+      "risk_level": "LOW",
+      "quality_score": 90.0,
+      "growth_score": 60.0,
+      "valuation_score": 100.0,
+      "factors": [
+        "Multi-day price base above Floor Pivot",
+        "Persistent Long buildup across cycles",
+        "Superior Quality & Growth profile (Q: 90, G: 60)"
+      ],
+      "pivots": {
+        "pivot": 293.37,
+        "r1": 295.68,
+        "s1": 291.33,
+        "r2": 297.72,
+        "s2": 289.02,
+        "r3": 300.03,
+        "s3": 286.98,
+        "r4": 304.38,
+        "s4": 282.63,
+        "high": 295.4,
+        "low": 291.05,
+        "close": 293.65,
+        "bias": "BULLISH",
+        "zone": "R2-R3",
+        "nearest_level": "R2",
+        "nearest_level_price": 297.72,
+        "distance_to_pivot_pct": 1.49
+      },
+      "entry_time": "2026-10-21T15:10:14.421399+05:30",
+      "last_updated": "2026-10-21T15:10:53.888279+05:30"
+    },
+    {
+      "symbol": "DRREDDY",
+      "company": "Dr Reddys Laboratories",
+      "direction": "LONG",
+      "mode": "DELIVERY",
+      "entry_price": 1240.8,
+      "current_price": 1240.8,
+      "target_price": 1259.41,
+      "sl_price": 1233.36,
+      "target_pct": 1.5,
+      "sl_pct": 0.6,
+      "rr_ratio": 2.5,
+      "sl_method": "Dynamic Swing SL (-0.60%)",
+      "target_method": "Dynamic Swing Target (+1.50% | 1:2.50 R:R)",
+      "pnl_pct": 0.0,
+      "buy_score": 74.0,
+      "composite_score": 93.5,
+      "confidence": 98.0,
+      "signal": "STRONG BUY",
+      "derivative_signal": "LONG",
+      "risk_level": "LOW",
+      "quality_score": 100.0,
+      "growth_score": 69.0,
+      "valuation_score": 76.0,
+      "factors": [
+        "Strong structural technical posture (Tech: 80/100)",
+        "Multi-day price base above Floor Pivot",
+        "Superior Quality & Growth profile (Q: 100, G: 69)"
+      ],
+      "pivots": {
+        "pivot": 1238.17,
+        "r1": 1249.33,
+        "s1": 1231.33,
+        "r2": 1256.17,
+        "s2": 1220.17,
+        "r3": 1267.33,
+        "s3": 1213.33,
+        "r4": 1285.33,
+        "s4": 1195.33,
+        "high": 1245.0,
+        "low": 1227.0,
+        "close": 1242.5,
+        "bias": "BULLISH",
+        "zone": "P-R1",
+        "nearest_level": "P",
+        "nearest_level_price": 1238.17,
+        "distance_to_pivot_pct": 0.21
+      },
+      "entry_time": "2026-10-21T15:10:14.421399+05:30",
+      "last_updated": "2026-10-21T15:10:53.888279+05:30"
+    },
+    {
+      "symbol": "RADICO",
+      "company": "Radico Khaitan",
+      "direction": "LONG",
+      "mode": "DELIVERY",
+      "entry_price": 4338.9,
+      "current_price": 4338.9,
+      "target_price": 4417.87,
+      "sl_price": 4300.28,
+      "target_pct": 1.82,
+      "sl_pct": 0.89,
+      "rr_ratio": 2.04,
+      "sl_method": "Dynamic Swing SL (-0.89%)",
+      "target_method": "Dynamic Swing Target (+1.82% | 1:2.04 R:R)",
+      "pnl_pct": 0.0,
+      "buy_score": 75.8,
+      "composite_score": 88.8,
+      "confidence": 93.0,
+      "signal": "STRONG BUY",
+      "derivative_signal": "LONG",
+      "risk_level": "LOW",
+      "quality_score": 90.0,
+      "growth_score": 94.0,
+      "valuation_score": 24.0,
+      "factors": [
+        "Strong structural technical posture (Tech: 100/100)",
+        "Persistent Long buildup across cycles",
+        "Superior Quality & Growth profile (Q: 90, G: 94)"
+      ],
+      "pivots": {
+        "pivot": 4447.5,
+        "r1": 4492.0,
+        "s1": 4391.0,
+        "r2": 4548.5,
+        "s2": 4346.5,
+        "r3": 4593.0,
+        "s3": 4290.0,
+        "r4": 4694.0,
+        "s4": 4189.0,
+        "high": 4504.0,
+        "low": 4403.0,
+        "close": 4435.5,
+        "bias": "BEARISH",
+        "zone": "S3-S2",
+        "nearest_level": "S2",
+        "nearest_level_price": 4346.5,
+        "distance_to_pivot_pct": -2.44
+      },
+      "entry_time": "2026-10-21T15:10:14.421399+05:30",
+      "last_updated": "2026-10-21T15:10:53.888279+05:30"
+    },
+    {
+      "symbol": "BANKBARODA",
+      "company": "Bank Of Baroda",
+      "direction": "LONG",
+      "mode": "DELIVERY",
+      "entry_price": 237.92,
+      "current_price": 237.92,
+      "target_price": 242.56,
+      "sl_price": 235.66,
+      "target_pct": 1.95,
+      "sl_pct": 0.95,
+      "rr_ratio": 2.05,
+      "sl_method": "Dynamic Swing SL (-0.95%)",
+      "target_method": "Dynamic Swing Target (+1.95% | 1:2.05 R:R)",
+      "pnl_pct": 0.0,
+      "buy_score": 70.9,
+      "composite_score": 86.7,
+      "confidence": 78.4,
+      "signal": "STRONG BUY",
+      "derivative_signal": "LONG",
+      "risk_level": "MODERATE",
+      "quality_score": 78.0,
+      "growth_score": 63.0,
+      "valuation_score": 88.0,
+      "factors": [
+        "Multi-day price base above Floor Pivot",
+        "Favorable valuation margin of safety (Val: 88)",
+        "Healthy futures carry contango (+0.11% premium)"
+      ],
+      "pivots": {
+        "pivot": 235.55,
+        "r1": 241.35,
+        "s1": 232.4,
+        "r2": 244.5,
+        "s2": 226.6,
+        "r3": 250.3,
+        "s3": 223.45,
+        "r4": 259.25,
+        "s4": 214.5,
+        "high": 238.7,
+        "low": 229.75,
+        "close": 238.2,
+        "bias": "BULLISH",
+        "zone": "P-R1",
+        "nearest_level": "P",
+        "nearest_level_price": 235.55,
+        "distance_to_pivot_pct": 1.01
+      },
+      "entry_time": "2026-10-21T15:10:14.421399+05:30",
+      "last_updated": "2026-10-21T15:10:53.888279+05:30"
+    }
+  ]
 };
   </script>
 
