@@ -6,8 +6,8 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>QuantAI — Autonomous NSE F&amp;O Single Stock Picker</title>
-  <meta name="description" content="QuantAI: Institutional-grade quantitative algorithmic stock picker for NSE F&O. One active share, strict Target & Stop Loss execution, 1-minute continuous scan.">
+  <title>QuantAI — Autonomous NSE F&amp;O Delivery Picker (Dynamic Algo)</title>
+  <meta name="description" content="QuantAI: Institutional-grade quantitative delivery stock picker for NSE F&O. One active share, dynamic Stop Loss & Target anchored to pivots and volatility, 1-minute continuous scan.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,9 +38,9 @@
         <div class="brand-info">
           <div class="brand-row">
             <span class="brand-title">QuantAI</span>
-            <span class="version-tag">v2.4 Quant Engine</span>
+            <span class="version-tag">Delivery Algo Engine</span>
           </div>
-          <span class="brand-subtitle">Autonomous NSE F&amp;O Precision Picker</span>
+          <span class="brand-subtitle">Autonomous NSE F&amp;O Delivery &amp; Swing Picker</span>
         </div>
       </div>
 
@@ -55,7 +55,7 @@
       <div class="header-right">
         <div class="status-pill" id="engineStatusPill">
           <span class="pulse-indicator"></span>
-          <span id="engineStatusText">1-Min Quant Loop Active</span>
+          <span id="engineStatusText">1-Min Delivery Loop Active</span>
         </div>
         <div class="cycle-pill">
           <span class="cycle-icon">⏱️</span>
@@ -66,11 +66,11 @@
       </div>
     </header>
 
-    <!-- Notice Bar: Display Only, No Trade/No Message Execution -->
+    <!-- Notice Bar: Delivery Invariant & Dynamic Algorithm -->
     <div class="info-banner">
-      <div class="banner-badge">CONTRACT RULES</div>
+      <div class="banner-badge">DELIVERY ALGO CONTRACT</div>
       <div class="banner-text">
-        <strong>Single-Share Invariant:</strong> Exactly 1 active stock monitored at any time • <strong>No premature exit:</strong> Held strictly until Target (+2.0%) or SL (-1.0%) trigger • <strong>Immediate rollover:</strong> Fresh best quant pick engaged instantly upon exit • <strong>Display only:</strong> Pure signal analytics (Zero order placement, Zero SMS/Email/Messages).
+        <strong>Dynamic P&amp;L Algorithm:</strong> Stop Loss is volatility &amp; structural pivot-anchored (2.5% to 5.5% buffer) to avoid intraday noise stops • Profit Target is dynamically calibrated to expansion boundaries &amp; min 1:2.0+ R:R (5.0% to 14.0%) • <strong>Single-Share Invariant:</strong> Strictly 1 active delivery pick • <strong>Immediate rollover:</strong> Fresh best quant pick engaged instantly upon exit • <strong>Display only:</strong> Zero broker orders, Zero SMS/Email/Messages.
       </div>
     </div>
 
@@ -79,12 +79,12 @@
       <div class="section-top-bar">
         <div class="section-title-wrap">
           <span class="live-dot"></span>
-          <h2 class="section-title">CURRENT ACTIVE PICK</h2>
-          <span class="active-badge" id="activeStateBadge">LOCKED IN POSITION</span>
+          <h2 class="section-title">ACTIVE DELIVERY PICK</h2>
+          <span class="active-badge" id="activeStateBadge">LOCKED IN DELIVERY POSITION</span>
         </div>
         <div class="active-meta-wrap">
           <span class="active-since-text">Entry Time: <strong id="heroEntryTime">--</strong></span>
-          <span class="holding-time-badge" id="heroDuration">0m</span>
+          <span class="holding-time-badge" id="heroDuration">0m active</span>
         </div>
       </div>
 
@@ -96,15 +96,15 @@
           <div class="stock-headline">
             <div class="symbol-row">
               <h1 class="stock-symbol" id="heroSymbol">LOADING...</h1>
-              <span class="direction-badge" id="heroDirection">LONG</span>
+              <span class="direction-badge" id="heroDirection">LONG (DELIVERY)</span>
               <span class="risk-badge" id="heroRisk">LOW RISK</span>
             </div>
-            <div class="company-name" id="heroCompany">Fetching optimal quantitative selection...</div>
+            <div class="company-name" id="heroCompany">Fetching optimal delivery selection...</div>
           </div>
 
           <div class="quant-score-matrix">
             <div class="score-card">
-              <span class="score-label">Quant Conviction</span>
+              <span class="score-label">Delivery Conviction</span>
               <div class="score-value-wrap">
                 <span class="score-num" id="heroBuyScore">--</span>
                 <span class="score-denom">/100</span>
@@ -120,21 +120,21 @@
                 <span class="score-num" id="heroConfidence">--</span>
                 <span class="score-denom">%</span>
               </div>
-              <span class="score-subtext" id="heroConfidenceSub">Pillar Confluence</span>
+              <span class="score-subtext" id="heroConfidenceSub">Multi-Horizon Confluence</span>
             </div>
 
             <div class="score-card">
-              <span class="score-label">Derivatives Signal</span>
+              <span class="score-label">Derivatives Posture</span>
               <div class="score-value-wrap">
                 <span class="signal-tag" id="heroDerivativeSig">LONG BUILDUP</span>
               </div>
-              <span class="score-subtext" id="heroOiDelta">OI Flow +0.0%</span>
+              <span class="score-subtext" id="heroOiDelta">Multi-Day Accumulation</span>
             </div>
           </div>
 
           <!-- Signal Rationales / Factors -->
           <div class="factors-container">
-            <span class="factors-heading">Institutional Drivers &amp; Analytics</span>
+            <span class="factors-heading">Delivery Rationales &amp; Quantitative Drivers</span>
             <div class="factors-chips" id="heroFactors">
               <span class="factor-chip">Loading quantitative pillars...</span>
             </div>
@@ -147,9 +147,9 @@
           <!-- Key Levels 4-Grid -->
           <div class="levels-grid">
             <div class="level-box entry-box">
-              <span class="box-title">ENTRY PRICE</span>
+              <span class="box-title">ENTRY BASIS</span>
               <span class="box-price" id="heroEntryPrice">₹ --</span>
-              <span class="box-sub">Initial Basis</span>
+              <span class="box-sub">Spot at Entry</span>
             </div>
             <div class="level-box live-box">
               <span class="box-title">CURRENT SPOT</span>
@@ -157,23 +157,23 @@
               <span class="box-sub" id="heroLivePnl">P&amp;L: --</span>
             </div>
             <div class="level-box target-box">
-              <span class="box-title">PROFIT TARGET</span>
+              <span class="box-title">DYNAMIC TARGET</span>
               <span class="box-price" id="heroTargetPrice">₹ --</span>
-              <span class="box-sub target-text" id="heroTargetSub">+2.00%</span>
+              <span class="box-sub target-text" id="heroTargetSub">+--% (Dynamic)</span>
             </div>
             <div class="level-box sl-box">
-              <span class="box-title">STOP LOSS</span>
+              <span class="box-title">DYNAMIC STOP LOSS</span>
               <span class="box-price" id="heroSlPrice">₹ --</span>
-              <span class="box-sub sl-text" id="heroSlSub">-1.00%</span>
+              <span class="box-sub sl-text" id="heroSlSub">---% (Dynamic)</span>
             </div>
           </div>
 
           <!-- Position Trajectory Progress Track -->
           <div class="gauge-container">
             <div class="gauge-header">
-              <span class="gauge-tag sl-tag">Stop Loss (<span id="gaugeSlPrice">₹--</span>)</span>
+              <span class="gauge-tag sl-tag">Dynamic SL (<span id="gaugeSlPrice">₹--</span>)</span>
               <span class="gauge-tag entry-tag">Entry (<span id="gaugeEntryPrice">₹--</span>)</span>
-              <span class="gauge-tag target-tag">Target (<span id="gaugeTargetPrice">₹--</span>)</span>
+              <span class="gauge-tag target-tag">Dynamic Target (<span id="gaugeTargetPrice">₹--</span>)</span>
             </div>
 
             <div class="gauge-track-wrap">
@@ -190,8 +190,8 @@
             </div>
 
             <div class="gauge-footer">
-              <span class="dist-text sl-dist" id="distToSl">Gap to SL: --</span>
-              <span class="dist-status" id="distStatus">In Trade Range</span>
+              <span class="dist-text sl-dist" id="distToSl">Buffer to SL: --</span>
+              <span class="dist-status" id="distStatus">In Delivery Swing Range</span>
               <span class="dist-text target-dist" id="distToTarget">Gap to Target: --</span>
             </div>
           </div>
@@ -219,28 +219,28 @@
         <div class="metric-icon">🎯</div>
         <div class="metric-data">
           <span class="metric-val" id="statTotalPicks">0</span>
-          <span class="metric-label">Total Picks Executed</span>
+          <span class="metric-label">Total Delivery Picks</span>
         </div>
       </div>
       <div class="metric-card success">
         <div class="metric-icon">🏆</div>
         <div class="metric-data">
           <span class="metric-val" id="statTargetHits">0</span>
-          <span class="metric-label">Target Hits (+2%)</span>
+          <span class="metric-label">Dynamic Target Hits</span>
         </div>
       </div>
       <div class="metric-card danger">
         <div class="metric-icon">🛡️</div>
         <div class="metric-data">
           <span class="metric-val" id="statSlHits">0</span>
-          <span class="metric-label">Stop Losses Hit (-1%)</span>
+          <span class="metric-label">Dynamic Stop Losses</span>
         </div>
       </div>
       <div class="metric-card winrate">
         <div class="metric-icon">📈</div>
         <div class="metric-data">
           <span class="metric-val" id="statWinRate">0.0%</span>
-          <span class="metric-label">Algorithm Accuracy</span>
+          <span class="metric-label">Delivery Accuracy</span>
         </div>
       </div>
       <div class="metric-card pnl">
@@ -273,7 +273,7 @@
               <tr>
                 <th>#</th>
                 <th>Share / Company</th>
-                <th>Direction</th>
+                <th>Mode</th>
                 <th>Entry Price</th>
                 <th>Exit Price</th>
                 <th>P&amp;L %</th>
@@ -287,8 +287,8 @@
                 <td colspan="9">
                   <div class="empty-state">
                     <span class="empty-icon">⏳</span>
-                    <span class="empty-title">Active pick is currently in progress.</span>
-                    <span class="empty-sub">Once the active share triggers its Stop Loss or Profit Target, it will log here and the engine will immediately load the next best share.</span>
+                    <span class="empty-title">Active delivery pick is currently in progress.</span>
+                    <span class="empty-sub">Once the active share triggers its Dynamic Stop Loss or Profit Target, it will log here and the engine will immediately load the next best delivery share.</span>
                   </div>
                 </td>
               </tr>
@@ -301,11 +301,11 @@
     <!-- Footer Disclaimer -->
     <footer class="app-footer">
       <p>
-        <strong>QuantAI Algorithm Note:</strong> This application continuously scans the 200+ NSE F&amp;O universe using quantitative multi-factor momentum, open interest buildup, and pivot mechanics from <code>Rishabh-F-O</code>. Exactly one stock is tracked until strict mathematical resolution. Designed exclusively for educational and quant modeling analysis.
+        <strong>QuantAI Delivery Algorithm Note:</strong> This application continuously scans the 200+ NSE F&amp;O universe using quantitative multi-factor momentum, multi-day open interest accumulation, and pivot mechanics from <code>Rishabh-F-O</code>. Exactly one stock is tracked until strict mathematical resolution. Designed exclusively for educational and quant modeling analysis.
       </p>
       <div class="footer-meta">
         <span>Host: <code>brainixt.github.io/quantAI</code></span>
-        <span>Engine: Python Quant Prediction Engine</span>
+        <span>Engine: Python Dynamic Delivery Picker</span>
         <span>Update Frequency: Every 60 Seconds</span>
       </div>
     </footer>
@@ -314,12 +314,12 @@
     <div class="exit-modal-backdrop" id="exitModal" style="display: none;">
       <div class="exit-modal-card">
         <div class="exit-badge-icon" id="modalIcon">🎯</div>
-        <h3 class="modal-title" id="modalTitle">PROFIT TARGET HIT</h3>
-        <p class="modal-stock" id="modalStock">INFY</p>
-        <div class="modal-pnl" id="modalPnl">+2.04%</div>
-        <div class="modal-desc" id="modalDesc">Position resolved cleanly. Selecting next optimal quant share immediately...</div>
+        <h3 class="modal-title" id="modalTitle">DYNAMIC TARGET HIT</h3>
+        <p class="modal-stock" id="modalStock">DIVISLAB</p>
+        <div class="modal-pnl" id="modalPnl">+9.64%</div>
+        <div class="modal-desc" id="modalDesc">Delivery position resolved cleanly. Selecting next optimal quant share immediately...</div>
         <div class="modal-countdown">
-          <span>Picking next share in</span>
+          <span>Picking next delivery share in</span>
           <strong id="modalTimer">3</strong>
         </div>
       </div>
