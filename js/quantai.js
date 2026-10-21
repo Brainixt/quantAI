@@ -68,22 +68,29 @@ function startClock() {
 
 // Load Persisted Active Pick and Trade History
 function loadPersistedData() {
+  // 1. First Priority: Instant Embedded Initial State (Zero Loading Screen)
+  if (window.QUANT_INITIAL_STATE && window.QUANT_INITIAL_STATE.active_pick) {
+    appState.activePick = window.QUANT_INITIAL_STATE.active_pick;
+    if (window.QUANT_INITIAL_STATE.nifty50) {
+      appState.nifty = window.QUANT_INITIAL_STATE.nifty50;
+      renderNiftyTicker(appState.nifty);
+    }
+  }
+
+  // 2. Check localStorage for any recent updates
   try {
     const savedActive = localStorage.getItem(STORAGE_ACTIVE_PICK);
     if (savedActive) {
       const parsed = JSON.parse(savedActive);
-      // Migrate if old hardcoded 1% / 2% pick was stored
-      if (parsed && (!parsed.mode || parsed.targetPct === 2.0)) {
-        appState.activePick = null;
-      } else {
+      if (parsed && parsed.mode === "DELIVERY") {
         appState.activePick = parsed;
       }
     }
   } catch (e) {
     console.warn("Could not parse saved active pick:", e);
-    appState.activePick = null;
   }
 
+  // 3. Load persistent trade history
   try {
     const savedHistory = localStorage.getItem(STORAGE_HISTORY);
     if (savedHistory) {
@@ -94,6 +101,8 @@ function loadPersistedData() {
     appState.history = [];
   }
 
+  // Synchronous Frame-1 Render (Zero Loading Flash)
+  renderSpotlightCard();
   renderHistoryTable();
   updateSummaryMetrics();
 }
@@ -188,13 +197,10 @@ async function fetchQuantData() {
   return generateInstitutionalFallback();
 }
 
-// Main 1-Minute Execution Cycle
+// Main 1-Minute Execution Cycle (Silent Background Refresh)
 async function runQuantScanCycle() {
   if (appState.isScanning) return;
   appState.isScanning = true;
-
-  const statusText = document.getElementById("engineStatusText");
-  if (statusText) statusText.innerText = "Scanning Delivery Universe...";
 
   try {
     const quantData = await fetchQuantData();
@@ -203,7 +209,6 @@ async function runQuantScanCycle() {
     console.error("Scan error:", err);
   } finally {
     appState.isScanning = false;
-    if (statusText) statusText.innerText = "1-Min Delivery Loop Active";
   }
 }
 
@@ -779,15 +784,6 @@ function showExitResolutionModal(stock, outcome) {
   }, 1000);
 }
 
-// Clear History Helper
-function clearLocalHistory() {
-  if (confirm("Reset pick history log?")) {
-    appState.history = [];
-    persistState();
-    renderHistoryTable();
-    updateSummaryMetrics();
-  }
-}
 
 // Utility: Escape HTML
 function escapeHtml(text) {
