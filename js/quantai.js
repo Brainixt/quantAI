@@ -355,55 +355,56 @@ function executeExitAndImmediateRollover(universe, outcome) {
   pickNextBestShare(candidatePool);
 }
 
-// Dynamic Delivery Calculation Algorithm
+// Dynamic Swing Trade Calculation Algorithm (Calibrated SL & Target)
 function calculateDynamicLevels(stock, spotPrice) {
   const piv = stock.pivot_points || {};
-  const s1 = parseFloat(piv.s1 || (spotPrice * 0.97));
-  const s2 = parseFloat(piv.s2 || (spotPrice * 0.95));
-  const r2 = parseFloat(piv.r2 || (spotPrice * 1.05));
-  const r3 = parseFloat(piv.r3 || (spotPrice * 1.08));
+  const s1 = parseFloat(piv.s1 || (spotPrice * 0.985));
+  const r1 = parseFloat(piv.r1 || (spotPrice * 1.025));
+  const r2 = parseFloat(piv.r2 || (spotPrice * 1.04));
 
   const risk = stock.risk || {};
-  const rangeSpan = parseFloat(risk.range_span_pct || 2.6);
+  const rangeSpan = parseFloat(risk.range_span_pct || 2.2);
 
-  // 1. Dynamic Stop Loss Anchor
+  // 1. Dynamic Stop Loss Anchor (Floor 1.2%, Cap 2.2%)
   let pivSlPct;
   let slAnchor;
-  if (spotPrice > s1 && ((spotPrice - s1) / spotPrice * 100.0) >= 1.5) {
+  if (spotPrice > s1) {
     pivSlPct = ((spotPrice - s1) / spotPrice) * 100.0;
-    slAnchor = "Pivot S1 Structural Floor";
+    slAnchor = "Pivot S1 Support";
   } else {
-    pivSlPct = ((spotPrice - s2) / spotPrice) * 100.0;
-    slAnchor = "Pivot S2 Extended Support";
+    pivSlPct = 1.6;
+    slAnchor = "Dynamic Swing Buffer";
   }
 
-  const volSlPct = rangeSpan * 1.35;
-  // Delivery boundaries: Minimum 2.5% anti-noise floor, capped at 5.5%
-  const dynSlPct = Math.round(Math.max(2.5, Math.min(5.5, Math.max(pivSlPct, volSlPct))) * 100) / 100;
+  const volSlPct = rangeSpan * 0.70;
+  const rawSl = Math.max(pivSlPct, volSlPct);
+  // Calibrated Swing boundaries: 1.20% floor, 2.20% cap
+  const dynSlPct = Math.round(Math.max(1.20, Math.min(2.20, rawSl)) * 100) / 100;
   const slPrice = Math.round(spotPrice * (1.0 - dynSlPct / 100.0) * 100) / 100;
 
-  // 2. Dynamic Target Anchor
-  const distToR2 = ((r2 - spotPrice) / spotPrice) * 100.0;
-  const distToR3 = ((r3 - spotPrice) / spotPrice) * 100.0;
+  // 2. Dynamic Target Anchor (Floor 2.5%, Cap 4.5%)
+  const distToR1 = r1 > spotPrice ? ((r1 - spotPrice) / spotPrice) * 100.0 : 0.0;
+  const distToR2 = r2 > spotPrice ? ((r2 - spotPrice) / spotPrice) * 100.0 : 0.0;
 
   let pivTgtPct;
   let tgtAnchor;
-  if (distToR2 >= 4.5) {
+  if (distToR1 >= 2.4) {
+    pivTgtPct = distToR1;
+    tgtAnchor = "Pivot R1 Resistance";
+  } else if (distToR2 >= 2.5) {
     pivTgtPct = distToR2;
     tgtAnchor = "Pivot R2 Expansion";
   } else {
-    pivTgtPct = Math.max(distToR3, distToR2);
-    tgtAnchor = "Pivot R3 Breakout Runway";
+    pivTgtPct = dynSlPct * 1.95;
+    tgtAnchor = "Swing R:R Target";
   }
 
-  // Institutional Asymmetric Risk:Reward Expectancy (Minimum 2.1x)
-  const st = stock.short_term || {};
-  const mcg = parseFloat(st.mc_g || 70.0);
-  const rrMultiplier = mcg >= 80 ? 2.3 : 2.1;
-  const rrTargetPct = dynSlPct * rrMultiplier;
+  // Institutional R:R Expectancy (~1.95x Risk)
+  const rrTargetPct = dynSlPct * 1.95;
+  const rawTgt = Math.max(pivTgtPct, rrTargetPct);
 
-  // Delivery boundaries: Minimum 5.0%, capped at 14.0%
-  const dynTgtPct = Math.round(Math.max(5.0, Math.min(14.0, Math.max(pivTgtPct, rrTargetPct))) * 100) / 100;
+  // Calibrated Swing boundaries: 2.50% floor, 4.50% cap
+  const dynTgtPct = Math.round(Math.max(2.50, Math.min(4.50, rawTgt)) * 100) / 100;
   const targetPrice = Math.round(spotPrice * (1.0 + dynTgtPct / 100.0) * 100) / 100;
 
   const rrRatio = Math.round((dynTgtPct / dynSlPct) * 100) / 100;
