@@ -4,12 +4,12 @@
     "company": "Infosys",
     "direction": "LONG",
     "entry_price": 1168.05,
-    "current_price": 1168.05,
+    "current_price": 1168.15,
     "target_price": 1191.41,
     "sl_price": 1156.37,
     "target_pct": 2.0,
     "sl_pct": 1.0,
-    "pnl_pct": 0.0,
+    "pnl_pct": 0.01,
     "buy_score": 91.0,
     "confidence": 86.0,
     "signal": "STRONG BUY",
@@ -41,14 +41,14 @@
       "distance_to_pivot_pct": 2.68
     },
     "entry_time": "2026-10-21T10:52:08.497003+05:30",
-    "last_updated": "2026-10-21T10:52:13.908225+05:30"
+    "last_updated": "2026-10-21T10:55:00.791292+05:30"
   },
   "nifty50": {
-    "price": "22969.9000",
-    "change": "80.9500",
-    "change_percent": "0.3500",
+    "price": "22979.0500",
+    "change": "90.1000",
+    "change_percent": "0.3900",
     "direction": "NA"
   },
-  "timestamp": "2026-10-21T10:52:13.908225+05:30",
+  "timestamp": "2026-10-21T10:55:00.791292+05:30",
   "total_completed_picks": 0
 }
