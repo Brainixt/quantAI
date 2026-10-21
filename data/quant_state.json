@@ -1,0 +1,54 @@
+{
+  "active_pick": {
+    "symbol": "INFY",
+    "company": "Infosys",
+    "direction": "LONG",
+    "entry_price": 1168.05,
+    "current_price": 1168.05,
+    "target_price": 1191.41,
+    "sl_price": 1156.37,
+    "target_pct": 2.0,
+    "sl_pct": 1.0,
+    "pnl_pct": 0.0,
+    "buy_score": 91.0,
+    "confidence": 86.0,
+    "signal": "STRONG BUY",
+    "derivative_signal": "LONG",
+    "risk_level": "LOW",
+    "factors": [
+      "Breakout above Pivot R1 (Rs.1,150.1)",
+      "Trading near session highs (100% of range)",
+      "Institutional Long Buildup (Price \u2191, OI \u2191)",
+      "Intra-cycle OI accumulation (+101,600 contracts)"
+    ],
+    "pivots": {
+      "pivot": 1137.58,
+      "r1": 1150.07,
+      "s1": 1118.22,
+      "r2": 1169.43,
+      "s2": 1105.73,
+      "r3": 1181.92,
+      "s3": 1086.37,
+      "r4": 1213.77,
+      "s4": 1054.52,
+      "high": 1156.95,
+      "low": 1125.1,
+      "close": 1130.7,
+      "bias": "BULLISH",
+      "zone": "R1-R2",
+      "nearest_level": "R2",
+      "nearest_level_price": 1169.43,
+      "distance_to_pivot_pct": 2.68
+    },
+    "entry_time": "2026-10-21T10:52:08.497003+05:30",
+    "last_updated": "2026-10-21T10:52:13.908225+05:30"
+  },
+  "nifty50": {
+    "price": "22969.9000",
+    "change": "80.9500",
+    "change_percent": "0.3500",
+    "direction": "NA"
+  },
+  "timestamp": "2026-10-21T10:52:13.908225+05:30",
+  "total_completed_picks": 0
+}
