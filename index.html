@@ -340,49 +340,66 @@
   <!-- Pre-embedded active state for instantaneous rendering (Zero loading screen) -->
   <script id="quantStateEmbed">
     window.QUANT_INITIAL_STATE = {
-      "active_pick": {
+    "active_pick": {
         "symbol": "DIVISLAB",
         "company": "Divis Laboratories",
         "direction": "LONG",
         "mode": "DELIVERY",
-        "entry_price": 9153.50,
-        "current_price": 9153.50,
-        "target_price": 10035.90,
+        "entry_price": 9153.5,
+        "current_price": 9132.0,
+        "target_price": 10035.9,
         "sl_price": 8769.97,
         "target_pct": 9.64,
         "sl_pct": 4.19,
         "rr_ratio": 2.3,
         "sl_method": "Pivot S1 Structural Floor (4.19%)",
         "target_method": "Pivot R3 Breakout Runway (9.64% | 1:2.3 R:R)",
-        "pnl_pct": 0.0,
+        "pnl_pct": -0.23,
         "buy_score": 84.2,
         "confidence": 93.0,
         "signal": "STRONG BUY",
         "derivative_signal": "LONG",
         "risk_level": "MODERATE",
+        "quality_score": 100.0,
+        "growth_score": 100.0,
+        "valuation_score": 24.0,
         "factors": [
-          "Strong structural technical posture (Tech: 100/100)",
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles",
-          "Superior Quality & Growth profile (Q: 100, G: 100)"
+            "Strong structural technical posture (Tech: 100/100)",
+            "Multi-day price base above Floor Pivot",
+            "Persistent Long buildup across cycles",
+            "Superior Quality & Growth profile (Q: 100, G: 100)"
         ],
         "pivots": {
-          "pivot": 9151.83,
-          "r1": 9258.67,
-          "s1": 8980.17,
-          "r2": 9430.33,
-          "s2": 8873.33,
-          "r3": 9537.17,
-          "s3": 8701.67
+            "pivot": 9151.83,
+            "r1": 9258.67,
+            "s1": 8980.17,
+            "r2": 9430.33,
+            "s2": 8873.33,
+            "r3": 9537.17,
+            "s3": 8701.67,
+            "r4": 9815.67,
+            "s4": 8423.17,
+            "high": 9323.5,
+            "low": 9045.0,
+            "close": 9087.0,
+            "bias": "BULLISH",
+            "zone": "P-R1",
+            "nearest_level": "P",
+            "nearest_level_price": 9151.83,
+            "distance_to_pivot_pct": 0.02
         },
-        "entry_time": "2026-10-21T11:00:04+05:30"
-      },
-      "nifty50": {
-        "price": "22979.05",
-        "change": "90.10",
-        "change_percent": "0.39"
-      }
-    };
+        "entry_time": "2026-10-21T11:00:04.773014+05:30",
+        "last_updated": "2026-10-21T11:07:28.937086+05:30"
+    },
+    "nifty50": {
+        "price": "22986.4500",
+        "change": "97.5000",
+        "change_percent": "0.4300",
+        "direction": "NA"
+    },
+    "timestamp": "2026-10-21T11:07:28.937086+05:30",
+    "total_completed_picks": 0
+};
   </script>
 
   <!-- QuantAI Frontend Application Engine -->
