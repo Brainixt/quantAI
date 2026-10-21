@@ -47,15 +47,15 @@
       <div class="header-center">
         <div class="nifty-ticker" id="niftyTicker">
           <span class="ticker-label">NIFTY 50</span>
-          <span class="ticker-val" id="niftyPrice">--</span>
-          <span class="ticker-chg" id="niftyChange">--</span>
+          <span class="ticker-val" id="niftyPrice">22,979.05</span>
+          <span class="ticker-chg up" id="niftyChange">+90.10 (+0.39%)</span>
         </div>
       </div>
 
       <div class="header-right">
         <div class="status-pill" id="engineStatusPill">
           <span class="pulse-indicator"></span>
-          <span id="engineStatusText">1-Min Delivery Loop Active</span>
+          <span id="engineStatusText">Live Delivery Active</span>
         </div>
         <div class="cycle-pill">
           <span class="cycle-icon">⏱️</span>
@@ -83,41 +83,41 @@
           <span class="active-badge" id="activeStateBadge">LOCKED IN DELIVERY POSITION</span>
         </div>
         <div class="active-meta-wrap">
-          <span class="active-since-text">Entry Time: <strong id="heroEntryTime">--</strong></span>
-          <span class="holding-time-badge" id="heroDuration">0m active</span>
+          <span class="active-since-text">Entry Time: <strong id="heroEntryTime">11:00:04 AM</strong></span>
+          <span class="holding-time-badge" id="heroDuration">Active</span>
         </div>
       </div>
 
-      <!-- Main Spotlight Card -->
+      <!-- Main Spotlight Card (Pre-rendered for Zero Loading Flash) -->
       <div class="spotlight-card" id="spotlightCard">
         
         <!-- Left: Stock Identity & Quant Conviction -->
         <div class="spotlight-left">
           <div class="stock-headline">
             <div class="symbol-row">
-              <h1 class="stock-symbol" id="heroSymbol">LOADING...</h1>
+              <h1 class="stock-symbol" id="heroSymbol">DIVISLAB</h1>
               <span class="direction-badge" id="heroDirection">LONG (DELIVERY)</span>
-              <span class="risk-badge" id="heroRisk">LOW RISK</span>
+              <span class="risk-badge" id="heroRisk">MODERATE RISK</span>
             </div>
-            <div class="company-name" id="heroCompany">Fetching optimal delivery selection...</div>
+            <div class="company-name" id="heroCompany">Divis Laboratories</div>
           </div>
 
           <div class="quant-score-matrix">
             <div class="score-card">
               <span class="score-label">Delivery Conviction</span>
               <div class="score-value-wrap">
-                <span class="score-num" id="heroBuyScore">--</span>
+                <span class="score-num" id="heroBuyScore">84.2</span>
                 <span class="score-denom">/100</span>
               </div>
               <div class="score-meter-bar">
-                <div class="score-meter-fill" id="heroScoreFill" style="width: 0%"></div>
+                <div class="score-meter-fill" id="heroScoreFill" style="width: 84%"></div>
               </div>
             </div>
 
             <div class="score-card">
               <span class="score-label">Stat Confidence</span>
               <div class="score-value-wrap">
-                <span class="score-num" id="heroConfidence">--</span>
+                <span class="score-num" id="heroConfidence">93</span>
                 <span class="score-denom">%</span>
               </div>
               <span class="score-subtext" id="heroConfidenceSub">Multi-Horizon Confluence</span>
@@ -136,7 +136,18 @@
           <div class="factors-container">
             <span class="factors-heading">Delivery Rationales &amp; Quantitative Drivers</span>
             <div class="factors-chips" id="heroFactors">
-              <span class="factor-chip">Loading quantitative pillars...</span>
+              <span class="factor-chip">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
+                Strong structural technical posture (Tech: 100/100)
+              </span>
+              <span class="factor-chip">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
+                Multi-day price base above Floor Pivot
+              </span>
+              <span class="factor-chip">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" fill="#6366F1"/></svg>
+                Persistent Long buildup across cycles
+              </span>
             </div>
           </div>
         </div>
@@ -148,32 +159,32 @@
           <div class="levels-grid">
             <div class="level-box entry-box">
               <span class="box-title">ENTRY BASIS</span>
-              <span class="box-price" id="heroEntryPrice">₹ --</span>
+              <span class="box-price" id="heroEntryPrice">₹ 9,153.50</span>
               <span class="box-sub">Spot at Entry</span>
             </div>
             <div class="level-box live-box">
               <span class="box-title">CURRENT SPOT</span>
-              <span class="box-price live-flash" id="heroCurrentPrice">₹ --</span>
-              <span class="box-sub" id="heroLivePnl">P&amp;L: --</span>
+              <span class="box-price live-flash" id="heroCurrentPrice">₹ 9,153.50</span>
+              <span class="box-sub" id="heroLivePnl" style="color: var(--success);">P&amp;L: +0.00%</span>
             </div>
             <div class="level-box target-box">
               <span class="box-title">DYNAMIC TARGET</span>
-              <span class="box-price" id="heroTargetPrice">₹ --</span>
-              <span class="box-sub target-text" id="heroTargetSub">+--% (Dynamic)</span>
+              <span class="box-price" id="heroTargetPrice">₹ 10,035.90</span>
+              <span class="box-sub target-text" id="heroTargetSub">+9.64% (1:2.3 R:R)</span>
             </div>
             <div class="level-box sl-box">
               <span class="box-title">DYNAMIC STOP LOSS</span>
-              <span class="box-price" id="heroSlPrice">₹ --</span>
-              <span class="box-sub sl-text" id="heroSlSub">---% (Dynamic)</span>
+              <span class="box-price" id="heroSlPrice">₹ 8,769.97</span>
+              <span class="box-sub sl-text" id="heroSlSub">-4.19% (Pivot S1 Anchor)</span>
             </div>
           </div>
 
           <!-- Position Trajectory Progress Track -->
           <div class="gauge-container">
             <div class="gauge-header">
-              <span class="gauge-tag sl-tag">Dynamic SL (<span id="gaugeSlPrice">₹--</span>)</span>
-              <span class="gauge-tag entry-tag">Entry (<span id="gaugeEntryPrice">₹--</span>)</span>
-              <span class="gauge-tag target-tag">Dynamic Target (<span id="gaugeTargetPrice">₹--</span>)</span>
+              <span class="gauge-tag sl-tag">Dynamic SL (<span id="gaugeSlPrice">₹ 8,769.97</span>)</span>
+              <span class="gauge-tag entry-tag">Entry (<span id="gaugeEntryPrice">₹ 9,153.50</span>)</span>
+              <span class="gauge-tag target-tag">Dynamic Target (<span id="gaugeTargetPrice">₹ 10,035.90</span>)</span>
             </div>
 
             <div class="gauge-track-wrap">
@@ -184,15 +195,15 @@
                 <div class="gauge-fill" id="gaugeFill"></div>
                 <!-- Current Price Pin -->
                 <div class="gauge-pin" id="gaugePin" style="left: 50%;">
-                  <div class="pin-tooltip" id="pinTooltip">₹-- (0.00%)</div>
+                  <div class="pin-tooltip" id="pinTooltip">₹ 9,153.50 (+0.00%)</div>
                 </div>
               </div>
             </div>
 
             <div class="gauge-footer">
-              <span class="dist-text sl-dist" id="distToSl">Buffer to SL: --</span>
+              <span class="dist-text sl-dist" id="distToSl">Buffer to SL: ₹383.53</span>
               <span class="dist-status" id="distStatus">In Delivery Swing Range</span>
-              <span class="dist-text target-dist" id="distToTarget">Gap to Target: --</span>
+              <span class="dist-text target-dist" id="distToTarget">Gap to Target: ₹882.40</span>
             </div>
           </div>
 
@@ -200,11 +211,11 @@
           <div class="pivots-ribbon">
             <span class="pivots-ribbon-title">Floor Pivots:</span>
             <div class="pivot-cells" id="heroPivotsRibbon">
-              <span class="p-cell">S2: <strong id="pS2">--</strong></span>
-              <span class="p-cell">S1: <strong id="pS1">--</strong></span>
-              <span class="p-cell p-pivot">P: <strong id="pPP">--</strong></span>
-              <span class="p-cell">R1: <strong id="pR1">--</strong></span>
-              <span class="p-cell">R2: <strong id="pR2">--</strong></span>
+              <span class="p-cell">S2: <strong id="pS2">8873.3</strong></span>
+              <span class="p-cell">S1: <strong id="pS1">8980.2</strong></span>
+              <span class="p-cell p-pivot">P: <strong id="pPP">9151.8</strong></span>
+              <span class="p-cell">R1: <strong id="pR1">9258.7</strong></span>
+              <span class="p-cell">R2: <strong id="pR2">9430.3</strong></span>
             </div>
           </div>
 
@@ -262,7 +273,6 @@
         </div>
         <div class="history-actions">
           <button class="action-btn" id="refreshBtn" onclick="triggerManualRefresh()">🔄 Force Scan Now</button>
-          <button class="action-btn secondary" onclick="clearLocalHistory()">Clear History</button>
         </div>
       </div>
 
@@ -326,6 +336,54 @@
     </div>
 
   </div>
+
+  <!-- Pre-embedded active state for instantaneous rendering (Zero loading screen) -->
+  <script id="quantStateEmbed">
+    window.QUANT_INITIAL_STATE = {
+      "active_pick": {
+        "symbol": "DIVISLAB",
+        "company": "Divis Laboratories",
+        "direction": "LONG",
+        "mode": "DELIVERY",
+        "entry_price": 9153.50,
+        "current_price": 9153.50,
+        "target_price": 10035.90,
+        "sl_price": 8769.97,
+        "target_pct": 9.64,
+        "sl_pct": 4.19,
+        "rr_ratio": 2.3,
+        "sl_method": "Pivot S1 Structural Floor (4.19%)",
+        "target_method": "Pivot R3 Breakout Runway (9.64% | 1:2.3 R:R)",
+        "pnl_pct": 0.0,
+        "buy_score": 84.2,
+        "confidence": 93.0,
+        "signal": "STRONG BUY",
+        "derivative_signal": "LONG",
+        "risk_level": "MODERATE",
+        "factors": [
+          "Strong structural technical posture (Tech: 100/100)",
+          "Multi-day price base above Floor Pivot",
+          "Persistent Long buildup across cycles",
+          "Superior Quality & Growth profile (Q: 100, G: 100)"
+        ],
+        "pivots": {
+          "pivot": 9151.83,
+          "r1": 9258.67,
+          "s1": 8980.17,
+          "r2": 9430.33,
+          "s2": 8873.33,
+          "r3": 9537.17,
+          "s3": 8701.67
+        },
+        "entry_time": "2026-10-21T11:00:04+05:30"
+      },
+      "nifty50": {
+        "price": "22979.05",
+        "change": "90.10",
+        "change_percent": "0.39"
+      }
+    };
+  </script>
 
   <!-- QuantAI Frontend Application Engine -->
   <script src="js/quantai.js"></script>
