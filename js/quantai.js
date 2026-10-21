@@ -1,19 +1,17 @@
 /**
  * ==============================================================================
- * QuantAI — Autonomous Single-Stock Algorithmic Picker Engine (Client Runtime)
+ * QuantAI — Autonomous Single-Stock Algorithmic Picker Engine (Delivery/Swing)
  * ==============================================================================
- * Core Principles:
+ * Dynamic Delivery Algorithm:
  * 1. Exactly 1 active share monitored at any given time.
- * 2. Strict Invariant: No exit until Stop Loss (-1.0% / S1) or Target (+2.0% / R2) is hit.
- * 3. Immediate rollover: When an exit occurs, pick the second best share immediately.
+ * 2. Strict Invariant: No exit until Dynamic Stop Loss (2.5% to 5.5% / S1) or
+ *    Dynamic Target (5.0% to 14.0% / R2/R3 with >= 1:2.0+ R:R) is hit.
+ * 3. Immediate rollover: When an exit occurs, pick the second best delivery share immediately.
  * 4. 60-second continuous refresh cycle.
  * 5. Display only: No broker trade execution, no external messages/emails.
  * ==============================================================================
  */
 
-// Target and Stop Loss Thresholds (Percent)
-const TARGET_PCT = 2.0; // Profit target: +2.0%
-const SL_PCT = 1.0;     // Stop loss: -1.0%
 const SCAN_INTERVAL_SEC = 60;
 
 // Local Storage Keys
@@ -73,7 +71,13 @@ function loadPersistedData() {
   try {
     const savedActive = localStorage.getItem(STORAGE_ACTIVE_PICK);
     if (savedActive) {
-      appState.activePick = JSON.parse(savedActive);
+      const parsed = JSON.parse(savedActive);
+      // Migrate if old hardcoded 1% / 2% pick was stored
+      if (parsed && (!parsed.mode || parsed.targetPct === 2.0)) {
+        appState.activePick = null;
+      } else {
+        appState.activePick = parsed;
+      }
     }
   } catch (e) {
     console.warn("Could not parse saved active pick:", e);
@@ -160,9 +164,7 @@ async function fetchQuantData() {
   const possiblePaths = [
     "data/quant_state.json",
     "data/stock_predictions.json",
-    "../Rishabh-F-O/json/stock_predictions.json",
-    "https://raw.githubusercontent.com/Brainixt/quantAI/main/data/stock_predictions.json",
-    "https://raw.githubusercontent.com/rishabhjain777/Rishabh-F-O/main/json/stock_predictions.json"
+    "../Rishabh-F-O/json/stock_predictions.json"
   ];
 
   for (const path of possiblePaths) {
@@ -170,6 +172,11 @@ async function fetchQuantData() {
       const resp = await fetch(path + "?_t=" + Date.now());
       if (resp.ok) {
         const data = await resp.json();
+        // If data is quant_state.json with active_pick, use it directly
+        if (data.active_pick && data.active_pick.symbol) {
+          appState.activePick = data.active_pick;
+          if (data.nifty50) appState.nifty = data.nifty50;
+        }
         return data;
       }
     } catch (e) {
@@ -177,7 +184,7 @@ async function fetchQuantData() {
     }
   }
 
-  // Built-in Institutional Fallback Candidate Dataset if network/local file is loading
+  // Built-in Institutional Fallback Candidate Dataset
   return generateInstitutionalFallback();
 }
 
@@ -187,7 +194,7 @@ async function runQuantScanCycle() {
   appState.isScanning = true;
 
   const statusText = document.getElementById("engineStatusText");
-  if (statusText) statusText.innerText = "Analyzing Quant Universe...";
+  if (statusText) statusText.innerText = "Scanning Delivery Universe...";
 
   try {
     const quantData = await fetchQuantData();
@@ -196,11 +203,11 @@ async function runQuantScanCycle() {
     console.error("Scan error:", err);
   } finally {
     appState.isScanning = false;
-    if (statusText) statusText.innerText = "1-Min Quant Loop Active";
+    if (statusText) statusText.innerText = "1-Min Delivery Loop Active";
   }
 }
 
-// Process Universe & Execute Algorithmic Logic
+// Process Universe & Execute Dynamic Algorithmic Logic
 function processQuantData(data) {
   if (!data) return;
 
@@ -214,6 +221,8 @@ function processQuantData(data) {
   let stocks = [];
   if (Array.isArray(data.stocks) && data.stocks.length > 0) {
     stocks = data.stocks;
+  } else if (data.top_opportunities && Array.isArray(data.top_opportunities.short_term_buys)) {
+    stocks = data.top_opportunities.short_term_buys;
   } else if (data.top_opportunities && Array.isArray(data.top_opportunities.intraday_buys)) {
     stocks = data.top_opportunities.intraday_buys;
   }
@@ -223,10 +232,10 @@ function processQuantData(data) {
   // 3. Handle Active Pick Lifecycle
   if (appState.activePick) {
     // We already have 1 active share!
-    // Update its live price and check for Target / SL trigger
+    // Update its live price and check for Dynamic Target / SL trigger
     evaluateActivePosition(stocks);
   } else {
-    // No active share! Pick the BEST share immediately
+    // No active share! Pick the BEST delivery share immediately
     pickNextBestShare(stocks);
   }
 
@@ -252,55 +261,41 @@ function renderNiftyTicker(nifty) {
   chgEl.className = "ticker-chg " + (chgNum >= 0 ? "up" : "down");
 }
 
-// Evaluate Current Active Pick: Strict Invariant (No Exit until SL or Target Hit)
+// Evaluate Current Active Pick: Strict Invariant (No Premature Exit until Dynamic SL or Target Hit)
 function evaluateActivePosition(universe) {
   const active = appState.activePick;
   if (!active) return;
 
   // Find latest price for active symbol in current universe
   const currentQuote = universe.find(s => s.symbol === active.symbol);
-  let liveSpot = active.currentPrice;
+  let liveSpot = active.current_price || active.currentPrice;
 
   if (currentQuote) {
-    liveSpot = parseFloat(currentQuote.spot || currentQuote.futures_current || active.currentPrice);
+    liveSpot = parseFloat(currentQuote.spot || currentQuote.futures_current || liveSpot);
+    active.current_price = liveSpot;
     active.currentPrice = liveSpot;
     active.lastSeen = new Date().toISOString();
-  } else {
-    // If quote not in current packet, simulate slight realistic micro-tick
-    const microMove = (Math.random() - 0.48) * 0.001 * active.currentPrice;
-    liveSpot = Math.round((active.currentPrice + microMove) * 100) / 100;
-    active.currentPrice = liveSpot;
   }
 
   // Calculate current P&L %
-  const entryPrice = active.entryPrice;
-  const pnlPct = active.direction === "LONG"
-    ? ((liveSpot - entryPrice) / entryPrice) * 100
-    : ((entryPrice - liveSpot) / entryPrice) * 100;
+  const entryPrice = parseFloat(active.entry_price || active.entryPrice);
+  const pnlPct = ((liveSpot - entryPrice) / entryPrice) * 100;
+  active.pnl_pct = Math.round(pnlPct * 100) / 100;
+  active.pnlPct = active.pnl_pct;
 
-  active.pnlPct = Math.round(pnlPct * 100) / 100;
+  const targetPrice = parseFloat(active.target_price || active.targetPrice);
+  const slPrice = parseFloat(active.sl_price || active.slPrice);
 
-  // Check Resolution Conditions:
+  // Check Dynamic Resolution Conditions:
   let isResolved = false;
   let resolutionOutcome = ""; // "TARGET" or "STOP_LOSS"
 
-  if (active.direction === "LONG") {
-    if (liveSpot >= active.targetPrice) {
-      isResolved = true;
-      resolutionOutcome = "TARGET";
-    } else if (liveSpot <= active.slPrice) {
-      isResolved = true;
-      resolutionOutcome = "STOP_LOSS";
-    }
-  } else {
-    // SHORT position support
-    if (liveSpot <= active.targetPrice) {
-      isResolved = true;
-      resolutionOutcome = "TARGET";
-    } else if (liveSpot >= active.slPrice) {
-      isResolved = true;
-      resolutionOutcome = "STOP_LOSS";
-    }
+  if (liveSpot >= targetPrice) {
+    isResolved = true;
+    resolutionOutcome = "TARGET";
+  } else if (liveSpot <= slPrice) {
+    isResolved = true;
+    resolutionOutcome = "STOP_LOSS";
   }
 
   if (isResolved) {
@@ -309,28 +304,36 @@ function evaluateActivePosition(universe) {
   }
 }
 
-// Exit Active Position & Immediately Pick Second Share
+// Exit Active Position & Immediately Pick Second Delivery Share
 function executeExitAndImmediateRollover(universe, outcome) {
   const exiting = appState.activePick;
   if (!exiting) return;
 
   const exitTime = new Date().toISOString();
-  const entryTime = new Date(exiting.entryTime);
+  const entryTime = new Date(exiting.entry_time || exiting.entryTime);
   const exitDurationMins = Math.max(1, Math.round((new Date(exitTime) - entryTime) / 60000));
+
+  const tgtPct = exiting.target_pct || exiting.targetPct || 8.0;
+  const slPct = exiting.sl_pct || exiting.slPct || 3.5;
+  const rrRatio = exiting.rr_ratio || 2.2;
 
   // 1. Record in History Table
   const historyItem = {
     id: appState.history.length + 1,
     symbol: exiting.symbol,
     company: exiting.company,
-    direction: exiting.direction,
-    entryPrice: exiting.entryPrice,
-    exitPrice: exiting.currentPrice,
-    pnlPct: exiting.pnlPct,
-    outcome: outcome === "TARGET" ? "TARGET HIT (+2%)" : "STOP LOSS HIT (-1%)",
+    direction: exiting.direction || "LONG",
+    mode: "DELIVERY",
+    entryPrice: exiting.entry_price || exiting.entryPrice,
+    exitPrice: exiting.current_price || exiting.currentPrice,
+    pnlPct: exiting.pnl_pct || exiting.pnlPct,
+    targetPct: tgtPct,
+    slPct: slPct,
+    rrRatio: rrRatio,
+    outcome: outcome === "TARGET" ? `TARGET HIT (+${tgtPct}%)` : `STOP LOSS HIT (-${slPct}%)`,
     isWin: outcome === "TARGET",
     duration: `${exitDurationMins}m`,
-    entryTime: exiting.entryTime,
+    entryTime: exiting.entry_time || exiting.entryTime,
     exitTime: exitTime
   };
 
@@ -341,34 +344,97 @@ function executeExitAndImmediateRollover(universe, outcome) {
   // 2. Show Visual Exit Resolution Modal
   showExitResolutionModal(exiting, outcome);
 
-  // 3. Immediately pick second share!
+  // 3. Immediately pick second delivery share!
   // Exclude the exiting stock to guarantee a fresh selection
   const candidatePool = universe.filter(s => s.symbol !== exiting.symbol);
   pickNextBestShare(candidatePool);
 }
 
-// Quant Algorithmic Selection: Finds Best Single Share
+// Dynamic Delivery Calculation Algorithm
+function calculateDynamicLevels(stock, spotPrice) {
+  const piv = stock.pivot_points || {};
+  const s1 = parseFloat(piv.s1 || (spotPrice * 0.97));
+  const s2 = parseFloat(piv.s2 || (spotPrice * 0.95));
+  const r2 = parseFloat(piv.r2 || (spotPrice * 1.05));
+  const r3 = parseFloat(piv.r3 || (spotPrice * 1.08));
+
+  const risk = stock.risk || {};
+  const rangeSpan = parseFloat(risk.range_span_pct || 2.6);
+
+  // 1. Dynamic Stop Loss Anchor
+  let pivSlPct;
+  let slAnchor;
+  if (spotPrice > s1 && ((spotPrice - s1) / spotPrice * 100.0) >= 1.5) {
+    pivSlPct = ((spotPrice - s1) / spotPrice) * 100.0;
+    slAnchor = "Pivot S1 Structural Floor";
+  } else {
+    pivSlPct = ((spotPrice - s2) / spotPrice) * 100.0;
+    slAnchor = "Pivot S2 Extended Support";
+  }
+
+  const volSlPct = rangeSpan * 1.35;
+  // Delivery boundaries: Minimum 2.5% anti-noise floor, capped at 5.5%
+  const dynSlPct = Math.round(Math.max(2.5, Math.min(5.5, Math.max(pivSlPct, volSlPct))) * 100) / 100;
+  const slPrice = Math.round(spotPrice * (1.0 - dynSlPct / 100.0) * 100) / 100;
+
+  // 2. Dynamic Target Anchor
+  const distToR2 = ((r2 - spotPrice) / spotPrice) * 100.0;
+  const distToR3 = ((r3 - spotPrice) / spotPrice) * 100.0;
+
+  let pivTgtPct;
+  let tgtAnchor;
+  if (distToR2 >= 4.5) {
+    pivTgtPct = distToR2;
+    tgtAnchor = "Pivot R2 Expansion";
+  } else {
+    pivTgtPct = Math.max(distToR3, distToR2);
+    tgtAnchor = "Pivot R3 Breakout Runway";
+  }
+
+  // Institutional Asymmetric Risk:Reward Expectancy (Minimum 2.1x)
+  const st = stock.short_term || {};
+  const mcg = parseFloat(st.mc_g || 70.0);
+  const rrMultiplier = mcg >= 80 ? 2.3 : 2.1;
+  const rrTargetPct = dynSlPct * rrMultiplier;
+
+  // Delivery boundaries: Minimum 5.0%, capped at 14.0%
+  const dynTgtPct = Math.round(Math.max(5.0, Math.min(14.0, Math.max(pivTgtPct, rrTargetPct))) * 100) / 100;
+  const targetPrice = Math.round(spotPrice * (1.0 + dynTgtPct / 100.0) * 100) / 100;
+
+  const rrRatio = Math.round((dynTgtPct / dynSlPct) * 100) / 100;
+
+  return {
+    slPct: dynSlPct,
+    targetPct: dynTgtPct,
+    slPrice: slPrice,
+    targetPrice: targetPrice,
+    rrRatio: rrRatio,
+    slMethod: `${slAnchor} (${dynSlPct.toFixed(2)}%)`,
+    targetMethod: `${tgtAnchor} (${dynTgtPct.toFixed(2)}% | 1:${rrRatio.toFixed(1)} R:R)`
+  };
+}
+
+// Quant Algorithmic Selection: Finds Best Delivery Share
 function pickNextBestShare(universe) {
   if (!universe || universe.length === 0) return;
 
-  // Algorithm Ranking Hierarchy:
-  // 1. Directional signal: STRONG BUY / BUY
-  // 2. Highest buy_score (0-100)
-  // 3. Highest confidence (0-100)
-  // 4. Positive relative strength vs NIFTY
-  // 5. Normal/Low Risk rating
+  // Delivery Ranking Hierarchy:
+  // 1. Short-Term Buy Score (0-100) + Fundamental Quality & Growth
+  // 2. Short-Term Signal (STRONG BUY / BUY)
+  // 3. Margin of Safety Valuation
+  // 4. Low Risk Volatility Profile
   const sortedCandidates = [...universe].sort((a, b) => {
-    const aBuy = a.intraday ? (a.intraday.buy_score || 0) : 0;
-    const bBuy = b.intraday ? (b.intraday.buy_score || 0) : 0;
+    const aST = a.short_term ? (a.short_term.buy_score || 0) : 0;
+    const bST = b.short_term ? (b.short_term.buy_score || 0) : 0;
 
-    const aConf = a.intraday ? (a.intraday.confidence || 0) : 0;
-    const bConf = b.intraday ? (b.intraday.confidence || 0) : 0;
+    const aQ = a.short_term ? (a.short_term.mc_q || 60) : 60;
+    const bQ = b.short_term ? (b.short_term.mc_q || 60) : 60;
 
-    const aSignal = a.intraday ? a.intraday.signal : "";
-    const bSignal = b.intraday ? b.intraday.signal : "";
+    const aG = a.short_term ? (a.short_term.mc_g || 60) : 60;
+    const bG = b.short_term ? (b.short_term.mc_g || 60) : 60;
 
-    const aScore = aBuy * 1.5 + aConf + (aSignal === "STRONG BUY" ? 20 : 0);
-    const bScore = bBuy * 1.5 + bConf + (bSignal === "STRONG BUY" ? 20 : 0);
+    const aScore = (aST * 0.45) + (aQ * 0.25) + (aG * 0.25) + (a.intraday ? a.intraday.buy_score * 0.1 : 0);
+    const bScore = (bST * 0.45) + (bQ * 0.25) + (bG * 0.25) + (b.intraday ? b.intraday.buy_score * 0.1 : 0);
 
     return bScore - aScore;
   });
@@ -377,37 +443,48 @@ function pickNextBestShare(universe) {
   if (!best) return;
 
   const spot = parseFloat(best.spot || best.futures_current || 1000);
-  const targetPrice = Math.round(spot * (1 + TARGET_PCT / 100) * 100) / 100;
-  const slPrice = Math.round(spot * (1 - SL_PCT / 100) * 100) / 100;
+  const dynLevels = calculateDynamicLevels(best, spot);
 
   // Construct New Active Pick
   appState.activePick = {
     symbol: best.symbol,
     company: best.company_name || best.company || best.symbol,
     direction: "LONG",
+    mode: "DELIVERY",
+    entry_price: spot,
+    current_price: spot,
     entryPrice: spot,
     currentPrice: spot,
-    targetPrice: targetPrice,
-    slPrice: slPrice,
-    targetPct: TARGET_PCT,
-    slPct: SL_PCT,
+    target_price: dynLevels.targetPrice,
+    sl_price: dynLevels.slPrice,
+    targetPrice: dynLevels.targetPrice,
+    slPrice: dynLevels.slPrice,
+    target_pct: dynLevels.targetPct,
+    sl_pct: dynLevels.slPct,
+    targetPct: dynLevels.targetPct,
+    slPct: dynLevels.slPct,
+    rr_ratio: dynLevels.rrRatio,
+    sl_method: dynLevels.slMethod,
+    target_method: dynLevels.targetMethod,
+    pnl_pct: 0.0,
     pnlPct: 0.0,
-    buyScore: best.intraday ? Math.round(best.intraday.buy_score) : 88,
-    confidence: best.intraday ? Math.round(best.intraday.confidence) : 85,
+    buy_score: best.short_term ? Math.round(best.short_term.buy_score) : (best.intraday ? Math.round(best.intraday.buy_score) : 88),
+    confidence: best.short_term ? Math.round(best.short_term.confidence) : 85,
     derivativeSignal: best.signal || "LONG",
-    risk: best.risk ? best.risk.level : "LOW",
-    factors: (best.intraday && best.intraday.factors) ? best.intraday.factors : [
-      "Institutional Long Buildup (Price ↑, OI ↑)",
-      "Breakout above Floor Pivot R1",
-      "Relative Strength Outperformance vs NIFTY"
+    risk_level: best.risk ? best.risk.level : "LOW",
+    factors: (best.short_term && best.short_term.factors) ? best.short_term.factors : [
+      "Superior Quality & Growth Profile for Multi-Day Delivery",
+      "Structural Consolidation established above Floor Pivot",
+      "Dynamic Volatility & Pivot-Anchored Risk-to-Reward"
     ],
     pivots: best.pivot_points || {
-      pivot: spot * 0.995,
-      r1: spot * 1.01,
-      r2: spot * 1.025,
-      s1: spot * 0.99,
-      s2: spot * 0.98
+      pivot: spot * 0.99,
+      r1: spot * 1.02,
+      r2: spot * 1.05,
+      s1: spot * 0.97,
+      s2: spot * 0.95
     },
+    entry_time: new Date().toISOString(),
     entryTime: new Date().toISOString()
   };
 
@@ -429,14 +506,14 @@ function renderSpotlightCard() {
   if (symEl) symEl.innerText = active.symbol;
   if (compEl) compEl.innerText = active.company;
   if (dirEl) {
-    dirEl.innerText = active.direction;
-    dirEl.className = "direction-badge " + (active.direction === "SHORT" ? "short" : "");
+    dirEl.innerText = `${active.direction || "LONG"} (DELIVERY)`;
+    dirEl.className = "direction-badge";
   }
   if (riskEl) {
-    riskEl.innerText = `${active.risk || "LOW"} RISK`;
+    riskEl.innerText = `${active.risk_level || active.risk || "LOW"} RISK`;
   }
   if (entryTimeEl) {
-    const entryDate = new Date(active.entryTime);
+    const entryDate = new Date(active.entry_time || active.entryTime);
     entryTimeEl.innerText = entryDate.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
   }
 
@@ -446,10 +523,11 @@ function renderSpotlightCard() {
   const confEl = document.getElementById("heroConfidence");
   const derivEl = document.getElementById("heroDerivativeSig");
 
-  if (buyScoreEl) buyScoreEl.innerText = active.buyScore || "--";
-  if (scoreFillEl) scoreFillEl.style.width = `${Math.min(100, active.buyScore || 0)}%`;
-  if (confEl) confEl.innerText = active.confidence || "--";
-  if (derivEl) derivEl.innerText = (active.derivativeSignal || "LONG") + " BUILDUP";
+  const bScore = active.buy_score || active.buyScore || 85;
+  if (buyScoreEl) buyScoreEl.innerText = bScore;
+  if (scoreFillEl) scoreFillEl.style.width = `${Math.min(100, bScore)}%`;
+  if (confEl) confEl.innerText = active.confidence || 80;
+  if (derivEl) derivEl.innerText = (active.derivativeSignal || active.derivative_signal || "LONG") + " BUILDUP";
 
   // Factors List
   const factorsEl = document.getElementById("heroFactors");
@@ -468,16 +546,29 @@ function renderSpotlightCard() {
   const pnlEl = document.getElementById("heroLivePnl");
   const tpEl = document.getElementById("heroTargetPrice");
   const slEl = document.getElementById("heroSlPrice");
+  const tpSub = document.getElementById("heroTargetSub");
+  const slSub = document.getElementById("heroSlSub");
 
-  if (epEl) epEl.innerText = fmtRupee(active.entryPrice);
-  if (cpEl) cpEl.innerText = fmtRupee(active.currentPrice);
+  const ep = active.entry_price || active.entryPrice;
+  const cp = active.current_price || active.currentPrice;
+  const tp = active.target_price || active.targetPrice;
+  const sl = active.sl_price || active.slPrice;
+  const tgtPct = active.target_pct || active.targetPct || 8.0;
+  const slPct = active.sl_pct || active.slPct || 3.5;
+  const rrRatio = active.rr_ratio || 2.2;
+
+  if (epEl) epEl.innerText = fmtRupee(ep);
+  if (cpEl) cpEl.innerText = fmtRupee(cp);
   if (pnlEl) {
-    const pnl = active.pnlPct || 0;
+    const pnl = active.pnl_pct || active.pnlPct || 0;
     pnlEl.innerText = `P&L: ${fmtPct(pnl)}`;
     pnlEl.style.color = pnl >= 0 ? "var(--success)" : "var(--danger)";
   }
-  if (tpEl) tpEl.innerText = fmtRupee(active.targetPrice);
-  if (slEl) slEl.innerText = fmtRupee(active.slPrice);
+  if (tpEl) tpEl.innerText = fmtRupee(tp);
+  if (slEl) slEl.innerText = fmtRupee(sl);
+
+  if (tpSub) tpSub.innerText = `+${tgtPct}% (1:${rrRatio} R:R)`;
+  if (slSub) slSub.innerText = `-${slPct}% (Support Buffer)`;
 
   // Position Trajectory Progress Gauge
   renderProgressGauge(active);
@@ -499,14 +590,15 @@ function renderProgressGauge(active) {
   const gEpEl = document.getElementById("gaugeEntryPrice");
   const gTpEl = document.getElementById("gaugeTargetPrice");
 
-  if (gSlEl) gSlEl.innerText = fmtRupee(active.slPrice);
-  if (gEpEl) gEpEl.innerText = fmtRupee(active.entryPrice);
-  if (gTpEl) gTpEl.innerText = fmtRupee(active.targetPrice);
+  const ep = parseFloat(active.entry_price || active.entryPrice);
+  const cp = parseFloat(active.current_price || active.currentPrice);
+  const tp = parseFloat(active.target_price || active.targetPrice);
+  const sl = parseFloat(active.sl_price || active.slPrice);
+  const pnl = parseFloat(active.pnl_pct || active.pnlPct || 0);
 
-  const ep = active.entryPrice;
-  const cp = active.currentPrice;
-  const tp = active.targetPrice;
-  const sl = active.slPrice;
+  if (gSlEl) gSlEl.innerText = fmtRupee(sl);
+  if (gEpEl) gEpEl.innerText = fmtRupee(ep);
+  if (gTpEl) gTpEl.innerText = fmtRupee(tp);
 
   // Normalized Range: 0% at SL, 50% at Entry, 100% at Target
   let pctPos = 50;
@@ -524,7 +616,7 @@ function renderProgressGauge(active) {
 
   // Update Pin & Fill
   if (gaugePin) gaugePin.style.left = `${pctPos}%`;
-  if (pinTooltip) pinTooltip.innerText = `${fmtRupee(cp)} (${fmtPct(active.pnlPct)})`;
+  if (pinTooltip) pinTooltip.innerText = `${fmtRupee(cp)} (${fmtPct(pnl)})`;
 
   if (gaugeFill) {
     if (pctPos >= 50) {
@@ -546,14 +638,14 @@ function renderProgressGauge(active) {
   if (distToSlEl) distToSlEl.innerText = `SL Buffer: ₹${Math.abs(gapToSl).toFixed(2)}`;
   
   if (distStatusEl) {
-    if (active.pnlPct >= 1.5) {
-      distStatusEl.innerText = "🔥 Nearing Target (+2%)";
+    if (gapToTarget <= (tp - ep) * 0.25) {
+      distStatusEl.innerText = "🔥 Nearing Dynamic Target";
       distStatusEl.style.color = "var(--success)";
-    } else if (active.pnlPct <= -0.75) {
-      distStatusEl.innerText = "⚠️ Near Stop Loss (-1%)";
+    } else if (gapToSl <= (ep - sl) * 0.25) {
+      distStatusEl.innerText = "⚠️ Near Dynamic Support SL";
       distStatusEl.style.color = "var(--danger)";
     } else {
-      distStatusEl.innerText = "In Execution Range";
+      distStatusEl.innerText = "In Delivery Swing Range";
       distStatusEl.style.color = "var(--text-secondary)";
     }
   }
@@ -589,8 +681,8 @@ function renderHistoryTable() {
         <td colspan="9">
           <div class="empty-state">
             <span class="empty-icon">⏳</span>
-            <span class="empty-title">Active pick is currently in progress.</span>
-            <span class="empty-sub">Once the active share triggers its Stop Loss or Profit Target, it will log here and the engine will immediately load the next best share.</span>
+            <span class="empty-title">Active delivery pick is currently in progress.</span>
+            <span class="empty-sub">Once the active share triggers its Dynamic Stop Loss or Profit Target, it will log here and the engine will immediately load the next best delivery share.</span>
           </div>
         </td>
       </tr>
@@ -614,7 +706,7 @@ function renderHistoryTable() {
             <span class="sym-name">${escapeHtml(item.company || "")}</span>
           </div>
         </td>
-        <td><span class="direction-badge">${escapeHtml(item.direction)}</span></td>
+        <td><span class="direction-badge">${escapeHtml(item.direction)} (DELIVERY)</span></td>
         <td class="mono-cell">${fmtRupee(item.entryPrice)}</td>
         <td class="mono-cell">${fmtRupee(item.exitPrice)}</td>
         <td class="${pnlClass}">${fmtPct(item.pnlPct)}</td>
@@ -663,11 +755,12 @@ function showExitResolutionModal(stock, outcome) {
 
   const isTarget = outcome === "TARGET";
   if (modalIcon) modalIcon.innerText = isTarget ? "🎯" : "🛡️";
-  if (modalTitle) modalTitle.innerText = isTarget ? "PROFIT TARGET REACHED!" : "STOP LOSS EXECUTED";
+  if (modalTitle) modalTitle.innerText = isTarget ? "DYNAMIC PROFIT TARGET REACHED!" : "DYNAMIC STOP LOSS EXECUTED";
   if (modalStock) modalStock.innerText = stock.symbol;
   if (modalPnl) {
-    modalPnl.innerText = fmtPct(stock.pnlPct);
-    modalPnl.className = "modal-pnl " + (stock.pnlPct >= 0 ? "positive" : "negative");
+    const pnl = stock.pnl_pct || stock.pnlPct || 0;
+    modalPnl.innerText = fmtPct(pnl);
+    modalPnl.className = "modal-pnl " + (pnl >= 0 ? "positive" : "negative");
   }
 
   modal.style.display = "flex";
@@ -718,82 +811,33 @@ function generateInstitutionalFallback() {
     },
     stocks: [
       {
-        symbol: "INFY",
-        company_name: "Infosys Limited",
-        spot: 1168.10,
-        futures_current: 1172.00,
+        symbol: "DIVISLAB",
+        company_name: "Divi's Laboratories",
+        spot: 9153.50,
+        futures_current: 9170.00,
         signal: "LONG",
-        intraday: {
-          buy_score: 91.0,
-          sell_score: 2.0,
+        short_term: {
+          buy_score: 92.0,
+          confidence: 88.0,
           signal: "STRONG BUY",
-          confidence: 86.0,
+          mc_q: 85.0,
+          mc_g: 82.0,
+          mc_v: 65.0,
           factors: [
-            "Breakout above Pivot R1 (₹1,150.10)",
-            "Trading near session highs (100% of range)",
-            "Institutional Long Buildup (Price ↑, OI ↑)"
+            "Superior Quality & Growth Profile for Multi-Day Delivery",
+            "Structural Base Breakout above Floor Pivot R1",
+            "Dynamic Asymmetric Risk-Reward Expansion (1:2.3 R:R)"
           ]
         },
         pivot_points: {
-          pivot: 1137.58,
-          r1: 1150.07,
-          r2: 1169.43,
-          s1: 1118.22,
-          s2: 1105.73
+          pivot: 8940.0,
+          r1: 9140.0,
+          r2: 9550.0,
+          r3: 10035.0,
+          s1: 8770.0,
+          s2: 8520.0
         },
-        risk: { level: "LOW" }
-      },
-      {
-        symbol: "KALYANKJIL",
-        company_name: "Kalyan Jewellers India",
-        spot: 563.45,
-        futures_current: 563.00,
-        signal: "LONG",
-        intraday: {
-          buy_score: 86.0,
-          sell_score: 7.0,
-          signal: "STRONG BUY",
-          confidence: 86.0,
-          factors: [
-            "Breakout above Pivot R1 (₹558.70)",
-            "Trading near session highs (100% of range)",
-            "Institutional Long Buildup (Price ↑, OI ↑)"
-          ]
-        },
-        pivot_points: {
-          pivot: 549.20,
-          r1: 558.70,
-          r2: 568.10,
-          s1: 541.00,
-          s2: 535.40
-        },
-        risk: { level: "LOW" }
-      },
-      {
-        symbol: "ICICIBANK",
-        company_name: "ICICI Bank Ltd.",
-        spot: 1402.40,
-        futures_current: 1406.50,
-        signal: "LONG",
-        intraday: {
-          buy_score: 84.5,
-          sell_score: 8.0,
-          signal: "BUY",
-          confidence: 82.0,
-          factors: [
-            "Breakout above Pivot Point (₹1,392.00)",
-            "Institutional Long Buildup (Price ↑, OI ↑)",
-            "Banking Sector Relative Strength Surge"
-          ]
-        },
-        pivot_points: {
-          pivot: 1392.50,
-          r1: 1408.00,
-          r2: 1422.00,
-          s1: 1380.00,
-          s2: 1368.00
-        },
-        risk: { level: "LOW" }
+        risk: { level: "LOW", range_span_pct: 2.8 }
       }
     ]
   };
