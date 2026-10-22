@@ -1,5 +1,22 @@
 [
   {
+    "id": 8,
+    "symbol": "SAGILITY",
+    "company": "Sagility",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 45.09,
+    "exit_price": 44.47,
+    "pnl_pct": -1.38,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T09:23:08.178211+05:30",
+    "exit_time": "2026-10-22T09:47:50.625111+05:30"
+  },
+  {
     "id": 7,
     "symbol": "INFY",
     "company": "Infosys",
