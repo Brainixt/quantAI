@@ -48,7 +48,12 @@
       "distance_to_pivot_pct": -1.4
     },
     "entry_time": "2026-10-21T11:14:51.332073+05:30",
-    "last_updated": "2026-10-22T08:28:04.273786+05:30"
+    "last_updated": "2026-10-22T08:29:11.347431+05:30",
+    "order_placed": true,
+    "quantity": 4,
+    "trade_id": "TRD_QUANTAI_MANKIND_1792637933333",
+    "broker_order_id": null,
+    "order_status": "QUEUED_FOR_MARKET_OPEN"
   },
   "nifty50": {
     "price": "22806.0500",
@@ -56,7 +61,7 @@
     "change_percent": "-0.3600",
     "direction": "NA"
   },
-  "timestamp": "2026-10-22T08:28:04.289415+05:30",
+  "timestamp": "2026-10-22T08:29:11.347431+05:30",
   "total_completed_picks": 0,
   "active_picks": [
     {
@@ -108,7 +113,12 @@
         "distance_to_pivot_pct": -1.4
       },
       "entry_time": "2026-10-21T11:14:51.332073+05:30",
-      "last_updated": "2026-10-22T08:28:04.273786+05:30"
+      "last_updated": "2026-10-22T08:29:11.347431+05:30",
+      "order_placed": true,
+      "quantity": 4,
+      "trade_id": "TRD_QUANTAI_MANKIND_1792637933333",
+      "broker_order_id": null,
+      "order_status": "QUEUED_FOR_MARKET_OPEN"
     },
     {
       "symbol": "PETRONET",
@@ -159,7 +169,12 @@
         "distance_to_pivot_pct": 1.49
       },
       "entry_time": "2026-10-21T15:10:14.421399+05:30",
-      "last_updated": "2026-10-22T08:28:04.273786+05:30"
+      "last_updated": "2026-10-22T08:29:11.347431+05:30",
+      "order_placed": true,
+      "quantity": 33,
+      "trade_id": "TRD_QUANTAI_PETRONET_1792637933333",
+      "broker_order_id": null,
+      "order_status": "QUEUED_FOR_MARKET_OPEN"
     },
     {
       "symbol": "DRREDDY",
@@ -210,7 +225,12 @@
         "distance_to_pivot_pct": 0.21
       },
       "entry_time": "2026-10-21T15:10:14.421399+05:30",
-      "last_updated": "2026-10-22T08:28:04.289415+05:30"
+      "last_updated": "2026-10-22T08:29:11.347431+05:30",
+      "order_placed": true,
+      "quantity": 8,
+      "trade_id": "TRD_QUANTAI_DRREDDY_1792637933361",
+      "broker_order_id": null,
+      "order_status": "QUEUED_FOR_MARKET_OPEN"
     },
     {
       "symbol": "RADICO",
@@ -261,7 +281,12 @@
         "distance_to_pivot_pct": -2.44
       },
       "entry_time": "2026-10-21T15:10:14.421399+05:30",
-      "last_updated": "2026-10-22T08:28:04.289415+05:30"
+      "last_updated": "2026-10-22T08:29:11.347431+05:30",
+      "order_placed": true,
+      "quantity": 2,
+      "trade_id": "TRD_QUANTAI_RADICO_1792637933391",
+      "broker_order_id": null,
+      "order_status": "QUEUED_FOR_MARKET_OPEN"
     },
     {
       "symbol": "BANKBARODA",
@@ -312,7 +337,12 @@
         "distance_to_pivot_pct": 1.01
       },
       "entry_time": "2026-10-21T15:10:14.421399+05:30",
-      "last_updated": "2026-10-22T08:28:04.289415+05:30"
+      "last_updated": "2026-10-22T08:29:11.347431+05:30",
+      "order_placed": true,
+      "quantity": 42,
+      "trade_id": "TRD_QUANTAI_BANKBARODA_1792637933422",
+      "broker_order_id": null,
+      "order_status": "QUEUED_FOR_MARKET_OPEN"
     }
   ]
 }
