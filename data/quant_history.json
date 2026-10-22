@@ -1,5 +1,22 @@
 [
   {
+    "id": 11,
+    "symbol": "TCS",
+    "company": "Tata Consultancy Services",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 2515.5,
+    "exit_price": 2490.0,
+    "pnl_pct": -1.01,
+    "target_pct": 1.82,
+    "sl_pct": 0.89,
+    "rr_ratio": 2.04,
+    "outcome": "STOP LOSS HIT (-0.89%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T09:17:32.792294+05:30",
+    "exit_time": "2026-10-22T11:36:29.920962+05:30"
+  },
+  {
     "id": 10,
     "symbol": "INFY",
     "company": "Infosys",
