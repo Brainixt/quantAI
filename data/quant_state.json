@@ -48,7 +48,7 @@
       "distance_to_pivot_pct": -1.4
     },
     "entry_time": "2026-10-21T11:14:51.332073+05:30",
-    "last_updated": "2026-10-22T10:43:12.307713+05:30",
+    "last_updated": "2026-10-22T10:44:19.699288+05:30",
     "order_placed": true,
     "quantity": 4,
     "trade_id": "TRD_QUANTAI_MANKIND_1792637933333",
@@ -61,7 +61,7 @@
     "change_percent": "-0.2800",
     "direction": "NA"
   },
-  "timestamp": "2026-10-22T10:43:12.307713+05:30",
+  "timestamp": "2026-10-22T10:44:19.699288+05:30",
   "total_completed_picks": 9,
   "active_picks": [
     {
@@ -113,7 +113,7 @@
         "distance_to_pivot_pct": -1.4
       },
       "entry_time": "2026-10-21T11:14:51.332073+05:30",
-      "last_updated": "2026-10-22T10:43:12.307713+05:30",
+      "last_updated": "2026-10-22T10:44:19.699288+05:30",
       "order_placed": true,
       "quantity": 4,
       "trade_id": "TRD_QUANTAI_MANKIND_1792637933333",
@@ -169,7 +169,7 @@
         "distance_to_pivot_pct": 1.01
       },
       "entry_time": "2026-10-22T09:17:32.792294+05:30",
-      "last_updated": "2026-10-22T10:43:12.307713+05:30",
+      "last_updated": "2026-10-22T10:44:19.699288+05:30",
       "order_placed": true,
       "quantity": 3,
       "trade_id": "TRD_QUANTAI_TCS_1792640853123",
@@ -225,7 +225,7 @@
         "distance_to_pivot_pct": -2.97
       },
       "entry_time": "2026-10-22T09:23:08.178211+05:30",
-      "last_updated": "2026-10-22T10:43:12.307713+05:30",
+      "last_updated": "2026-10-22T10:44:19.699288+05:30",
       "order_placed": true,
       "quantity": 2,
       "trade_id": "TRD_QUANTAI_RADICO_1792641188356",
@@ -281,7 +281,7 @@
         "distance_to_pivot_pct": 1.94
       },
       "entry_time": "2026-10-22T09:47:50.627260+05:30",
-      "last_updated": "2026-10-22T10:43:12.307713+05:30",
+      "last_updated": "2026-10-22T10:44:19.699288+05:30",
       "order_placed": true,
       "quantity": 8,
       "trade_id": "TRD_QUANTAI_INFY_1792642670627",
@@ -337,7 +337,7 @@
         "distance_to_pivot_pct": 0.85
       },
       "entry_time": "2026-10-22T10:17:43.139667+05:30",
-      "last_updated": "2026-10-22T10:43:12.307713+05:30",
+      "last_updated": "2026-10-22T10:44:19.699288+05:30",
       "order_placed": true,
       "quantity": 5,
       "trade_id": "TRD_QUANTAI_PHOENIXLTD_1792644463139",
