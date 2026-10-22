@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": 1,
+    "symbol": "PETRONET",
+    "company": "Petronet LNG",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 297.75,
+    "exit_price": 295.0,
+    "pnl_pct": -0.92,
+    "target_pct": 1.5,
+    "sl_pct": 0.6,
+    "rr_ratio": 2.5,
+    "outcome": "STOP LOSS HIT (-0.6%)",
+    "is_win": false,
+    "entry_time": "2026-10-21T15:10:14.421399+05:30",
+    "exit_time": "2026-10-22T09:13:03.215879+05:30"
+  }
+]
