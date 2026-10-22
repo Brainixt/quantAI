@@ -1,5 +1,22 @@
 [
   {
+    "id": 12,
+    "symbol": "DRREDDY",
+    "company": "Dr Reddys Laboratories",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 1246.8,
+    "exit_price": 1233.1,
+    "pnl_pct": -1.1,
+    "target_pct": 1.5,
+    "sl_pct": 0.6,
+    "rr_ratio": 2.5,
+    "outcome": "STOP LOSS HIT (-0.6%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T11:36:29.920962+05:30",
+    "exit_time": "2026-10-22T12:03:26.846865+05:30"
+  },
+  {
     "id": 11,
     "symbol": "TCS",
     "company": "Tata Consultancy Services",
