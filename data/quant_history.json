@@ -1,5 +1,22 @@
 [
   {
+    "id": 13,
+    "symbol": "PHOENIXLTD",
+    "company": "Phoenix Mills",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 1907.4,
+    "exit_price": 1886.1,
+    "pnl_pct": -1.12,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T10:17:43.139667+05:30",
+    "exit_time": "2026-10-22T12:19:35.454638+05:30"
+  },
+  {
     "id": 12,
     "symbol": "DRREDDY",
     "company": "Dr Reddys Laboratories",
