@@ -1,5 +1,22 @@
 [
   {
+    "id": 17,
+    "symbol": "PERSISTENT",
+    "company": "Persistent Systems",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 5777.0,
+    "exit_price": 5736.5,
+    "pnl_pct": -0.7,
+    "target_pct": 1.5,
+    "sl_pct": 0.69,
+    "rr_ratio": 2.17,
+    "outcome": "STOP LOSS HIT (-0.69%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T13:32:39.821223+05:30",
+    "exit_time": "2026-10-22T14:27:00.815648+05:30"
+  },
+  {
     "id": 16,
     "symbol": "RADICO",
     "company": "Radico Khaitan",
