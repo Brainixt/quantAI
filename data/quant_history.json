@@ -1,5 +1,22 @@
 [
   {
+    "id": 10,
+    "symbol": "INFY",
+    "company": "Infosys",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 1172.15,
+    "exit_price": 1162.0,
+    "pnl_pct": -0.87,
+    "target_pct": 1.58,
+    "sl_pct": 0.77,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.77%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T09:47:50.627260+05:30",
+    "exit_time": "2026-10-22T10:46:31.238692+05:30"
+  },
+  {
     "id": 9,
     "symbol": "TORNTPHARM",
     "company": "Torrent Pharmaceuticals",
