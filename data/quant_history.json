@@ -1,5 +1,22 @@
 [
   {
+    "id": 7,
+    "symbol": "INFY",
+    "company": "Infosys",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 1172.5,
+    "exit_price": 1162.2,
+    "pnl_pct": -0.88,
+    "target_pct": 1.58,
+    "sl_pct": 0.77,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.77%)",
+    "is_win": false,
+    "entry_time": "2026-10-22T09:17:32.792294+05:30",
+    "exit_time": "2026-10-22T09:26:34.430141+05:30"
+  },
+  {
     "id": 6,
     "symbol": "PERSISTENT",
     "company": "Persistent Systems",
