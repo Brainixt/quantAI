@@ -1,5 +1,22 @@
 [
   {
+    "id": 9,
+    "symbol": "TORNTPHARM",
+    "company": "Torrent Pharmaceuticals",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 4512.0,
+    "exit_price": 4592.1,
+    "pnl_pct": 1.78,
+    "target_pct": 1.66,
+    "sl_pct": 0.81,
+    "rr_ratio": 2.05,
+    "outcome": "TARGET HIT (+1.66%)",
+    "is_win": true,
+    "entry_time": "2026-10-22T09:26:34.430141+05:30",
+    "exit_time": "2026-10-22T10:17:43.139667+05:30"
+  },
+  {
     "id": 8,
     "symbol": "SAGILITY",
     "company": "Sagility",
