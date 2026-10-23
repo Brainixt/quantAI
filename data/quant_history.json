@@ -1,5 +1,22 @@
 [
   {
+    "id": 23,
+    "symbol": "POLICYBZR",
+    "company": "PB Fintech",
+    "direction": "LONG",
+    "mode": "DELIVERY",
+    "entry_price": 1021.1,
+    "exit_price": 1010.5,
+    "pnl_pct": -1.04,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-23T10:57:00.419601+05:30",
+    "exit_time": "2026-10-23T12:27:01.090924+05:30"
+  },
+  {
     "id": 22,
     "symbol": "AUROPHARMA",
     "company": "Aurobindo Pharma",
