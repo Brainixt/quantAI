@@ -48,7 +48,7 @@
       "distance_to_pivot_pct": 2.77
     },
     "entry_time": "2026-10-22T13:32:39.821223+05:30",
-    "last_updated": "2026-10-23T10:52:37.122201+05:30",
+    "last_updated": "2026-10-23T10:53:43.172042+05:30",
     "order_placed": true,
     "quantity": 12,
     "trade_id": "TRD_QUANTAI_INDHOTEL_1792656159821",
@@ -61,7 +61,7 @@
     "change_percent": "-0.9000",
     "direction": "NA"
   },
-  "timestamp": "2026-10-23T10:52:37.124737+05:30",
+  "timestamp": "2026-10-23T10:53:43.175020+05:30",
   "total_completed_picks": 20,
   "active_picks": [
     {
@@ -113,7 +113,7 @@
         "distance_to_pivot_pct": 2.77
       },
       "entry_time": "2026-10-22T13:32:39.821223+05:30",
-      "last_updated": "2026-10-23T10:52:37.122201+05:30",
+      "last_updated": "2026-10-23T10:53:43.172042+05:30",
       "order_placed": true,
       "quantity": 12,
       "trade_id": "TRD_QUANTAI_INDHOTEL_1792656159821",
@@ -169,7 +169,7 @@
         "distance_to_pivot_pct": -1.22
       },
       "entry_time": "2026-10-22T14:27:00.815648+05:30",
-      "last_updated": "2026-10-23T10:52:37.122845+05:30",
+      "last_updated": "2026-10-23T10:53:43.172698+05:30",
       "order_placed": true,
       "quantity": 1,
       "trade_id": "TRD_QUANTAI_APOLLOHOSP_1792659420815",
@@ -225,7 +225,7 @@
         "distance_to_pivot_pct": 0.11
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T10:52:37.123473+05:30",
+      "last_updated": "2026-10-23T10:53:43.173349+05:30",
       "order_placed": true,
       "quantity": 6,
       "trade_id": "TRD_QUANTAI_AUROPHARMA_1792731685381",
@@ -281,7 +281,7 @@
         "distance_to_pivot_pct": 0.88
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T10:52:37.123473+05:30",
+      "last_updated": "2026-10-23T10:53:43.173896+05:30",
       "order_placed": true,
       "quantity": 8,
       "trade_id": "TRD_QUANTAI_ZYDUSLIFE_1792731685639",
@@ -337,7 +337,7 @@
         "distance_to_pivot_pct": 0.65
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T10:52:37.124089+05:30",
+      "last_updated": "2026-10-23T10:53:43.174358+05:30",
       "order_placed": true,
       "quantity": 5,
       "trade_id": "TRD_QUANTAI_SUNPHARMA_1792731685883",
