@@ -48,7 +48,7 @@
       "distance_to_pivot_pct": -1.22
     },
     "entry_time": "2026-10-22T14:27:00.815648+05:30",
-    "last_updated": "2026-10-23T11:30:28.457517+05:30",
+    "last_updated": "2026-10-23T11:31:35.711972+05:30",
     "order_placed": true,
     "quantity": 1,
     "trade_id": "TRD_QUANTAI_APOLLOHOSP_1792659420815",
@@ -61,7 +61,7 @@
     "change_percent": "-0.8600",
     "direction": "NA"
   },
-  "timestamp": "2026-10-23T11:30:28.460879+05:30",
+  "timestamp": "2026-10-23T11:31:35.715354+05:30",
   "total_completed_picks": 21,
   "active_picks": [
     {
@@ -113,7 +113,7 @@
         "distance_to_pivot_pct": -1.22
       },
       "entry_time": "2026-10-22T14:27:00.815648+05:30",
-      "last_updated": "2026-10-23T11:30:28.457517+05:30",
+      "last_updated": "2026-10-23T11:31:35.711972+05:30",
       "order_placed": true,
       "quantity": 1,
       "trade_id": "TRD_QUANTAI_APOLLOHOSP_1792659420815",
@@ -169,7 +169,7 @@
         "distance_to_pivot_pct": 0.11
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T11:30:28.458406+05:30",
+      "last_updated": "2026-10-23T11:31:35.712612+05:30",
       "order_placed": true,
       "quantity": 6,
       "trade_id": "TRD_QUANTAI_AUROPHARMA_1792731685381",
@@ -225,7 +225,7 @@
         "distance_to_pivot_pct": 0.88
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T11:30:28.459011+05:30",
+      "last_updated": "2026-10-23T11:31:35.713203+05:30",
       "order_placed": true,
       "quantity": 8,
       "trade_id": "TRD_QUANTAI_ZYDUSLIFE_1792731685639",
@@ -281,7 +281,7 @@
         "distance_to_pivot_pct": 0.65
       },
       "entry_time": "2026-10-23T10:31:25.380848+05:30",
-      "last_updated": "2026-10-23T11:30:28.459623+05:30",
+      "last_updated": "2026-10-23T11:31:35.713796+05:30",
       "order_placed": true,
       "quantity": 5,
       "trade_id": "TRD_QUANTAI_SUNPHARMA_1792731685883",
@@ -337,7 +337,7 @@
         "distance_to_pivot_pct": 0.38
       },
       "entry_time": "2026-10-23T10:57:00.419601+05:30",
-      "last_updated": "2026-10-23T11:30:28.460243+05:30",
+      "last_updated": "2026-10-23T11:31:35.714425+05:30",
       "order_placed": true,
       "quantity": 9,
       "trade_id": "TRD_QUANTAI_POLICYBZR_1792733220419",
