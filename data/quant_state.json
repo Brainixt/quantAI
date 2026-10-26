@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": -1.11
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T09:24:37.520042+05:30",
+      "last_updated": "2026-10-26T09:25:42.232555+05:30",
       "order_placed": true,
       "quantity": 14,
       "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": -1.75
       },
       "entry_time": "2026-10-26T09:02:47.857973+05:30",
-      "last_updated": "2026-10-26T09:24:37.521036+05:30",
+      "last_updated": "2026-10-26T09:25:42.233554+05:30",
       "order_placed": true,
       "quantity": 22,
       "trade_id": "TRD_QUANTAI_SHORT_JSWENERGY_1792985567860",
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -2.46
       },
       "entry_time": "2026-10-26T09:02:47.858967+05:30",
-      "last_updated": "2026-10-26T09:24:37.521036+05:30",
+      "last_updated": "2026-10-26T09:25:42.233554+05:30",
       "order_placed": true,
       "quantity": 21,
       "trade_id": "TRD_QUANTAI_SHORT_PGEL_1792985567874",
@@ -222,7 +222,7 @@
       "distance_to_pivot_pct": -1.11
     },
     "entry_time": "2026-10-26T08:51:37.823481+05:30",
-    "last_updated": "2026-10-26T09:24:37.520042+05:30",
+    "last_updated": "2026-10-26T09:25:42.232555+05:30",
     "order_placed": true,
     "quantity": 14,
     "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -239,7 +239,7 @@
     "regime": "BEARISH",
     "allowed_direction": "SHORT",
     "rationale": "Macro Index Bearish (NIFTY -0.73%, Sells: 150 vs Buys: 18) -> SELL (Short MIS) Only",
-    "updated_at": "2026-10-26T09:24:37.526040+05:30"
+    "updated_at": "2026-10-26T09:25:42.234550+05:30"
   },
-  "timestamp": "2026-10-26T09:24:37.526040+05:30"
+  "timestamp": "2026-10-26T09:25:42.234550+05:30"
 }
