@@ -1,5 +1,22 @@
 [
   {
+    "id": 8,
+    "symbol": "CUMMINSIND",
+    "company": "Cummins India",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 4303.6,
+    "exit_price": 4357.0,
+    "pnl_pct": -1.24,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T09:30:02.688731+05:30",
+    "exit_time": "2026-10-26T10:07:57.067606+05:30"
+  },
+  {
     "id": 7,
     "symbol": "DELHIVERY",
     "company": "Delhivery",
