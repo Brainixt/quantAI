@@ -1,5 +1,22 @@
 [
   {
+    "id": 15,
+    "symbol": "BIOCON",
+    "company": "Biocon",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 326.4,
+    "exit_price": 329.65,
+    "pnl_pct": -1.0,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T12:32:02.963144+05:30",
+    "exit_time": "2026-10-26T14:16:56.932582+05:30"
+  },
+  {
     "id": 14,
     "symbol": "PGEL",
     "company": "PG Electroplast",
