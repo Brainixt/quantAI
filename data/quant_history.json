@@ -1,5 +1,22 @@
 [
   {
+    "id": 9,
+    "symbol": "AMBUJACEM",
+    "company": "Ambuja Cements",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 354.95,
+    "exit_price": 358.6,
+    "pnl_pct": -1.03,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T10:01:27.549538+05:30",
+    "exit_time": "2026-10-26T10:46:02.286356+05:30"
+  },
+  {
     "id": 8,
     "symbol": "CUMMINSIND",
     "company": "Cummins India",
