@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": -1.11
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T08:52:49.081530+05:30",
+      "last_updated": "2026-10-26T08:53:54.597606+05:30",
       "order_placed": true,
       "quantity": 14,
       "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": -1.73
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T08:52:49.081530+05:30",
+      "last_updated": "2026-10-26T08:53:54.597606+05:30",
       "order_placed": true,
       "quantity": 4,
       "trade_id": "TRD_QUANTAI_SHORT_TIINDIA_1792984897838",
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -2.89
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T08:52:49.081530+05:30",
+      "last_updated": "2026-10-26T08:53:54.597606+05:30",
       "order_placed": true,
       "quantity": 9,
       "trade_id": "TRD_QUANTAI_SHORT_360ONE_1792984897889",
@@ -213,7 +213,7 @@
         "distance_to_pivot_pct": -3.64
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T08:52:49.081530+05:30",
+      "last_updated": "2026-10-26T08:53:54.597606+05:30",
       "order_placed": true,
       "quantity": 116,
       "trade_id": "TRD_QUANTAI_SHORT_VMM_1792984897928",
@@ -268,7 +268,7 @@
         "distance_to_pivot_pct": -3.03
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T08:52:49.081530+05:30",
+      "last_updated": "2026-10-26T08:53:54.597606+05:30",
       "order_placed": true,
       "quantity": 6,
       "trade_id": "TRD_QUANTAI_SHORT_CHOLAFIN_1792984897981",
@@ -329,7 +329,7 @@
       "distance_to_pivot_pct": -1.11
     },
     "entry_time": "2026-10-26T08:51:37.823481+05:30",
-    "last_updated": "2026-10-26T08:52:49.081530+05:30",
+    "last_updated": "2026-10-26T08:53:54.597606+05:30",
     "order_placed": true,
     "quantity": 14,
     "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -346,7 +346,7 @@
     "regime": "BEARISH",
     "allowed_direction": "SHORT",
     "rationale": "Macro Index Bearish (NIFTY -1.17%, Sells: 181 vs Buys: 11) -> SELL (Short MIS) Only",
-    "updated_at": "2026-10-26T08:52:49.081530+05:30"
+    "updated_at": "2026-10-26T08:53:54.597606+05:30"
   },
-  "timestamp": "2026-10-26T08:52:49.081530+05:30"
+  "timestamp": "2026-10-26T08:53:54.597606+05:30"
 }
