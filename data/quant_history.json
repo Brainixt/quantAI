@@ -1,5 +1,22 @@
 [
   {
+    "id": 14,
+    "symbol": "PGEL",
+    "company": "PG Electroplast",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 470.55,
+    "exit_price": 475.45,
+    "pnl_pct": -1.04,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T11:12:07.550323+05:30",
+    "exit_time": "2026-10-26T13:36:22.982101+05:30"
+  },
+  {
     "id": 13,
     "symbol": "MPHASIS",
     "company": "MphasiS",
