@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": -1.11
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T10:16:42.294311+05:30",
+      "last_updated": "2026-10-26T10:17:46.859551+05:30",
       "order_placed": true,
       "quantity": 14,
       "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -61,7 +61,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 448.55,
-      "current_price": 452.1,
+      "current_price": 451.0,
       "target_price": 439.8,
       "sl_price": 452.81,
       "target_pct": 1.95,
@@ -69,7 +69,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.95%)",
       "target_method": "Dynamic MIS Short Target (-1.95% | 1:2.05 R:R)",
-      "pnl_pct": -0.79,
+      "pnl_pct": -0.55,
       "buy_score": 80.7,
       "composite_score": 84.8,
       "confidence": 98.0,
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": -1.75
       },
       "entry_time": "2026-10-26T09:02:47.857973+05:30",
-      "last_updated": "2026-10-26T10:16:42.294311+05:30",
+      "last_updated": "2026-10-26T10:17:46.859551+05:30",
       "order_placed": true,
       "quantity": 22,
       "trade_id": "TRD_QUANTAI_SHORT_JSWENERGY_1792985567860",
@@ -116,7 +116,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 878.7,
-      "current_price": 880.4,
+      "current_price": 878.4,
       "target_price": 861.57,
       "sl_price": 887.05,
       "target_pct": 1.95,
@@ -124,7 +124,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.95%)",
       "target_method": "Dynamic MIS Short Target (-1.95% | 1:2.05 R:R)",
-      "pnl_pct": -0.19,
+      "pnl_pct": 0.03,
       "buy_score": 67.7,
       "composite_score": 66.8,
       "confidence": 83.2,
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -6.84
       },
       "entry_time": "2026-10-26T09:57:05.949347+05:30",
-      "last_updated": "2026-10-26T10:16:42.294311+05:30",
+      "last_updated": "2026-10-26T10:17:46.859551+05:30",
       "order_placed": true,
       "quantity": 11,
       "trade_id": "TRD_QUANTAI_SHORT_AUBANK_1792988825950",
@@ -171,7 +171,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 354.95,
-      "current_price": 356.75,
+      "current_price": 357.6,
       "target_price": 348.03,
       "sl_price": 358.32,
       "target_pct": 1.95,
@@ -179,7 +179,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.95%)",
       "target_method": "Dynamic MIS Short Target (-1.95% | 1:2.05 R:R)",
-      "pnl_pct": -0.51,
+      "pnl_pct": -0.75,
       "buy_score": 63.9,
       "composite_score": 63.1,
       "confidence": 77.1,
@@ -213,7 +213,7 @@
         "distance_to_pivot_pct": -1.35
       },
       "entry_time": "2026-10-26T10:01:27.549538+05:30",
-      "last_updated": "2026-10-26T10:16:42.295311+05:30",
+      "last_updated": "2026-10-26T10:17:46.860555+05:30",
       "order_placed": true,
       "quantity": 28,
       "trade_id": "TRD_QUANTAI_SHORT_AMBUJACEM_1792989087549",
@@ -226,7 +226,7 @@
       "direction": "LONG",
       "mode": "MIS",
       "entry_price": 401.75,
-      "current_price": 402.6,
+      "current_price": 403.0,
       "target_price": 409.58,
       "sl_price": 397.93,
       "target_pct": 1.95,
@@ -234,7 +234,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Long SL (-0.95%)",
       "target_method": "Dynamic MIS Long Target (+1.95% | 1:2.05 R:R)",
-      "pnl_pct": 0.21,
+      "pnl_pct": 0.31,
       "buy_score": 80.0,
       "composite_score": 82.9,
       "confidence": 93.0,
@@ -268,7 +268,7 @@
         "distance_to_pivot_pct": 0.68
       },
       "entry_time": "2026-10-26T10:07:57.070604+05:30",
-      "last_updated": "2026-10-26T10:16:42.295311+05:30",
+      "last_updated": "2026-10-26T10:17:46.860555+05:30",
       "order_placed": true,
       "quantity": 24,
       "trade_id": "TRD_QUANTAI_LONG_COALINDIA_1792989477070",
@@ -335,7 +335,7 @@
       "distance_to_pivot_pct": -1.11
     },
     "entry_time": "2026-10-26T08:51:37.823481+05:30",
-    "last_updated": "2026-10-26T10:16:42.294311+05:30",
+    "last_updated": "2026-10-26T10:17:46.859551+05:30",
     "order_placed": true,
     "quantity": 14,
     "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -343,16 +343,16 @@
     "order_status": "SUBMITTED"
   },
   "nifty50": {
-    "price": "22682.9000",
-    "change": "82.9000",
-    "change_percent": "0.3700",
+    "price": "22667.2000",
+    "change": "67.2000",
+    "change_percent": "0.3000",
     "direction": "NA"
   },
   "macro_filter": {
     "regime": "BULLISH",
     "allowed_direction": "LONG",
-    "rationale": "Macro Index Bullish (NIFTY +0.37%, Buys: 59 vs Sells: 65) -> BUY (Long MIS) Only",
-    "updated_at": "2026-10-26T10:16:42.296311+05:30"
+    "rationale": "Macro Index Bullish (NIFTY +0.30%, Buys: 42 vs Sells: 120) -> BUY (Long MIS) Only",
+    "updated_at": "2026-10-26T10:17:46.861555+05:30"
   },
-  "timestamp": "2026-10-26T10:16:42.296311+05:30"
+  "timestamp": "2026-10-26T10:17:46.861555+05:30"
 }
