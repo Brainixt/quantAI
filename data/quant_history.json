@@ -1,5 +1,22 @@
 [
   {
+    "id": 5,
+    "symbol": "PGEL",
+    "company": "PG Electroplast",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 470.05,
+    "exit_price": 459.1,
+    "pnl_pct": 2.33,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "TARGET HIT (+1.95%)",
+    "is_win": true,
+    "entry_time": "2026-10-26T09:02:47.858967+05:30",
+    "exit_time": "2026-10-26T09:26:46.794197+05:30"
+  },
+  {
     "id": 4,
     "symbol": "CHOLAFIN",
     "company": "Cholamandalam Investment and Finance Company",
