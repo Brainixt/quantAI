@@ -1,5 +1,22 @@
 [
   {
+    "id": 11,
+    "symbol": "FORTIS",
+    "company": "Fortis Healthcare",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 714.1,
+    "exit_price": 721.5,
+    "pnl_pct": -1.04,
+    "target_pct": 1.74,
+    "sl_pct": 0.85,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.85%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T08:51:37.823481+05:30",
+    "exit_time": "2026-10-26T12:01:25.652699+05:30"
+  },
+  {
     "id": 10,
     "symbol": "AUBANK",
     "company": "AU Small Finance Bank",
