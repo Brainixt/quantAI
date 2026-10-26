@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": -1.75
       },
       "entry_time": "2026-10-26T09:02:47.857973+05:30",
-      "last_updated": "2026-10-26T12:29:52.540437+05:30",
+      "last_updated": "2026-10-26T12:30:58.350259+05:30",
       "order_placed": true,
       "quantity": 22,
       "trade_id": "TRD_QUANTAI_SHORT_JSWENERGY_1792985567860",
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": 0.68
       },
       "entry_time": "2026-10-26T10:07:57.070604+05:30",
-      "last_updated": "2026-10-26T12:29:52.540437+05:30",
+      "last_updated": "2026-10-26T12:30:58.350259+05:30",
       "order_placed": true,
       "quantity": 24,
       "trade_id": "TRD_QUANTAI_LONG_COALINDIA_1792989477070",
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -1.07
       },
       "entry_time": "2026-10-26T10:46:02.289380+05:30",
-      "last_updated": "2026-10-26T12:29:52.541437+05:30",
+      "last_updated": "2026-10-26T12:30:58.350259+05:30",
       "order_placed": true,
       "quantity": 4,
       "trade_id": "TRD_QUANTAI_SHORT_MPHASIS_1792991762290",
@@ -213,7 +213,7 @@
         "distance_to_pivot_pct": -2.36
       },
       "entry_time": "2026-10-26T11:12:07.550323+05:30",
-      "last_updated": "2026-10-26T12:29:52.541437+05:30",
+      "last_updated": "2026-10-26T12:30:58.351260+05:30",
       "order_placed": true,
       "quantity": 21,
       "trade_id": "TRD_QUANTAI_SHORT_PGEL_1792993327551",
@@ -268,7 +268,7 @@
         "distance_to_pivot_pct": -0.2
       },
       "entry_time": "2026-10-26T12:01:25.659698+05:30",
-      "last_updated": "2026-10-26T12:29:52.541437+05:30",
+      "last_updated": "2026-10-26T12:30:58.351260+05:30",
       "order_placed": true,
       "quantity": 2,
       "trade_id": "TRD_QUANTAI_SHORT_KEI_1792996285659",
@@ -337,7 +337,7 @@
       "distance_to_pivot_pct": -1.75
     },
     "entry_time": "2026-10-26T09:02:47.857973+05:30",
-    "last_updated": "2026-10-26T12:29:52.540437+05:30",
+    "last_updated": "2026-10-26T12:30:58.350259+05:30",
     "order_placed": true,
     "quantity": 22,
     "trade_id": "TRD_QUANTAI_SHORT_JSWENERGY_1792985567860",
@@ -354,7 +354,7 @@
     "regime": "BEARISH",
     "allowed_direction": "SHORT",
     "rationale": "Macro Index Bearish (NIFTY -0.01%, Sells: 98 vs Buys: 42) -> SELL (Short MIS) Only",
-    "updated_at": "2026-10-26T12:29:52.542437+05:30"
+    "updated_at": "2026-10-26T12:30:58.352258+05:30"
   },
-  "timestamp": "2026-10-26T12:29:52.542437+05:30"
+  "timestamp": "2026-10-26T12:30:58.352258+05:30"
 }
