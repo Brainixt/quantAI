@@ -1,5 +1,22 @@
 [
   {
+    "id": 7,
+    "symbol": "DELHIVERY",
+    "company": "Delhivery",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 366.75,
+    "exit_price": 372.75,
+    "pnl_pct": -1.64,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T09:30:02.688731+05:30",
+    "exit_time": "2026-10-26T10:01:27.545536+05:30"
+  },
+  {
     "id": 6,
     "symbol": "POWERINDIA",
     "company": "Hitachi Energy India",
