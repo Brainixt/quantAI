@@ -6,7 +6,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 714.1,
-      "current_price": 706.9,
+      "current_price": 709.0,
       "target_price": 701.67,
       "sl_price": 720.17,
       "target_pct": 1.74,
@@ -14,7 +14,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.85%)",
       "target_method": "Dynamic MIS Short Target (-1.74% | 1:2.05 R:R)",
-      "pnl_pct": 1.01,
+      "pnl_pct": 0.71,
       "buy_score": 66.8,
       "composite_score": 67.3,
       "confidence": 86.4,
@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": -1.11
       },
       "entry_time": "2026-10-26T08:51:37.823481+05:30",
-      "last_updated": "2026-10-26T09:20:15.413913+05:30",
+      "last_updated": "2026-10-26T09:21:19.722714+05:30",
       "order_placed": true,
       "quantity": 14,
       "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -61,7 +61,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 448.55,
-      "current_price": 441.0,
+      "current_price": 445.0,
       "target_price": 439.8,
       "sl_price": 452.81,
       "target_pct": 1.95,
@@ -69,7 +69,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.95%)",
       "target_method": "Dynamic MIS Short Target (-1.95% | 1:2.05 R:R)",
-      "pnl_pct": 1.68,
+      "pnl_pct": 0.79,
       "buy_score": 80.7,
       "composite_score": 84.8,
       "confidence": 98.0,
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": -1.75
       },
       "entry_time": "2026-10-26T09:02:47.857973+05:30",
-      "last_updated": "2026-10-26T09:20:15.414915+05:30",
+      "last_updated": "2026-10-26T09:21:19.722714+05:30",
       "order_placed": true,
       "quantity": 22,
       "trade_id": "TRD_QUANTAI_SHORT_JSWENERGY_1792985567860",
@@ -116,7 +116,7 @@
       "direction": "SHORT",
       "mode": "MIS",
       "entry_price": 470.05,
-      "current_price": 466.9,
+      "current_price": 461.35,
       "target_price": 460.88,
       "sl_price": 474.52,
       "target_pct": 1.95,
@@ -124,7 +124,7 @@
       "rr_ratio": 2.05,
       "sl_method": "Dynamic MIS Short SL (+0.95%)",
       "target_method": "Dynamic MIS Short Target (-1.95% | 1:2.05 R:R)",
-      "pnl_pct": 0.67,
+      "pnl_pct": 1.85,
       "buy_score": 78.5,
       "composite_score": 83.7,
       "confidence": 98.0,
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -2.46
       },
       "entry_time": "2026-10-26T09:02:47.858967+05:30",
-      "last_updated": "2026-10-26T09:20:15.414915+05:30",
+      "last_updated": "2026-10-26T09:21:19.723711+05:30",
       "order_placed": true,
       "quantity": 21,
       "trade_id": "TRD_QUANTAI_SHORT_PGEL_1792985567874",
@@ -180,7 +180,7 @@
     "direction": "SHORT",
     "mode": "MIS",
     "entry_price": 714.1,
-    "current_price": 706.9,
+    "current_price": 709.0,
     "target_price": 701.67,
     "sl_price": 720.17,
     "target_pct": 1.74,
@@ -188,7 +188,7 @@
     "rr_ratio": 2.05,
     "sl_method": "Dynamic MIS Short SL (+0.85%)",
     "target_method": "Dynamic MIS Short Target (-1.74% | 1:2.05 R:R)",
-    "pnl_pct": 1.01,
+    "pnl_pct": 0.71,
     "buy_score": 66.8,
     "composite_score": 67.3,
     "confidence": 86.4,
@@ -222,7 +222,7 @@
       "distance_to_pivot_pct": -1.11
     },
     "entry_time": "2026-10-26T08:51:37.823481+05:30",
-    "last_updated": "2026-10-26T09:20:15.413913+05:30",
+    "last_updated": "2026-10-26T09:21:19.722714+05:30",
     "order_placed": true,
     "quantity": 14,
     "trade_id": "TRD_QUANTAI_SHORT_FORTIS_1792984897826",
@@ -230,16 +230,16 @@
     "order_status": "SUBMITTED"
   },
   "nifty50": {
-    "price": "22482.9000",
-    "change": "-117.1000",
-    "change_percent": "-0.5200",
+    "price": "22434.4000",
+    "change": "-165.6000",
+    "change_percent": "-0.7300",
     "direction": "NA"
   },
   "macro_filter": {
     "regime": "BEARISH",
     "allowed_direction": "SHORT",
-    "rationale": "Macro Index Bearish (NIFTY -0.52%, Sells: 166 vs Buys: 12) -> SELL (Short MIS) Only",
-    "updated_at": "2026-10-26T09:20:15.415909+05:30"
+    "rationale": "Macro Index Bearish (NIFTY -0.73%, Sells: 150 vs Buys: 18) -> SELL (Short MIS) Only",
+    "updated_at": "2026-10-26T09:21:19.723711+05:30"
   },
-  "timestamp": "2026-10-26T09:20:15.415909+05:30"
+  "timestamp": "2026-10-26T09:21:19.723711+05:30"
 }
