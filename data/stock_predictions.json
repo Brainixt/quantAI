@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-26T09:06:56.108821",
+  "timestamp": "2026-10-26T09:10:54.112346",
   "nifty50": {
-    "price": "22520.8500",
-    "change": "-79.1500",
-    "change_percent": "-0.3500",
+    "price": "22524.4000",
+    "change": "-75.6000",
+    "change_percent": "-0.3300",
     "direction": "NA"
   },
   "total_evaluated": 213,
   "summary": {
-    "intraday_buys": 22,
-    "intraday_sells": 160,
-    "intraday_neutrals": 31,
-    "short_term_buys": 23,
-    "short_term_sells": 136,
-    "short_term_neutrals": 54
+    "intraday_buys": 19,
+    "intraday_sells": 159,
+    "intraday_neutrals": 35,
+    "short_term_buys": 18,
+    "short_term_sells": 134,
+    "short_term_neutrals": 61
   },
   "top_opportunities": {
     "intraday_buys": [
@@ -36,9 +36,9 @@
             "Breakout above Pivot R1 (Rs.22,676.7)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "High Relative Outperformance vs NIFTY (+2.16% alpha)"
+            "High Relative Outperformance vs NIFTY (+2.14% alpha)"
           ],
-          "relative_strength": 2.16,
+          "relative_strength": 2.14,
           "range_pos_pct": 100.0,
           "basis_pct": 1.08,
           "call_put_ratio": 1.39
@@ -110,7 +110,7 @@
         "symbol": "ETERNAL",
         "company_name": "Eternal",
         "spot": 317.4,
-        "futures_current": 317.0,
+        "futures_current": 315.0,
         "lot_size": "2425",
         "signal": "LONG",
         "last_signal": "LONG",
@@ -125,18 +125,18 @@
             "Breakout above Pivot R1 (Rs.311.6)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "High Relative Outperformance vs NIFTY (+4.60% alpha)"
+            "High Relative Outperformance vs NIFTY (+4.58% alpha)"
           ],
-          "relative_strength": 4.6,
+          "relative_strength": 4.58,
           "range_pos_pct": 100.0,
-          "basis_pct": -0.13,
+          "basis_pct": -0.76,
           "call_put_ratio": 1.34
         },
         "short_term": {
           "buy_score": 61.4,
-          "sell_score": 28.1,
+          "sell_score": 33.1,
           "signal": "BUY",
-          "confidence": 78.0,
+          "confidence": 73.5,
           "factors": [
             "Strong structural technical posture (Tech: 100/100)",
             "Multi-day price base above Floor Pivot",
@@ -216,9 +216,9 @@
             "Breakout above Pivot R1 (Rs.7,687.5)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "High Relative Outperformance vs NIFTY (+2.00% alpha)"
+            "High Relative Outperformance vs NIFTY (+1.98% alpha)"
           ],
-          "relative_strength": 2.0,
+          "relative_strength": 1.98,
           "range_pos_pct": 100.0,
           "basis_pct": -0.42,
           "call_put_ratio": 1.0
@@ -308,9 +308,9 @@
             "Trading above Central Pivot (Rs.11,119.3)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "Outperforming NIFTY (+0.89% alpha)"
+            "Outperforming NIFTY (+0.87% alpha)"
           ],
-          "relative_strength": 0.89,
+          "relative_strength": 0.87,
           "range_pos_pct": 100.0,
           "basis_pct": 0.2,
           "call_put_ratio": 1.24
@@ -400,9 +400,9 @@
             "Breakout above Pivot R1 (Rs.2,306.9)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "Outperforming NIFTY (+1.32% alpha)"
+            "Outperforming NIFTY (+1.30% alpha)"
           ],
-          "relative_strength": 1.32,
+          "relative_strength": 1.3,
           "range_pos_pct": 100.0,
           "basis_pct": -0.22,
           "call_put_ratio": 0.72
@@ -475,6 +475,97 @@
     ],
     "intraday_sells": [
       {
+        "symbol": "INDIANB",
+        "company_name": "Indian Bank",
+        "spot": 837.15,
+        "futures_current": 836.0,
+        "lot_size": "1000",
+        "signal": "UNWIND",
+        "last_signal": "SHORT",
+        "current_oi": 3931000.0,
+        "previous_day_oi": 6611000.0,
+        "intraday": {
+          "buy_score": 6.0,
+          "sell_score": 86.0,
+          "signal": "STRONG SELL",
+          "confidence": 86.0,
+          "factors": [
+            "Breakdown below Pivot S1 (Rs.839.4)",
+            "Trading right at session lows (18% of range)",
+            "Long Unwinding Pressure (Buyer capitulation)",
+            "Severe Relative Weakness vs NIFTY (-1.84% drag)"
+          ],
+          "relative_strength": -1.84,
+          "range_pos_pct": 17.8,
+          "basis_pct": -0.14,
+          "call_put_ratio": 0.6
+        },
+        "short_term": {
+          "buy_score": 24.4,
+          "sell_score": 61.2,
+          "signal": "SELL",
+          "confidence": 74.1,
+          "factors": [
+            "Deteriorating structural chart trend (Tech: 20/100)",
+            "Multi-day price breakdown below Floor Pivot",
+            "Exhaustion & heavy multi-day long unwinding",
+            "Elevated valuation multiples / high derating risk (Val: 29)"
+          ],
+          "oi_yest_pct": -40.5,
+          "mc_total": 66.0,
+          "mc_q": 84.0,
+          "mc_g": 80.0,
+          "mc_v": 29.0,
+          "mc_t": 20.0,
+          "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
+        },
+        "risk": {
+          "level": "MODERATE",
+          "score": 20,
+          "badge_color": "#b45309",
+          "bg_color": "#fffbeb",
+          "range_span_pct": 3.1,
+          "flags": [
+            "Moderate range expansion (3.1%)"
+          ]
+        },
+        "pivot_points": {
+          "pivot": 848.9,
+          "r1": 865.25,
+          "s1": 839.35,
+          "r2": 874.8,
+          "s2": 823.0,
+          "r3": 891.15,
+          "s3": 813.45,
+          "r4": 917.05,
+          "s4": 787.55,
+          "high": 858.45,
+          "low": 832.55,
+          "close": 855.7,
+          "bias": "BEARISH",
+          "zone": "S2-S1",
+          "nearest_level": "S1",
+          "nearest_level_price": 839.35,
+          "distance_to_pivot_pct": -1.38
+        },
+        "options_current": {
+          "expiry": "1477578600",
+          "strike": 840.0,
+          "CE": {
+            "price": "6.05",
+            "token": "82155",
+            "trading_symbol": "INDIANB26OCT840CE",
+            "lot_size": "1000"
+          },
+          "PE": {
+            "price": "10.1",
+            "token": "82156",
+            "trading_symbol": "INDIANB26OCT840PE",
+            "lot_size": "1000"
+          }
+        }
+      },
+      {
         "symbol": "UNIONBANK",
         "company_name": "Union Bank of India",
         "spot": 178.9,
@@ -493,9 +584,9 @@
             "Breakdown below Pivot S1 (Rs.179.9)",
             "Trading right at session lows (2% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-1.81% drag)"
+            "Severe Relative Weakness vs NIFTY (-1.83% drag)"
           ],
-          "relative_strength": -1.81,
+          "relative_strength": -1.83,
           "range_pos_pct": 2.1,
           "basis_pct": -0.34,
           "call_put_ratio": 0.39
@@ -569,7 +660,7 @@
         "symbol": "LTM",
         "company_name": "LTM",
         "spot": 4134.0,
-        "futures_current": 4112.4,
+        "futures_current": 4042.5,
         "lot_size": "150",
         "signal": "SHORT",
         "last_signal": "SHORT",
@@ -584,11 +675,11 @@
             "Breakdown below Pivot S1 (Rs.4,149.8)",
             "Trading right at session lows (0% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-2.93% drag)"
+            "Severe Relative Weakness vs NIFTY (-2.95% drag)"
           ],
-          "relative_strength": -2.93,
+          "relative_strength": -2.95,
           "range_pos_pct": 0.0,
-          "basis_pct": -0.52,
+          "basis_pct": -2.21,
           "call_put_ratio": 0.67
         },
         "short_term": {
@@ -600,7 +691,7 @@
             "Deteriorating structural chart trend (Tech: 20/100)",
             "Multi-day price breakdown below Floor Pivot",
             "Continuous Short buildup across cycles",
-            "Persistent futures backwardation discount (-0.52% basis)"
+            "Persistent futures backwardation discount (-2.21% basis)"
           ],
           "oi_yest_pct": 0.0,
           "mc_total": 68.0,
@@ -611,13 +702,14 @@
           "oneliner": "Superior Financial Strength, High Growth Trend Stock at Reasonable Valuations"
         },
         "risk": {
-          "level": "MODERATE",
-          "score": 35,
-          "badge_color": "#b45309",
-          "bg_color": "#fffbeb",
+          "level": "ELEVATED",
+          "score": 55,
+          "badge_color": "#c2410c",
+          "bg_color": "#fff7ed",
           "range_span_pct": 5.8,
           "flags": [
-            "High intraday volatility (5.8% daily range)"
+            "High intraday volatility (5.8% daily range)",
+            "Elevated futures basis dislocation (-2.21%)"
           ]
         },
         "pivot_points": {
@@ -675,9 +767,9 @@
             "Breakdown below Pivot S1 (Rs.376.5)",
             "Trading right at session lows (1% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-4.78% drag)"
+            "Severe Relative Weakness vs NIFTY (-4.80% drag)"
           ],
-          "relative_strength": -4.78,
+          "relative_strength": -4.8,
           "range_pos_pct": 1.5,
           "basis_pct": -0.41,
           "call_put_ratio": 0.77
@@ -766,9 +858,9 @@
             "Breakdown below Pivot S1 (Rs.70.4)",
             "Trading right at session lows (15% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-3.16% drag)"
+            "Severe Relative Weakness vs NIFTY (-3.18% drag)"
           ],
-          "relative_strength": -3.16,
+          "relative_strength": -3.18,
           "range_pos_pct": 15.0,
           "basis_pct": -0.5,
           "call_put_ratio": 0.56
@@ -837,97 +929,6 @@
             "lot_size": "6950"
           }
         }
-      },
-      {
-        "symbol": "ANGELONE",
-        "company_name": "Angel One",
-        "spot": 279.0,
-        "futures_current": 278.7,
-        "lot_size": "2500",
-        "signal": "SHORT",
-        "last_signal": "SHORT",
-        "current_oi": 31775000.0,
-        "previous_day_oi": 31775000.0,
-        "intraday": {
-          "buy_score": 2.0,
-          "sell_score": 84.0,
-          "signal": "STRONG SELL",
-          "confidence": 86.0,
-          "factors": [
-            "Breakdown below Pivot S1 (Rs.281.1)",
-            "Trading right at session lows (14% of range)",
-            "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-3.86% drag)"
-          ],
-          "relative_strength": -3.86,
-          "range_pos_pct": 14.4,
-          "basis_pct": -0.11,
-          "call_put_ratio": 0.73
-        },
-        "short_term": {
-          "buy_score": 20.3,
-          "sell_score": 74.9,
-          "signal": "STRONG SELL",
-          "confidence": 93.0,
-          "factors": [
-            "Deteriorating structural chart trend (Tech: 20/100)",
-            "Multi-day price breakdown below Floor Pivot",
-            "Continuous Short buildup across cycles",
-            "Elevated valuation multiples / high derating risk (Val: 29)"
-          ],
-          "oi_yest_pct": 0.0,
-          "mc_total": 47.0,
-          "mc_q": 43.0,
-          "mc_g": 74.0,
-          "mc_v": 29.0,
-          "mc_t": 20.0,
-          "oneliner": "Average Financial Strength, High Growth Trend Stock Priced at High Valuations"
-        },
-        "risk": {
-          "level": "MODERATE",
-          "score": 35,
-          "badge_color": "#b45309",
-          "bg_color": "#fffbeb",
-          "range_span_pct": 5.8,
-          "flags": [
-            "High intraday volatility (5.8% daily range)"
-          ]
-        },
-        "pivot_points": {
-          "pivot": 286.87,
-          "r1": 297.03,
-          "s1": 281.08,
-          "r2": 302.82,
-          "s2": 270.92,
-          "r3": 312.98,
-          "s3": 265.13,
-          "r4": 328.93,
-          "s4": 249.18,
-          "high": 292.65,
-          "low": 276.7,
-          "close": 291.25,
-          "bias": "BEARISH",
-          "zone": "S2-S1",
-          "nearest_level": "S1",
-          "nearest_level_price": 281.08,
-          "distance_to_pivot_pct": -2.74
-        },
-        "options_current": {
-          "expiry": "1477578600",
-          "strike": 280.0,
-          "CE": {
-            "price": "3.3",
-            "token": "54475",
-            "trading_symbol": "ANGELONE26OCT280CE",
-            "lot_size": "2500"
-          },
-          "PE": {
-            "price": "4.55",
-            "token": "54476",
-            "trading_symbol": "ANGELONE26OCT280PE",
-            "lot_size": "2500"
-          }
-        }
       }
     ],
     "short_term_buys": [
@@ -951,7 +952,7 @@
             "Futures carry premium (+0.27% basis)",
             "Call option premium skew (CE > PE)"
           ],
-          "relative_strength": 0.38,
+          "relative_strength": 0.36,
           "range_pos_pct": 40.5,
           "basis_pct": 0.27,
           "call_put_ratio": 2.14
@@ -1023,97 +1024,6 @@
         }
       },
       {
-        "symbol": "CGPOWER",
-        "company_name": "CG Power and Industrial Solutions",
-        "spot": 813.35,
-        "futures_current": 816.0,
-        "lot_size": "850",
-        "signal": "LONG",
-        "last_signal": "LONG",
-        "current_oi": 17029750.0,
-        "previous_day_oi": 17029750.0,
-        "intraday": {
-          "buy_score": 58.5,
-          "sell_score": 15.0,
-          "signal": "BUY",
-          "confidence": 73.2,
-          "factors": [
-            "Trading above Central Pivot (Rs.798.6)",
-            "Trading near session highs (100% of range)",
-            "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "Futures carry premium (+0.33% basis)"
-          ],
-          "relative_strength": -0.11,
-          "range_pos_pct": 100.0,
-          "basis_pct": 0.33,
-          "call_put_ratio": 1.15
-        },
-        "short_term": {
-          "buy_score": 71.6,
-          "sell_score": 31.3,
-          "signal": "STRONG BUY",
-          "confidence": 84.3,
-          "factors": [
-            "Multi-day price base above Floor Pivot",
-            "Persistent Long buildup across cycles",
-            "Superior Quality & Growth profile (Q: 90, G: 94)",
-            "Healthy futures carry contango (+0.33% premium)"
-          ],
-          "oi_yest_pct": 0.0,
-          "mc_total": 75.0,
-          "mc_q": 90.0,
-          "mc_g": 94.0,
-          "mc_v": 24.0,
-          "mc_t": 60.0,
-          "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
-        },
-        "risk": {
-          "level": "MODERATE",
-          "score": 20,
-          "badge_color": "#b45309",
-          "bg_color": "#fffbeb",
-          "range_span_pct": 4.4,
-          "flags": [
-            "Moderate range expansion (4.4%)"
-          ]
-        },
-        "pivot_points": {
-          "pivot": 798.6,
-          "r1": 824.95,
-          "s1": 790.75,
-          "r2": 832.8,
-          "s2": 764.4,
-          "r3": 859.15,
-          "s3": 756.55,
-          "r4": 893.35,
-          "s4": 722.35,
-          "high": 806.45,
-          "low": 772.25,
-          "close": 817.1,
-          "bias": "BULLISH",
-          "zone": "P-R1",
-          "nearest_level": "R1",
-          "nearest_level_price": 824.95,
-          "distance_to_pivot_pct": 1.85
-        },
-        "options_current": {
-          "expiry": "1477578600",
-          "strike": 810.0,
-          "CE": {
-            "price": "14.6",
-            "token": "95689",
-            "trading_symbol": "CGPOWER26OCT810CE",
-            "lot_size": "850"
-          },
-          "PE": {
-            "price": "12.75",
-            "token": "95692",
-            "trading_symbol": "CGPOWER26OCT810PE",
-            "lot_size": "850"
-          }
-        }
-      },
-      {
         "symbol": "PETRONET",
         "company_name": "Petronet LNG",
         "spot": 286.3,
@@ -1130,11 +1040,11 @@
           "confidence": 45.7,
           "factors": [
             "Trading below Central Pivot (Rs.287.2)",
-            "Underperforming NIFTY (-1.06% drag)",
+            "Underperforming NIFTY (-1.08% drag)",
             "Dragging down despite buoyant market",
             "Put hedging demand skew (PE > CE)"
           ],
-          "relative_strength": -1.06,
+          "relative_strength": -1.08,
           "range_pos_pct": 54.9,
           "basis_pct": 0.38,
           "call_put_ratio": 0.67
@@ -1224,7 +1134,7 @@
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
             "Call option premium skew (CE > PE)"
           ],
-          "relative_strength": 0.13,
+          "relative_strength": 0.11,
           "range_pos_pct": 65.5,
           "basis_pct": 0.01,
           "call_put_ratio": 1.94
@@ -1313,9 +1223,9 @@
             "Trading above Central Pivot (Rs.11,119.3)",
             "Trading near session highs (100% of range)",
             "Institutional Long Buildup (Price \u2191, OI \u2191)",
-            "Outperforming NIFTY (+0.89% alpha)"
+            "Outperforming NIFTY (+0.87% alpha)"
           ],
-          "relative_strength": 0.89,
+          "relative_strength": 0.87,
           "range_pos_pct": 100.0,
           "basis_pct": 0.2,
           "call_put_ratio": 1.24
@@ -1385,6 +1295,96 @@
             "lot_size": "50"
           }
         }
+      },
+      {
+        "symbol": "DMART",
+        "company_name": "Avenue Supermarts",
+        "spot": 3157.7,
+        "futures_current": 3160.0,
+        "lot_size": "150",
+        "signal": "LONG",
+        "last_signal": "LONG",
+        "current_oi": 3603900.0,
+        "previous_day_oi": 3603900.0,
+        "intraday": {
+          "buy_score": 60.5,
+          "sell_score": 9.0,
+          "signal": "BUY",
+          "confidence": 79.0,
+          "factors": [
+            "Trading above Central Pivot (Rs.3,150.0)",
+            "Institutional Long Buildup (Price \u2191, OI \u2191)",
+            "Futures carry premium (+0.07% basis)"
+          ],
+          "relative_strength": 0.07,
+          "range_pos_pct": 73.1,
+          "basis_pct": 0.07,
+          "call_put_ratio": 1.21
+        },
+        "short_term": {
+          "buy_score": 67.6,
+          "sell_score": 24.5,
+          "signal": "BUY",
+          "confidence": 79.8,
+          "factors": [
+            "Multi-day price base above Floor Pivot",
+            "Persistent Long buildup across cycles",
+            "Superior Quality & Growth profile (Q: 90, G: 94)"
+          ],
+          "oi_yest_pct": 0.0,
+          "mc_total": 78.0,
+          "mc_q": 90.0,
+          "mc_g": 94.0,
+          "mc_v": 35.0,
+          "mc_t": 60.0,
+          "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 5,
+          "badge_color": "#15803d",
+          "bg_color": "#f0fdf4",
+          "range_span_pct": 2.2,
+          "flags": [
+            "Normal trading volatility within standard pivot boundaries",
+            "Healthy basis and orderly flow"
+          ]
+        },
+        "pivot_points": {
+          "pivot": 3150.0,
+          "r1": 3192.0,
+          "s1": 3124.0,
+          "r2": 3218.0,
+          "s2": 3082.0,
+          "r3": 3260.0,
+          "s3": 3056.0,
+          "r4": 3328.0,
+          "s4": 2988.0,
+          "high": 3176.0,
+          "low": 3108.0,
+          "close": 3166.0,
+          "bias": "BULLISH",
+          "zone": "P-R1",
+          "nearest_level": "P",
+          "nearest_level_price": 3150.0,
+          "distance_to_pivot_pct": 0.24
+        },
+        "options_current": {
+          "expiry": "1477578600",
+          "strike": 3150.0,
+          "CE": {
+            "price": "33.15",
+            "token": "88866",
+            "trading_symbol": "DMART26OCT3150CE",
+            "lot_size": "150"
+          },
+          "PE": {
+            "price": "27.45",
+            "token": "88867",
+            "trading_symbol": "DMART26OCT3150PE",
+            "lot_size": "150"
+          }
+        }
       }
     ],
     "short_term_sells": [
@@ -1406,10 +1406,10 @@
           "factors": [
             "Trading below Central Pivot (Rs.456.6)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-2.96% drag)",
+            "Severe Relative Weakness vs NIFTY (-2.98% drag)",
             "Dragging down despite buoyant market"
           ],
-          "relative_strength": -2.96,
+          "relative_strength": -2.98,
           "range_pos_pct": 32.1,
           "basis_pct": -0.46,
           "call_put_ratio": 0.56
@@ -1480,6 +1480,98 @@
         }
       },
       {
+        "symbol": "LTF",
+        "company_name": "L&T Finance",
+        "spot": 237.5,
+        "futures_current": 234.6,
+        "lot_size": "2250",
+        "signal": "SHORT",
+        "last_signal": "SHORT",
+        "current_oi": 38972250.0,
+        "previous_day_oi": 38972250.0,
+        "intraday": {
+          "buy_score": 7.0,
+          "sell_score": 75.0,
+          "signal": "STRONG SELL",
+          "confidence": 86.0,
+          "factors": [
+            "Breakdown below Pivot S1 (Rs.237.7)",
+            "Aggressive Short Buildup (Price \u2193, OI \u2191)",
+            "Severe Relative Weakness vs NIFTY (-2.37% drag)",
+            "Dragging down despite buoyant market"
+          ],
+          "relative_strength": -2.37,
+          "range_pos_pct": 28.6,
+          "basis_pct": -1.22,
+          "call_put_ratio": 2.24
+        },
+        "short_term": {
+          "buy_score": 21.1,
+          "sell_score": 79.9,
+          "signal": "STRONG SELL",
+          "confidence": 98.0,
+          "factors": [
+            "Deteriorating structural chart trend (Tech: 20/100)",
+            "Multi-day price breakdown below Floor Pivot",
+            "Continuous Short buildup across cycles",
+            "Elevated valuation multiples / high derating risk (Val: 24)"
+          ],
+          "oi_yest_pct": 0.0,
+          "mc_total": 52.0,
+          "mc_q": 52.0,
+          "mc_g": 80.0,
+          "mc_v": 24.0,
+          "mc_t": 20.0,
+          "oneliner": "Average Financial Strength, High Growth Trend Stock Priced at High Valuations"
+        },
+        "risk": {
+          "level": "ELEVATED",
+          "score": 40,
+          "badge_color": "#c2410c",
+          "bg_color": "#fff7ed",
+          "range_span_pct": 4.2,
+          "flags": [
+            "Moderate range expansion (4.2%)",
+            "Elevated futures basis dislocation (-1.22%)"
+          ]
+        },
+        "pivot_points": {
+          "pivot": 241.1,
+          "r1": 247.5,
+          "s1": 237.7,
+          "r2": 250.9,
+          "s2": 231.3,
+          "r3": 257.3,
+          "s3": 227.9,
+          "r4": 267.1,
+          "s4": 218.1,
+          "high": 244.5,
+          "low": 234.7,
+          "close": 244.1,
+          "bias": "BEARISH",
+          "zone": "S2-S1",
+          "nearest_level": "S1",
+          "nearest_level_price": 237.7,
+          "distance_to_pivot_pct": -1.49
+        },
+        "options_current": {
+          "expiry": "1477578600",
+          "strike": 235.0,
+          "CE": {
+            "price": "4.25",
+            "token": "113345",
+            "trading_symbol": "LTF26OCT235CE",
+            "lot_size": "2250"
+          },
+          "PE": {
+            "price": "1.9",
+            "token": "113346",
+            "trading_symbol": "LTF26OCT235PE",
+            "lot_size": "2250"
+          }
+        }
+      },
+      {
         "symbol": "PGEL",
         "company_name": "PG Electroplast",
         "spot": 470.05,
@@ -1498,9 +1590,9 @@
             "Breakdown below Pivot S1 (Rs.473.7)",
             "Trading right at session lows (17% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-3.65% drag)"
+            "Severe Relative Weakness vs NIFTY (-3.67% drag)"
           ],
-          "relative_strength": -3.65,
+          "relative_strength": -3.67,
           "range_pos_pct": 17.0,
           "basis_pct": -0.52,
           "call_put_ratio": 0.85
@@ -1588,10 +1680,10 @@
           "factors": [
             "Trading below Central Pivot (Rs.26,393.3)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-2.37% drag)",
+            "Severe Relative Weakness vs NIFTY (-2.39% drag)",
             "Dragging down despite buoyant market"
           ],
-          "relative_strength": -2.37,
+          "relative_strength": -2.39,
           "range_pos_pct": 67.4,
           "basis_pct": -0.19,
           "call_put_ratio": 0.54
@@ -1665,7 +1757,7 @@
         "symbol": "SWIGGY",
         "company_name": "Swiggy",
         "spot": 176.0,
-        "futures_current": 175.4,
+        "futures_current": 175.35,
         "lot_size": "1825",
         "signal": "SHORT",
         "last_signal": "SHORT",
@@ -1680,11 +1772,11 @@
             "Breakdown below Pivot S1 (Rs.188.9)",
             "Trading right at session lows (3% of range)",
             "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Severe Relative Weakness vs NIFTY (-16.40% drag)"
+            "Severe Relative Weakness vs NIFTY (-16.42% drag)"
           ],
-          "relative_strength": -16.4,
+          "relative_strength": -16.42,
           "range_pos_pct": 3.4,
-          "basis_pct": -0.34,
+          "basis_pct": -0.37,
           "call_put_ratio": 1.51
         },
         "short_term": {
@@ -1696,7 +1788,7 @@
             "Deteriorating structural chart trend (Tech: 20/100)",
             "Multi-day price breakdown below Floor Pivot",
             "Continuous Short buildup across cycles",
-            "Persistent futures backwardation discount (-0.34% basis)"
+            "Persistent futures backwardation discount (-0.37% basis)"
           ],
           "oi_yest_pct": 0.0,
           "mc_total": 46.0,
@@ -1751,97 +1843,6 @@
             "lot_size": "1825"
           }
         }
-      },
-      {
-        "symbol": "TMPV",
-        "company_name": "Tata Motors Passenger Vehicles",
-        "spot": 264.6,
-        "futures_current": 264.2,
-        "lot_size": "1600",
-        "signal": "SHORT",
-        "last_signal": "SHORT",
-        "current_oi": 64011200.0,
-        "previous_day_oi": 64011200.0,
-        "intraday": {
-          "buy_score": 8.0,
-          "sell_score": 72.0,
-          "signal": "STRONG SELL",
-          "confidence": 86.0,
-          "factors": [
-            "Trading below Central Pivot (Rs.267.0)",
-            "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-            "Underperforming NIFTY (-1.65% drag)",
-            "Dragging down despite buoyant market"
-          ],
-          "relative_strength": -1.65,
-          "range_pos_pct": 40.5,
-          "basis_pct": -0.15,
-          "call_put_ratio": 0.6
-        },
-        "short_term": {
-          "buy_score": 17.3,
-          "sell_score": 77.0,
-          "signal": "STRONG SELL",
-          "confidence": 93.0,
-          "factors": [
-            "Deteriorating structural chart trend (Tech: 20/100)",
-            "Multi-day price breakdown below Floor Pivot",
-            "Continuous Short buildup across cycles",
-            "Weak balance sheet / fundamental vulnerability (Q: 33)"
-          ],
-          "oi_yest_pct": 0.0,
-          "mc_total": 30.0,
-          "mc_q": 33.0,
-          "mc_g": 14.0,
-          "mc_v": 53.0,
-          "mc_t": 20.0,
-          "oneliner": "Low Financial Strength, Low Growth Trend Stock at Reasonable Valuations"
-        },
-        "risk": {
-          "level": "MODERATE",
-          "score": 20,
-          "badge_color": "#b45309",
-          "bg_color": "#fffbeb",
-          "range_span_pct": 3.8,
-          "flags": [
-            "Moderate range expansion (3.8%)"
-          ]
-        },
-        "pivot_points": {
-          "pivot": 267.03,
-          "r1": 273.52,
-          "s1": 263.52,
-          "r2": 277.03,
-          "s2": 257.03,
-          "r3": 283.52,
-          "s3": 253.52,
-          "r4": 293.52,
-          "s4": 243.52,
-          "high": 270.55,
-          "low": 260.55,
-          "close": 270.0,
-          "bias": "BEARISH",
-          "zone": "S1-P",
-          "nearest_level": "S1",
-          "nearest_level_price": 263.52,
-          "distance_to_pivot_pct": -0.91
-        },
-        "options_current": {
-          "expiry": "1477578600",
-          "strike": 265.0,
-          "CE": {
-            "price": "2.25",
-            "token": "130380",
-            "trading_symbol": "TMPV26OCT265CE",
-            "lot_size": "1600"
-          },
-          "PE": {
-            "price": "3.75",
-            "token": "130381",
-            "trading_symbol": "TMPV26OCT265PE",
-            "lot_size": "1600"
-          }
-        }
       }
     ]
   },
@@ -1850,37 +1851,38 @@
       "symbol": "HINDALCO",
       "company_name": "Hindalco Industries",
       "spot": 869.85,
-      "futures_current": 870.0,
+      "futures_current": 866.95,
       "lot_size": "700",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 27615000.0,
       "previous_day_oi": 27615000.0,
       "intraday": {
-        "buy_score": 19.5,
-        "sell_score": 56.5,
+        "buy_score": 17.0,
+        "sell_score": 61.5,
         "signal": "SELL",
-        "confidence": 74.3,
+        "confidence": 81.1,
         "factors": [
           "Trading below Central Pivot (Rs.870.5)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.43% drag)",
+          "Underperforming NIFTY (-1.45% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.43,
+        "relative_strength": -1.45,
         "range_pos_pct": 82.1,
-        "basis_pct": 0.02,
+        "basis_pct": -0.33,
         "call_put_ratio": 0.85
       },
       "short_term": {
-        "buy_score": 37.1,
-        "sell_score": 55.7,
+        "buy_score": 27.1,
+        "sell_score": 65.7,
         "signal": "SELL",
-        "confidence": 57.7,
+        "confidence": 82.7,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles"
+          "Continuous Short buildup across cycles",
+          "Persistent futures backwardation discount (-0.33% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 70.0,
@@ -1956,9 +1958,9 @@
           "Breakout above Pivot R1 (Rs.2,306.9)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+1.32% alpha)"
+          "Outperforming NIFTY (+1.30% alpha)"
         ],
-        "relative_strength": 1.32,
+        "relative_strength": 1.3,
         "range_pos_pct": 100.0,
         "basis_pct": -0.22,
         "call_put_ratio": 0.72
@@ -2046,9 +2048,9 @@
         "factors": [
           "Trading above Central Pivot (Rs.1,474.6)",
           "Trading near session highs (100% of range)",
-          "Outperforming NIFTY (+0.79% alpha)"
+          "Outperforming NIFTY (+0.77% alpha)"
         ],
-        "relative_strength": 0.79,
+        "relative_strength": 0.77,
         "range_pos_pct": 100.0,
         "basis_pct": -1.35,
         "call_put_ratio": 0.85
@@ -2122,40 +2124,40 @@
       "symbol": "ATHERENERG",
       "company_name": "Ather Energy",
       "spot": 1380.0,
-      "futures_current": 1375.0,
+      "futures_current": 1367.1,
       "lot_size": "375",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 3495750.0,
+      "current_oi": 2071500.0,
       "previous_day_oi": 3495750.0,
       "intraday": {
-        "buy_score": 7.5,
-        "sell_score": 72.0,
+        "buy_score": 11.5,
+        "sell_score": 74.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Trading below Central Pivot (Rs.1,408.2)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.83% drag)",
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-2.85% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.83,
+        "relative_strength": -2.85,
         "range_pos_pct": 27.0,
-        "basis_pct": -0.36,
+        "basis_pct": -0.93,
         "call_put_ratio": 1.15
       },
       "short_term": {
         "buy_score": 29.5,
-        "sell_score": 68.2,
+        "sell_score": 63.1,
         "signal": "SELL",
-        "confidence": 75.8,
+        "confidence": 64.2,
         "factors": [
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Weak balance sheet / fundamental vulnerability (Q: 33)",
-          "Persistent futures backwardation discount (-0.36% basis)"
+          "Persistent futures backwardation discount (-0.93% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -40.7,
         "mc_total": 53.0,
         "mc_q": 33.0,
         "mc_g": 71.0,
@@ -2227,10 +2229,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.5,097.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.23% drag)",
+          "Underperforming NIFTY (-1.25% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.23,
+        "relative_strength": -1.25,
         "range_pos_pct": 30.0,
         "basis_pct": 0.1,
         "call_put_ratio": 1.08
@@ -2316,10 +2318,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.26,393.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.37% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.39% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.37,
+        "relative_strength": -2.39,
         "range_pos_pct": 67.4,
         "basis_pct": -0.19,
         "call_put_ratio": 0.54
@@ -2393,7 +2395,7 @@
       "symbol": "TATASTEEL",
       "company_name": "Tata Steel",
       "spot": 167.67,
-      "futures_current": 167.1,
+      "futures_current": 167.0,
       "lot_size": "2750",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -2407,12 +2409,12 @@
         "factors": [
           "Trading below Central Pivot (Rs.169.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.35% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.37% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.35,
+        "relative_strength": -2.37,
         "range_pos_pct": 52.2,
-        "basis_pct": -0.34,
+        "basis_pct": -0.4,
         "call_put_ratio": 0.75
       },
       "short_term": {
@@ -2424,7 +2426,7 @@
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
           "Elevated valuation multiples / high derating risk (Val: 35)",
-          "Persistent futures backwardation discount (-0.34% basis)"
+          "Persistent futures backwardation discount (-0.40% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 62.0,
@@ -2500,7 +2502,7 @@
           "Trading near session highs (83% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": -0.29,
+        "relative_strength": -0.31,
         "range_pos_pct": 83.2,
         "basis_pct": 0.02,
         "call_put_ratio": 1.0
@@ -2588,10 +2590,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.9,060.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.96% drag)",
+          "Severe Relative Weakness vs NIFTY (-1.98% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.96,
+        "relative_strength": -1.98,
         "range_pos_pct": 31.8,
         "basis_pct": -0.46,
         "call_put_ratio": 1.0
@@ -2681,7 +2683,7 @@
           "Futures carry premium (+1.14% basis)",
           "Call option premium skew (CE > PE)"
         ],
-        "relative_strength": -0.78,
+        "relative_strength": -0.8,
         "range_pos_pct": 55.9,
         "basis_pct": 1.14,
         "call_put_ratio": 1.28
@@ -2770,7 +2772,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.67,
+        "relative_strength": -0.69,
         "range_pos_pct": 38.7,
         "basis_pct": 0.16,
         "call_put_ratio": 0.6
@@ -2858,10 +2860,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,393.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.27% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.29% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.27,
+        "relative_strength": -2.29,
         "range_pos_pct": 37.6,
         "basis_pct": -0.01,
         "call_put_ratio": 0.62
@@ -2950,9 +2952,9 @@
           "Breakdown below Pivot S1 (Rs.493.7)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.04% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.06% drag)"
         ],
-        "relative_strength": -2.04,
+        "relative_strength": -2.06,
         "range_pos_pct": 0.0,
         "basis_pct": 1.01,
         "call_put_ratio": 8.86
@@ -3041,7 +3043,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.79% basis)"
         ],
-        "relative_strength": -0.38,
+        "relative_strength": -0.4,
         "range_pos_pct": 76.6,
         "basis_pct": -0.79,
         "call_put_ratio": 1.0
@@ -3129,10 +3131,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,180.9)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.90% drag)",
+          "Underperforming NIFTY (-0.92% drag)",
           "Futures backwardation discount (-0.50% basis)"
         ],
-        "relative_strength": -0.9,
+        "relative_strength": -0.92,
         "range_pos_pct": 46.3,
         "basis_pct": -0.5,
         "call_put_ratio": 0.6
@@ -3206,37 +3208,38 @@
       "symbol": "CDSL",
       "company_name": "Central Depository Services",
       "spot": 1188.5,
-      "futures_current": 1188.5,
+      "futures_current": 1185.0,
       "lot_size": "475",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 7989500.0,
       "previous_day_oi": 7989500.0,
       "intraday": {
-        "buy_score": 9.5,
-        "sell_score": 72.5,
+        "buy_score": 7.0,
+        "sell_score": 75.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,192.2)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.63% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.65% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.63,
+        "relative_strength": -2.65,
         "range_pos_pct": 26.3,
-        "basis_pct": 0.0,
+        "basis_pct": -0.29,
         "call_put_ratio": 1.81
       },
       "short_term": {
-        "buy_score": 27.9,
-        "sell_score": 62.5,
-        "signal": "SELL",
-        "confidence": 72.1,
+        "buy_score": 22.9,
+        "sell_score": 72.5,
+        "signal": "STRONG SELL",
+        "confidence": 92.6,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles"
+          "Continuous Short buildup across cycles",
+          "Persistent futures backwardation discount (-0.29% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 56.0,
@@ -3313,7 +3316,7 @@
           "Futures backwardation discount (-0.46% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.39,
+        "relative_strength": -0.41,
         "range_pos_pct": 60.1,
         "basis_pct": -0.46,
         "call_put_ratio": 0.36
@@ -3404,7 +3407,7 @@
           "Futures backwardation discount (-0.71% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": 0.17,
+        "relative_strength": 0.15,
         "range_pos_pct": 70.2,
         "basis_pct": -0.71,
         "call_put_ratio": 0.42
@@ -3493,10 +3496,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.858.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.87% drag)",
+          "Underperforming NIFTY (-0.89% drag)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.87,
+        "relative_strength": -0.89,
         "range_pos_pct": 43.0,
         "basis_pct": 0.32,
         "call_put_ratio": 0.47
@@ -3584,10 +3587,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.936.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.05% drag)",
+          "Underperforming NIFTY (-1.07% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.05,
+        "relative_strength": -1.07,
         "range_pos_pct": 33.2,
         "basis_pct": -0.32,
         "call_put_ratio": 0.55
@@ -3676,9 +3679,9 @@
           "Breakdown below Pivot S1 (Rs.1,684.3)",
           "Trading right at session lows (3% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.01% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.03% drag)"
         ],
-        "relative_strength": -3.01,
+        "relative_strength": -3.03,
         "range_pos_pct": 3.1,
         "basis_pct": -0.46,
         "call_put_ratio": 1.5
@@ -3752,40 +3755,40 @@
       "symbol": "BEL",
       "company_name": "Bharat Electronics",
       "spot": 362.0,
-      "futures_current": 359.95,
+      "futures_current": 359.2,
       "lot_size": "1425",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 54211275.0,
+      "current_oi": 37354950.0,
       "previous_day_oi": 54211275.0,
       "intraday": {
-        "buy_score": 17.0,
-        "sell_score": 58.0,
+        "buy_score": 21.0,
+        "sell_score": 60.0,
         "signal": "SELL",
-        "confidence": 70.9,
+        "confidence": 69.1,
         "factors": [
           "Trading below Central Pivot (Rs.362.4)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Futures backwardation discount (-0.57% basis)",
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Futures backwardation discount (-0.77% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.34,
+        "relative_strength": -0.36,
         "range_pos_pct": 56.4,
-        "basis_pct": -0.57,
+        "basis_pct": -0.77,
         "call_put_ratio": 0.77
       },
       "short_term": {
         "buy_score": 27.3,
-        "sell_score": 71.8,
-        "signal": "STRONG SELL",
-        "confidence": 88.1,
+        "sell_score": 66.8,
+        "signal": "SELL",
+        "confidence": 76.6,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.57% basis)"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-0.77% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -31.1,
         "mc_total": 74.0,
         "mc_q": 90.0,
         "mc_g": 83.0,
@@ -3844,7 +3847,7 @@
       "symbol": "CGPOWER",
       "company_name": "CG Power and Industrial Solutions",
       "spot": 813.35,
-      "futures_current": 816.0,
+      "futures_current": 825.45,
       "lot_size": "850",
       "signal": "LONG",
       "last_signal": "LONG",
@@ -3859,23 +3862,22 @@
           "Trading above Central Pivot (Rs.798.6)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Futures carry premium (+0.33% basis)"
+          "Futures carry premium (+1.49% basis)"
         ],
-        "relative_strength": -0.11,
+        "relative_strength": -0.13,
         "range_pos_pct": 100.0,
-        "basis_pct": 0.33,
+        "basis_pct": 1.49,
         "call_put_ratio": 1.15
       },
       "short_term": {
-        "buy_score": 71.6,
+        "buy_score": 66.6,
         "sell_score": 31.3,
-        "signal": "STRONG BUY",
-        "confidence": 84.3,
+        "signal": "BUY",
+        "confidence": 72.8,
         "factors": [
           "Multi-day price base above Floor Pivot",
           "Persistent Long buildup across cycles",
-          "Superior Quality & Growth profile (Q: 90, G: 94)",
-          "Healthy futures carry contango (+0.33% premium)"
+          "Superior Quality & Growth profile (Q: 90, G: 94)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 75.0,
@@ -3886,13 +3888,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 4.4,
         "flags": [
-          "Moderate range expansion (4.4%)"
+          "Moderate range expansion (4.4%)",
+          "Elevated futures basis dislocation (+1.49%)"
         ]
       },
       "pivot_points": {
@@ -3951,7 +3954,7 @@
           "Futures backwardation discount (-0.41% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.46,
+        "relative_strength": -0.48,
         "range_pos_pct": 65.8,
         "basis_pct": -0.41,
         "call_put_ratio": 0.78
@@ -4039,10 +4042,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,984.4)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.27% drag)",
+          "Underperforming NIFTY (-1.29% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.27,
+        "relative_strength": -1.29,
         "range_pos_pct": 42.3,
         "basis_pct": -0.29,
         "call_put_ratio": 1.26
@@ -4116,7 +4119,7 @@
       "symbol": "JSWSTEEL",
       "company_name": "JSW Steel",
       "spot": 1185.5,
-      "futures_current": 1186.5,
+      "futures_current": 1197.0,
       "lot_size": "675",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -4131,11 +4134,11 @@
           "Breakdown below Pivot S1 (Rs.1,200.0)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.48% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.50% drag)"
         ],
-        "relative_strength": -2.48,
+        "relative_strength": -2.5,
         "range_pos_pct": 0.0,
-        "basis_pct": 0.08,
+        "basis_pct": 0.97,
         "call_put_ratio": 0.7
       },
       "short_term": {
@@ -4222,9 +4225,9 @@
           "Breakdown below Pivot S1 (Rs.1,361.2)",
           "Trading right at session lows (7% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.78% drag)"
+          "Severe Relative Weakness vs NIFTY (-1.80% drag)"
         ],
-        "relative_strength": -1.78,
+        "relative_strength": -1.8,
         "range_pos_pct": 7.2,
         "basis_pct": -0.25,
         "call_put_ratio": 0.81
@@ -4314,7 +4317,7 @@
           "Futures backwardation discount (-0.27% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": 0.2,
+        "relative_strength": 0.18,
         "range_pos_pct": 53.7,
         "basis_pct": -0.27,
         "call_put_ratio": 0.29
@@ -4389,7 +4392,7 @@
       "symbol": "HCLTECH",
       "company_name": "HCL Technologies",
       "spot": 1422.2,
-      "futures_current": 1411.8,
+      "futures_current": 1394.0,
       "lot_size": "400",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -4404,11 +4407,11 @@
           "Trading below Central Pivot (Rs.1,436.9)",
           "Trading right at session lows (2% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Futures backwardation discount (-0.73% basis)"
+          "Futures backwardation discount (-1.98% basis)"
         ],
-        "relative_strength": 0.39,
+        "relative_strength": 0.37,
         "range_pos_pct": 1.5,
-        "basis_pct": -0.73,
+        "basis_pct": -1.98,
         "call_put_ratio": 0.77
       },
       "short_term": {
@@ -4419,7 +4422,7 @@
         "factors": [
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.73% basis)"
+          "Persistent futures backwardation discount (-1.98% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 75.0,
@@ -4430,13 +4433,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock at Reasonable Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 3.2,
         "flags": [
-          "Moderate range expansion (3.2%)"
+          "Moderate range expansion (3.2%)",
+          "Elevated futures basis dislocation (-1.98%)"
         ]
       },
       "pivot_points": {
@@ -4494,9 +4498,9 @@
           "Breakdown below Pivot S1 (Rs.1,208.2)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.84% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.86% drag)"
         ],
-        "relative_strength": -4.84,
+        "relative_strength": -4.86,
         "range_pos_pct": 0.0,
         "basis_pct": 0.2,
         "call_put_ratio": 1.34
@@ -4586,7 +4590,7 @@
           "Futures backwardation discount (-1.07% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.1,
+        "relative_strength": -0.12,
         "range_pos_pct": 76.5,
         "basis_pct": -1.07,
         "call_put_ratio": 0.17
@@ -4675,7 +4679,7 @@
           "Trading below Central Pivot (Rs.258.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.04,
+        "relative_strength": -0.06,
         "range_pos_pct": 56.4,
         "basis_pct": 0.02,
         "call_put_ratio": 1.03
@@ -4766,7 +4770,7 @@
           "Futures backwardation discount (-0.21% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.69,
+        "relative_strength": -0.71,
         "range_pos_pct": 54.1,
         "basis_pct": -0.21,
         "call_put_ratio": 0.62
@@ -4855,9 +4859,9 @@
           "Breakout above Pivot R1 (Rs.226.3)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+1.46% alpha)"
+          "Outperforming NIFTY (+1.44% alpha)"
         ],
-        "relative_strength": 1.46,
+        "relative_strength": 1.44,
         "range_pos_pct": 100.0,
         "basis_pct": -0.87,
         "call_put_ratio": 0.25
@@ -4931,40 +4935,40 @@
       "symbol": "OFSS",
       "company_name": "Oracle Financial Services Software",
       "spot": 9677.0,
-      "futures_current": 9672.0,
+      "futures_current": 9540.0,
       "lot_size": "100",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 752300.0,
+      "current_oi": 534200.0,
       "previous_day_oi": 752300.0,
       "intraday": {
-        "buy_score": 5.0,
-        "sell_score": 73.5,
+        "buy_score": 9.0,
+        "sell_score": 75.5,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Trading below Central Pivot (Rs.9,822.7)",
           "Trading right at session lows (21% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.34% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Underperforming NIFTY (-1.36% drag)"
         ],
-        "relative_strength": -1.34,
+        "relative_strength": -1.36,
         "range_pos_pct": 21.5,
-        "basis_pct": -0.05,
+        "basis_pct": -1.42,
         "call_put_ratio": 0.83
       },
       "short_term": {
-        "buy_score": 29.4,
+        "buy_score": 24.4,
         "sell_score": 71.8,
         "signal": "STRONG SELL",
-        "confidence": 86.2,
+        "confidence": 90.7,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 35)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -29.0,
         "mc_total": 64.0,
         "mc_q": 67.0,
         "mc_g": 94.0,
@@ -4973,13 +4977,14 @@
         "oneliner": "Average Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 5.0,
         "flags": [
-          "Moderate range expansion (5.0%)"
+          "Moderate range expansion (5.0%)",
+          "Elevated futures basis dislocation (-1.42%)"
         ]
       },
       "pivot_points": {
@@ -5022,7 +5027,7 @@
       "symbol": "RELIANCE",
       "company_name": "Reliance Industries",
       "spot": 1190.0,
-      "futures_current": 1188.7,
+      "futures_current": 1189.0,
       "lot_size": "500",
       "signal": "LONG",
       "last_signal": "LONG",
@@ -5036,18 +5041,18 @@
         "factors": [
           "Trading above Central Pivot (Rs.1,183.2)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+0.81% alpha)"
+          "Outperforming NIFTY (+0.79% alpha)"
         ],
-        "relative_strength": 0.81,
+        "relative_strength": 0.79,
         "range_pos_pct": 69.3,
-        "basis_pct": -0.11,
+        "basis_pct": -0.08,
         "call_put_ratio": 0.71
       },
       "short_term": {
-        "buy_score": 53.0,
+        "buy_score": 58.0,
         "sell_score": 42.0,
-        "signal": "NEUTRAL",
-        "confidence": 50.9,
+        "signal": "BUY",
+        "confidence": 55.4,
         "factors": [
           "Multi-day price base above Floor Pivot",
           "Persistent Long buildup across cycles",
@@ -5126,10 +5131,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.4,306.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.81% drag)",
+          "Underperforming NIFTY (-0.83% drag)",
           "Futures backwardation discount (-0.42% basis)"
         ],
-        "relative_strength": -0.81,
+        "relative_strength": -0.83,
         "range_pos_pct": 61.3,
         "basis_pct": -0.42,
         "call_put_ratio": 0.33
@@ -5217,10 +5222,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.3,259.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.67% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.69% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.67,
+        "relative_strength": -3.69,
         "range_pos_pct": 28.9,
         "basis_pct": -0.01,
         "call_put_ratio": 0.85
@@ -5294,7 +5299,7 @@
       "symbol": "DRREDDY",
       "company_name": "Dr Reddys Laboratories",
       "spot": 1229.5,
-      "futures_current": 1234.0,
+      "futures_current": 1255.0,
       "lot_size": "625",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -5310,21 +5315,21 @@
           "Trading right at session lows (13% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.42,
+        "relative_strength": -0.44,
         "range_pos_pct": 12.8,
-        "basis_pct": 0.37,
+        "basis_pct": 2.07,
         "call_put_ratio": 1.06
       },
       "short_term": {
-        "buy_score": 55.0,
+        "buy_score": 50.0,
         "sell_score": 36.4,
-        "signal": "BUY",
-        "confidence": 57.7,
+        "signal": "NEUTRAL",
+        "confidence": 46.2,
         "factors": [
           "Strong structural technical posture (Tech: 80/100)",
           "Superior Quality & Growth profile (Q: 100, G: 69)",
           "Favorable valuation margin of safety (Val: 76)",
-          "Healthy futures carry contango (+0.37% premium)"
+          "Substantial hurdle-free runway to R2 (+2.7%)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 84.0,
@@ -5335,14 +5340,13 @@
         "oneliner": "Superior Financial Strength, Average Growth Trend Stock at Attractive Valuations"
       },
       "risk": {
-        "level": "LOW",
-        "score": 5,
-        "badge_color": "#15803d",
-        "bg_color": "#f0fdf4",
+        "level": "MODERATE",
+        "score": 25,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 2.0,
         "flags": [
-          "Normal trading volatility within standard pivot boundaries",
-          "Healthy basis and orderly flow"
+          "Elevated futures basis dislocation (+2.07%)"
         ]
       },
       "pivot_points": {
@@ -5399,10 +5403,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.6,105.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.49% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.51% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.49,
+        "relative_strength": -2.51,
         "range_pos_pct": 29.6,
         "basis_pct": 0.48,
         "call_put_ratio": 1.36
@@ -5490,10 +5494,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.299.5)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.17% drag)",
+          "Underperforming NIFTY (-1.19% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.17,
+        "relative_strength": -1.19,
         "range_pos_pct": 51.0,
         "basis_pct": -0.45,
         "call_put_ratio": 0.62
@@ -5582,9 +5586,9 @@
           "Breakdown below Pivot S1 (Rs.179.9)",
           "Trading right at session lows (2% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.81% drag)"
+          "Severe Relative Weakness vs NIFTY (-1.83% drag)"
         ],
-        "relative_strength": -1.81,
+        "relative_strength": -1.83,
         "range_pos_pct": 2.1,
         "basis_pct": -0.34,
         "call_put_ratio": 0.39
@@ -5673,7 +5677,7 @@
           "Trading below Central Pivot (Rs.149.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": 0.03,
+        "relative_strength": 0.01,
         "range_pos_pct": 50.0,
         "basis_pct": 0.0,
         "call_put_ratio": 1.0
@@ -5747,26 +5751,26 @@
       "symbol": "AUBANK",
       "company_name": "AU Small Finance Bank",
       "spot": 932.9,
-      "futures_current": 931.9,
+      "futures_current": 896.5,
       "lot_size": "1000",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 14610000.0,
+      "current_oi": 8087000.0,
       "previous_day_oi": 14610000.0,
       "intraday": {
-        "buy_score": 7.5,
-        "sell_score": 72.0,
+        "buy_score": 11.5,
+        "sell_score": 74.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Trading below Central Pivot (Rs.943.2)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.85% drag)",
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-1.87% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.85,
+        "relative_strength": -1.87,
         "range_pos_pct": 35.5,
-        "basis_pct": -0.11,
+        "basis_pct": -3.9,
         "call_put_ratio": 1.18
       },
       "short_term": {
@@ -5777,10 +5781,10 @@
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 24)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -44.6,
         "mc_total": 63.0,
         "mc_q": 76.0,
         "mc_g": 86.0,
@@ -5789,13 +5793,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 3.7,
         "flags": [
-          "Moderate range expansion (3.7%)"
+          "Moderate range expansion (3.7%)",
+          "Elevated futures basis dislocation (-3.90%)"
         ]
       },
       "pivot_points": {
@@ -5853,9 +5858,9 @@
           "Breakdown below Pivot S1 (Rs.11,306.3)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.13% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.15% drag)"
         ],
-        "relative_strength": -3.13,
+        "relative_strength": -3.15,
         "range_pos_pct": 0.0,
         "basis_pct": 0.37,
         "call_put_ratio": 0.72
@@ -5942,10 +5947,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.384.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.20% drag)",
+          "Underperforming NIFTY (-1.22% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.2,
+        "relative_strength": -1.22,
         "range_pos_pct": 35.6,
         "basis_pct": -0.42,
         "call_put_ratio": 1.22
@@ -6019,40 +6024,39 @@
       "symbol": "SBIN",
       "company_name": "State Bank of India",
       "spot": 958.6,
-      "futures_current": 957.8,
+      "futures_current": 961.7,
       "lot_size": "750",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 68579250.0,
+      "current_oi": 38411250.0,
       "previous_day_oi": 68579250.0,
       "intraday": {
-        "buy_score": 8.0,
-        "sell_score": 68.0,
-        "signal": "SELL",
-        "confidence": 86.0,
+        "buy_score": 33.0,
+        "sell_score": 49.0,
+        "signal": "NEUTRAL",
+        "confidence": 48.4,
         "factors": [
           "Trading below Central Pivot (Rs.963.8)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.83% drag)",
-          "Futures backwardation discount (-0.08% basis)"
+          "Underperforming NIFTY (-0.85% drag)",
+          "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.83,
+        "relative_strength": -0.85,
         "range_pos_pct": 40.3,
-        "basis_pct": -0.08,
+        "basis_pct": 0.32,
         "call_put_ratio": 0.61
       },
       "short_term": {
-        "buy_score": 28.6,
-        "sell_score": 67.3,
-        "signal": "SELL",
-        "confidence": 82.8,
+        "buy_score": 50.6,
+        "sell_score": 40.3,
+        "signal": "NEUTRAL",
+        "confidence": 43.3,
         "factors": [
-          "Deteriorating structural chart trend (Tech: 20/100)",
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Elevated valuation multiples / high derating risk (Val: 24)"
+          "Heavy short squeeze unwinding prior bears",
+          "Superior Quality & Growth profile (Q: 81, G: 80)",
+          "Healthy futures carry contango (+0.32% premium)",
+          "Substantial hurdle-free runway to R2 (+2.8%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -44.0,
         "mc_total": 63.0,
         "mc_q": 81.0,
         "mc_g": 80.0,
@@ -6111,38 +6115,37 @@
       "symbol": "INFY",
       "company_name": "Infosys",
       "spot": 1153.8,
-      "futures_current": 1137.0,
+      "futures_current": 1125.0,
       "lot_size": "400",
-      "signal": "LONG",
+      "signal": "UNWIND",
       "last_signal": "LONG",
-      "current_oi": 69268800.0,
+      "current_oi": 60238800.0,
       "previous_day_oi": 69268800.0,
       "intraday": {
-        "buy_score": 53.0,
-        "sell_score": 19.0,
+        "buy_score": 39.0,
+        "sell_score": 39.0,
         "signal": "NEUTRAL",
-        "confidence": 64.6,
+        "confidence": 27.0,
         "factors": [
-          "Trading above Central Pivot (Rs.1,129.7)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)"
+          "Trading above Central Pivot (Rs.1,129.7)"
         ],
-        "relative_strength": 0.39,
+        "relative_strength": 0.37,
         "range_pos_pct": 72.5,
-        "basis_pct": -1.46,
+        "basis_pct": -2.5,
         "call_put_ratio": 0.58
       },
       "short_term": {
-        "buy_score": 57.4,
-        "sell_score": 39.9,
-        "signal": "BUY",
-        "confidence": 56.8,
+        "buy_score": 40.4,
+        "sell_score": 51.9,
+        "signal": "NEUTRAL",
+        "confidence": 44.4,
         "factors": [
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles",
-          "Superior Quality & Growth profile (Q: 71, G: 86)",
-          "Favorable valuation margin of safety (Val: 82)"
+          "Deteriorating structural chart trend (Tech: 20/100)",
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-2.50% basis)",
+          "Significant downside room to S2 support (-15.9%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -13.0,
         "mc_total": 73.0,
         "mc_q": 71.0,
         "mc_g": 86.0,
@@ -6151,14 +6154,15 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock at Attractive Valuations"
       },
       "risk": {
-        "level": "ELEVATED",
-        "score": 55,
-        "badge_color": "#c2410c",
-        "bg_color": "#fff7ed",
+        "level": "HIGH",
+        "score": 75,
+        "badge_color": "#991b1b",
+        "bg_color": "#fef2f2",
         "range_span_pct": 15.4,
         "flags": [
           "High intraday volatility (15.4% daily range)",
-          "Elevated futures basis dislocation (-1.46%)"
+          "Elevated futures basis dislocation (-2.50%)",
+          "Conflicting multi-factor indicators (low confidence)"
         ]
       },
       "pivot_points": {
@@ -6201,33 +6205,32 @@
       "symbol": "TIINDIA",
       "company_name": "Tube Investments of India Ltd",
       "spot": 2080.0,
-      "futures_current": 2108.3,
+      "futures_current": 2073.0,
       "lot_size": "200",
       "signal": "LONG",
       "last_signal": "LONG",
       "current_oi": 3082000.0,
       "previous_day_oi": 3082000.0,
       "intraday": {
-        "buy_score": 56.0,
-        "sell_score": 20.0,
-        "signal": "BUY",
-        "confidence": 66.4,
+        "buy_score": 51.0,
+        "sell_score": 25.0,
+        "signal": "NEUTRAL",
+        "confidence": 57.4,
         "factors": [
           "Trading above Central Pivot (Rs.2,064.4)",
           "Trading near session highs (90% of range)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Futures carry premium (+1.36% basis)"
+          "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": -0.6,
+        "relative_strength": -0.62,
         "range_pos_pct": 90.3,
-        "basis_pct": 1.36,
+        "basis_pct": -0.34,
         "call_put_ratio": 0.35
       },
       "short_term": {
-        "buy_score": 64.1,
-        "sell_score": 38.5,
-        "signal": "BUY",
-        "confidence": 64.0,
+        "buy_score": 54.1,
+        "sell_score": 53.5,
+        "signal": "NEUTRAL",
+        "confidence": 41.5,
         "factors": [
           "Multi-day price base above Floor Pivot",
           "Persistent Long buildup across cycles",
@@ -6243,14 +6246,13 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "ELEVATED",
-        "score": 40,
-        "badge_color": "#c2410c",
-        "bg_color": "#fff7ed",
+        "level": "MODERATE",
+        "score": 20,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 4.1,
         "flags": [
-          "Moderate range expansion (4.1%)",
-          "Elevated futures basis dislocation (+1.36%)"
+          "Moderate range expansion (4.1%)"
         ]
       },
       "pivot_points": {
@@ -6308,9 +6310,9 @@
           "Trading below Central Pivot (Rs.45.4)",
           "Trading right at session lows (9% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.32% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.34% drag)"
         ],
-        "relative_strength": -2.32,
+        "relative_strength": -2.34,
         "range_pos_pct": 9.0,
         "basis_pct": -1.65,
         "call_put_ratio": 0.96
@@ -6385,40 +6387,40 @@
       "symbol": "VBL",
       "company_name": "Varun Beverages",
       "spot": 395.1,
-      "futures_current": 392.75,
+      "futures_current": 394.95,
       "lot_size": "1275",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 44920800.0,
+      "current_oi": 31274475.0,
       "previous_day_oi": 44920800.0,
       "intraday": {
-        "buy_score": 8.0,
-        "sell_score": 67.0,
-        "signal": "SELL",
-        "confidence": 86.0,
+        "buy_score": 28.0,
+        "sell_score": 50.5,
+        "signal": "NEUTRAL",
+        "confidence": 54.2,
         "factors": [
           "Trading below Central Pivot (Rs.397.5)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.07% drag)",
-          "Dragging down despite buoyant market"
+          "Underperforming NIFTY (-1.09% drag)",
+          "Dragging down despite buoyant market",
+          "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -1.07,
+        "relative_strength": -1.09,
         "range_pos_pct": 45.5,
-        "basis_pct": -0.59,
+        "basis_pct": -0.04,
         "call_put_ratio": 0.47
       },
       "short_term": {
-        "buy_score": 37.2,
-        "sell_score": 63.9,
-        "signal": "SELL",
-        "confidence": 72.0,
+        "buy_score": 54.2,
+        "sell_score": 41.9,
+        "signal": "NEUTRAL",
+        "confidence": 45.1,
         "factors": [
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Elevated valuation multiples / high derating risk (Val: 35)",
-          "Persistent futures backwardation discount (-0.59% basis)"
+          "Strong structural technical posture (Tech: 80/100)",
+          "Heavy short squeeze unwinding prior bears",
+          "Superior Quality & Growth profile (Q: 90, G: 94)",
+          "Substantial hurdle-free runway to R2 (+4.9%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -30.4,
         "mc_total": 80.0,
         "mc_q": 90.0,
         "mc_g": 94.0,
@@ -6490,10 +6492,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.348.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.44% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.46% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.44,
+        "relative_strength": -2.46,
         "range_pos_pct": 26.9,
         "basis_pct": 0.0,
         "call_put_ratio": 1.35
@@ -6582,9 +6584,9 @@
           "Breakdown below Pivot S1 (Rs.449.2)",
           "Trading right at session lows (13% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.63% drag)"
+          "Underperforming NIFTY (-1.65% drag)"
         ],
-        "relative_strength": -1.63,
+        "relative_strength": -1.65,
         "range_pos_pct": 12.6,
         "basis_pct": -0.17,
         "call_put_ratio": 0.6
@@ -6672,10 +6674,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.195.2)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.74% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.76% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.74,
+        "relative_strength": -2.76,
         "range_pos_pct": 25.2,
         "basis_pct": -0.18,
         "call_put_ratio": 0.9
@@ -6764,9 +6766,9 @@
           "Breakdown below Pivot S1 (Rs.59.2)",
           "Trading right at session lows (23% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.77% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.79% drag)"
         ],
-        "relative_strength": -4.77,
+        "relative_strength": -4.79,
         "range_pos_pct": 23.1,
         "basis_pct": 0.12,
         "call_put_ratio": 1.04
@@ -6855,7 +6857,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.54% basis)"
         ],
-        "relative_strength": -0.13,
+        "relative_strength": -0.15,
         "range_pos_pct": 38.3,
         "basis_pct": -0.54,
         "call_put_ratio": 1.15
@@ -6945,9 +6947,9 @@
           "Trading below Central Pivot (Rs.760.8)",
           "Trading right at session lows (22% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.23% drag)"
+          "Underperforming NIFTY (-1.25% drag)"
         ],
-        "relative_strength": -1.23,
+        "relative_strength": -1.25,
         "range_pos_pct": 22.4,
         "basis_pct": -0.11,
         "call_put_ratio": 1.51
@@ -7035,10 +7037,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.349.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.18% drag)",
+          "Underperforming NIFTY (-1.20% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.18,
+        "relative_strength": -1.2,
         "range_pos_pct": 59.8,
         "basis_pct": -1.45,
         "call_put_ratio": 0.13
@@ -7113,37 +7115,38 @@
       "symbol": "GRASIM",
       "company_name": "Grasim Industries",
       "spot": 2894.0,
-      "futures_current": 2894.3,
+      "futures_current": 2864.4,
       "lot_size": "250",
-      "signal": "LONG",
+      "signal": "UNWIND",
       "last_signal": "LONG",
-      "current_oi": 3658500.0,
+      "current_oi": 2161750.0,
       "previous_day_oi": 3658500.0,
       "intraday": {
-        "buy_score": 59.5,
-        "sell_score": 14.0,
-        "signal": "BUY",
-        "confidence": 75.0,
+        "buy_score": 43.0,
+        "sell_score": 39.0,
+        "signal": "NEUTRAL",
+        "confidence": 30.6,
         "factors": [
           "Trading above Central Pivot (Rs.2,884.5)",
-          "Trading near session highs (83% of range)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)"
+          "Trading near session highs (83% of range)"
         ],
-        "relative_strength": 0.34,
+        "relative_strength": 0.32,
         "range_pos_pct": 83.2,
-        "basis_pct": 0.01,
+        "basis_pct": -1.02,
         "call_put_ratio": 0.69
       },
       "short_term": {
-        "buy_score": 59.2,
-        "sell_score": 37.6,
-        "signal": "BUY",
-        "confidence": 53.4,
+        "buy_score": 32.2,
+        "sell_score": 59.6,
+        "signal": "SELL",
+        "confidence": 58.7,
         "factors": [
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Elevated valuation multiples / high derating risk (Val: 24)",
+          "Weak balance sheet / fundamental vulnerability (Q: 19)",
+          "Persistent futures backwardation discount (-1.02% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -40.9,
         "mc_total": 42.0,
         "mc_q": 19.0,
         "mc_g": 77.0,
@@ -7152,14 +7155,13 @@
         "oneliner": "Low Financial Strength, High Growth Trend Stock Priced at Expensive Valuations"
       },
       "risk": {
-        "level": "LOW",
-        "score": 5,
-        "badge_color": "#15803d",
-        "bg_color": "#f0fdf4",
+        "level": "MODERATE",
+        "score": 25,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 1.5,
         "flags": [
-          "Normal trading volatility within standard pivot boundaries",
-          "Healthy basis and orderly flow"
+          "Conflicting multi-factor indicators (low confidence)"
         ]
       },
       "pivot_points": {
@@ -7202,7 +7204,7 @@
       "symbol": "HINDPETRO",
       "company_name": "Hindustan Petroleum Corporation",
       "spot": 338.3,
-      "futures_current": 337.0,
+      "futures_current": 333.5,
       "lot_size": "2025",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -7215,12 +7217,12 @@
         "confidence": 39.6,
         "factors": [
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Futures backwardation discount (-0.38% basis)",
+          "Futures backwardation discount (-1.42% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.38,
+        "relative_strength": -0.4,
         "range_pos_pct": 63.2,
-        "basis_pct": -0.38,
+        "basis_pct": -1.42,
         "call_put_ratio": 0.57
       },
       "short_term": {
@@ -7232,7 +7234,7 @@
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Continuous Short buildup across cycles",
           "Elevated valuation multiples / high derating risk (Val: 24)",
-          "Persistent futures backwardation discount (-0.38% basis)"
+          "Persistent futures backwardation discount (-1.42% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 58.0,
@@ -7243,13 +7245,14 @@
         "oneliner": "Superior Financial Strength, Average Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 4.4,
         "flags": [
-          "Moderate range expansion (4.4%)"
+          "Moderate range expansion (4.4%)",
+          "Elevated futures basis dislocation (-1.42%)"
         ]
       },
       "pivot_points": {
@@ -7292,40 +7295,40 @@
       "symbol": "BDL",
       "company_name": "Bharat Dynamics",
       "spot": 1017.5,
-      "futures_current": 1020.5,
+      "futures_current": 1004.8,
       "lot_size": "425",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 4038775.0,
+      "current_oi": 2999650.0,
       "previous_day_oi": 4038775.0,
       "intraday": {
-        "buy_score": 7.0,
-        "sell_score": 76.5,
+        "buy_score": 6.0,
+        "sell_score": 83.5,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,021.9)",
           "Trading right at session lows (22% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.98% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-3.00% drag)"
         ],
-        "relative_strength": -2.98,
+        "relative_strength": -3.0,
         "range_pos_pct": 21.7,
-        "basis_pct": 0.29,
+        "basis_pct": -1.25,
         "call_put_ratio": 0.84
       },
       "short_term": {
-        "buy_score": 43.1,
-        "sell_score": 49.4,
-        "signal": "NEUTRAL",
-        "confidence": 46.7,
+        "buy_score": 28.1,
+        "sell_score": 59.4,
+        "signal": "SELL",
+        "confidence": 69.2,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Significant downside room to S2 support (-2.6%)"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-1.25% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -25.7,
         "mc_total": 70.0,
         "mc_q": 100.0,
         "mc_g": 31.0,
@@ -7334,13 +7337,14 @@
         "oneliner": "Superior Financial Strength, Low Growth Trend Stock at Discounted Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 4.6,
         "flags": [
-          "Moderate range expansion (4.6%)"
+          "Moderate range expansion (4.6%)",
+          "Elevated futures basis dislocation (-1.25%)"
         ]
       },
       "pivot_points": {
@@ -7399,7 +7403,7 @@
           "Trading right at session lows (19% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.6,
+        "relative_strength": -0.62,
         "range_pos_pct": 19.1,
         "basis_pct": 0.07,
         "call_put_ratio": 1.42
@@ -7473,7 +7477,7 @@
       "symbol": "TECHM",
       "company_name": "Tech Mahindra",
       "spot": 1790.0,
-      "futures_current": 1777.9,
+      "futures_current": 1758.9,
       "lot_size": "600",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -7488,11 +7492,11 @@
           "Breakdown below Pivot S1 (Rs.1,796.9)",
           "Trading right at session lows (2% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.79% drag)"
+          "Severe Relative Weakness vs NIFTY (-1.81% drag)"
         ],
-        "relative_strength": -1.79,
+        "relative_strength": -1.81,
         "range_pos_pct": 2.3,
-        "basis_pct": -0.68,
+        "basis_pct": -1.74,
         "call_put_ratio": 1.07
       },
       "short_term": {
@@ -7515,13 +7519,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 3.1,
         "flags": [
-          "Moderate range expansion (3.1%)"
+          "Moderate range expansion (3.1%)",
+          "Elevated futures basis dislocation (-1.74%)"
         ]
       },
       "pivot_points": {
@@ -7579,9 +7584,9 @@
           "Breakdown below Pivot S1 (Rs.117.8)",
           "Trading right at session lows (2% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.60% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.62% drag)"
         ],
-        "relative_strength": -3.6,
+        "relative_strength": -3.62,
         "range_pos_pct": 2.4,
         "basis_pct": -0.15,
         "call_put_ratio": 1.0
@@ -7668,10 +7673,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,666.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.02% drag)",
+          "Underperforming NIFTY (-1.04% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.02,
+        "relative_strength": -1.04,
         "range_pos_pct": 39.6,
         "basis_pct": 0.18,
         "call_put_ratio": 0.57
@@ -7761,9 +7766,9 @@
           "Breakdown below Pivot S1 (Rs.813.9)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.80% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.82% drag)"
         ],
-        "relative_strength": -4.8,
+        "relative_strength": -4.82,
         "range_pos_pct": 0.0,
         "basis_pct": 0.13,
         "call_put_ratio": 0.9
@@ -7851,9 +7856,9 @@
           "Breakdown below Pivot S1 (Rs.348.1)",
           "Trading right at session lows (17% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.90% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.92% drag)"
         ],
-        "relative_strength": -3.9,
+        "relative_strength": -3.92,
         "range_pos_pct": 17.0,
         "basis_pct": 0.26,
         "call_put_ratio": 1.24
@@ -7941,9 +7946,9 @@
           "Breakdown below Pivot S1 (Rs.181.8)",
           "Trading right at session lows (22% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.79% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.81% drag)"
         ],
-        "relative_strength": -2.79,
+        "relative_strength": -2.81,
         "range_pos_pct": 21.6,
         "basis_pct": 0.6,
         "call_put_ratio": 0.91
@@ -8032,9 +8037,9 @@
           "Breakout above Pivot R1 (Rs.11,048.0)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+1.19% alpha)"
+          "Outperforming NIFTY (+1.17% alpha)"
         ],
-        "relative_strength": 1.19,
+        "relative_strength": 1.17,
         "range_pos_pct": 100.0,
         "basis_pct": -0.74,
         "call_put_ratio": 0.45
@@ -8124,7 +8129,7 @@
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
           "Call option premium skew (CE > PE)"
         ],
-        "relative_strength": 0.13,
+        "relative_strength": 0.11,
         "range_pos_pct": 65.5,
         "basis_pct": 0.01,
         "call_put_ratio": 1.94
@@ -8213,7 +8218,7 @@
           "Trading above Central Pivot (Rs.7,031.8)",
           "Trading near session highs (82% of range)"
         ],
-        "relative_strength": 0.09,
+        "relative_strength": 0.07,
         "range_pos_pct": 82.0,
         "basis_pct": -0.87,
         "call_put_ratio": 0.19
@@ -8303,9 +8308,9 @@
           "Breakdown below Pivot S1 (Rs.6,213.0)",
           "Trading right at session lows (19% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.67% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.69% drag)"
         ],
-        "relative_strength": -4.67,
+        "relative_strength": -4.69,
         "range_pos_pct": 19.4,
         "basis_pct": -0.03,
         "call_put_ratio": 1.45
@@ -8379,39 +8384,40 @@
       "symbol": "BRITANNIA",
       "company_name": "Britannia Industries",
       "spot": 4537.9,
-      "futures_current": 4537.9,
+      "futures_current": 4559.8,
       "lot_size": "125",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 1406375.0,
+      "current_oi": 787000.0,
       "previous_day_oi": 1406375.0,
       "intraday": {
-        "buy_score": 4.5,
-        "sell_score": 76.5,
-        "signal": "STRONG SELL",
-        "confidence": 86.0,
+        "buy_score": 27.0,
+        "sell_score": 60.0,
+        "signal": "SELL",
+        "confidence": 63.7,
         "factors": [
           "Breakdown below Pivot S1 (Rs.4,568.4)",
           "Trading right at session lows (0% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.53% drag)"
+          "Underperforming NIFTY (-1.55% drag)",
+          "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.53,
+        "relative_strength": -1.55,
         "range_pos_pct": 0.0,
-        "basis_pct": 0.0,
+        "basis_pct": 0.48,
         "call_put_ratio": 0.67
       },
       "short_term": {
-        "buy_score": 30.2,
-        "sell_score": 60.0,
-        "signal": "SELL",
-        "confidence": 67.8,
+        "buy_score": 52.2,
+        "sell_score": 38.0,
+        "signal": "NEUTRAL",
+        "confidence": 46.8,
         "factors": [
-          "Deteriorating structural chart trend (Tech: 20/100)",
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles"
+          "Heavy short squeeze unwinding prior bears",
+          "Superior Quality & Growth profile (Q: 76, G: 86)",
+          "Healthy futures carry contango (+0.48% premium)",
+          "Substantial hurdle-free runway to R2 (+3.4%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -44.0,
         "mc_total": 66.0,
         "mc_q": 76.0,
         "mc_g": 86.0,
@@ -8485,9 +8491,9 @@
           "Trading above Central Pivot (Rs.1,327.9)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+0.88% alpha)"
+          "Outperforming NIFTY (+0.86% alpha)"
         ],
-        "relative_strength": 0.88,
+        "relative_strength": 0.86,
         "range_pos_pct": 100.0,
         "basis_pct": -0.41,
         "call_put_ratio": 0.47
@@ -8575,10 +8581,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.326.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.71% drag)",
+          "Underperforming NIFTY (-1.73% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.71,
+        "relative_strength": -1.73,
         "range_pos_pct": 38.6,
         "basis_pct": 0.0,
         "call_put_ratio": 0.53
@@ -8666,10 +8672,10 @@
         "factors": [
           "Trading above Central Pivot (Rs.2,226.4)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+0.89% alpha)",
+          "Outperforming NIFTY (+0.87% alpha)",
           "Futures carry premium (+0.38% basis)"
         ],
-        "relative_strength": 0.89,
+        "relative_strength": 0.87,
         "range_pos_pct": 74.8,
         "basis_pct": 0.38,
         "call_put_ratio": 0.63
@@ -8758,9 +8764,9 @@
           "Breakdown below Pivot S1 (Rs.1,515.8)",
           "Trading right at session lows (4% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.84% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.86% drag)"
         ],
-        "relative_strength": -3.84,
+        "relative_strength": -3.86,
         "range_pos_pct": 4.3,
         "basis_pct": -0.01,
         "call_put_ratio": 1.21
@@ -8832,37 +8838,38 @@
       "symbol": "COFORGE",
       "company_name": "COFORGE",
       "spot": 1900.5,
-      "futures_current": 1900.6,
+      "futures_current": 1840.2,
       "lot_size": "475",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 9611150.0,
       "previous_day_oi": 9611150.0,
       "intraday": {
-        "buy_score": 11.5,
-        "sell_score": 59.5,
+        "buy_score": 9.0,
+        "sell_score": 64.5,
         "signal": "SELL",
-        "confidence": 77.2,
+        "confidence": 79.0,
         "factors": [
           "Trading below Central Pivot (Rs.1,931.6)",
           "Trading right at session lows (7% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)"
+          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
+          "Futures backwardation discount (-3.17% basis)"
         ],
-        "relative_strength": -0.08,
+        "relative_strength": -0.1,
         "range_pos_pct": 6.9,
-        "basis_pct": 0.01,
+        "basis_pct": -3.17,
         "call_put_ratio": 0.88
       },
       "short_term": {
-        "buy_score": 37.0,
-        "sell_score": 63.7,
-        "signal": "SELL",
-        "confidence": 65.0,
+        "buy_score": 27.0,
+        "sell_score": 73.7,
+        "signal": "STRONG SELL",
+        "confidence": 90.0,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Significant downside room to S2 support (-3.6%)"
+          "Persistent futures backwardation discount (-3.17% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 75.0,
@@ -8873,13 +8880,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock at Reasonable Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 35,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 55,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 5.2,
         "flags": [
-          "High intraday volatility (5.2% daily range)"
+          "High intraday volatility (5.2% daily range)",
+          "Elevated futures basis dislocation (-3.17%)"
         ]
       },
       "pivot_points": {
@@ -8922,7 +8930,7 @@
       "symbol": "TCS",
       "company_name": "Tata Consultancy Services",
       "spot": 2530.0,
-      "futures_current": 2529.8,
+      "futures_current": 2500.0,
       "lot_size": "225",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -8930,29 +8938,30 @@
       "previous_day_oi": 14336550.0,
       "intraday": {
         "buy_score": 29.0,
-        "sell_score": 49.5,
+        "sell_score": 52.0,
         "signal": "NEUTRAL",
-        "confidence": 52.5,
+        "confidence": 54.7,
         "factors": [
           "Trading below Central Pivot (Rs.2,555.3)",
           "Trading right at session lows (0% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)"
+          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
+          "Futures backwardation discount (-1.19% basis)"
         ],
-        "relative_strength": 1.27,
+        "relative_strength": 1.25,
         "range_pos_pct": 0.0,
-        "basis_pct": -0.01,
+        "basis_pct": -1.19,
         "call_put_ratio": 1.31
       },
       "short_term": {
-        "buy_score": 41.1,
-        "sell_score": 62.2,
+        "buy_score": 36.1,
+        "sell_score": 67.2,
         "signal": "SELL",
-        "confidence": 60.0,
+        "confidence": 76.0,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Significant downside room to S2 support (-2.6%)"
+          "Persistent futures backwardation discount (-1.19% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 80.0,
@@ -9028,7 +9037,7 @@
           "Futures backwardation discount (-0.54% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.69,
+        "relative_strength": -0.71,
         "range_pos_pct": 77.4,
         "basis_pct": -0.54,
         "call_put_ratio": 0.69
@@ -9116,10 +9125,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.966.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.96% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.98% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.96,
+        "relative_strength": -3.98,
         "range_pos_pct": 31.0,
         "basis_pct": -0.42,
         "call_put_ratio": 0.83
@@ -9207,10 +9216,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.720.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.54% drag)",
+          "Underperforming NIFTY (-1.56% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.54,
+        "relative_strength": -1.56,
         "range_pos_pct": 33.5,
         "basis_pct": -0.39,
         "call_put_ratio": 1.25
@@ -9299,9 +9308,9 @@
           "Breakdown below Pivot S1 (Rs.68.5)",
           "Trading right at session lows (8% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.34% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.36% drag)"
         ],
-        "relative_strength": -3.34,
+        "relative_strength": -3.36,
         "range_pos_pct": 8.2,
         "basis_pct": 0.59,
         "call_put_ratio": 0.93
@@ -9389,10 +9398,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,016.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.86% drag)",
+          "Severe Relative Weakness vs NIFTY (-1.88% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.86,
+        "relative_strength": -1.88,
         "range_pos_pct": 28.3,
         "basis_pct": 0.12,
         "call_put_ratio": 0.79
@@ -9480,9 +9489,9 @@
           "Trading below Central Pivot (Rs.16.0)",
           "Trading right at session lows (19% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.21% drag)"
+          "Underperforming NIFTY (-1.23% drag)"
         ],
-        "relative_strength": -1.21,
+        "relative_strength": -1.23,
         "range_pos_pct": 19.1,
         "basis_pct": -0.51,
         "call_put_ratio": 0.26
@@ -9572,9 +9581,9 @@
           "Breakdown below Pivot S1 (Rs.2,237.1)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.42% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.44% drag)"
         ],
-        "relative_strength": -2.42,
+        "relative_strength": -2.44,
         "range_pos_pct": 0.0,
         "basis_pct": 0.47,
         "call_put_ratio": 6.23
@@ -9663,10 +9672,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.2,746.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.39% drag)",
+          "Underperforming NIFTY (-1.41% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.39,
+        "relative_strength": -1.41,
         "range_pos_pct": 44.7,
         "basis_pct": 0.03,
         "call_put_ratio": 0.35
@@ -9755,9 +9764,9 @@
           "Trading above Central Pivot (Rs.1,211.1)",
           "Trading near session highs (77% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+0.80% alpha)"
+          "Outperforming NIFTY (+0.78% alpha)"
         ],
-        "relative_strength": 0.8,
+        "relative_strength": 0.78,
         "range_pos_pct": 77.0,
         "basis_pct": -0.19,
         "call_put_ratio": 0.59
@@ -9831,40 +9840,40 @@
       "symbol": "ADANIPOWER",
       "company_name": "Adani Power",
       "spot": 182.04,
-      "futures_current": 181.92,
+      "futures_current": 181.69,
       "lot_size": "3550",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 159668350.0,
+      "current_oi": 114008250.0,
       "previous_day_oi": 159668350.0,
       "intraday": {
-        "buy_score": 13.0,
-        "sell_score": 61.5,
+        "buy_score": 17.0,
+        "sell_score": 63.5,
         "signal": "SELL",
-        "confidence": 84.7,
+        "confidence": 82.8,
         "factors": [
           "Trading below Central Pivot (Rs.182.2)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.39% drag)",
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Underperforming NIFTY (-1.41% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.39,
+        "relative_strength": -1.41,
         "range_pos_pct": 63.6,
-        "basis_pct": -0.07,
+        "basis_pct": -0.19,
         "call_put_ratio": 0.81
       },
       "short_term": {
-        "buy_score": 29.6,
+        "buy_score": 24.6,
         "sell_score": 69.7,
         "signal": "SELL",
-        "confidence": 84.1,
+        "confidence": 88.6,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 35)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -28.6,
         "mc_total": 66.0,
         "mc_q": 90.0,
         "mc_g": 69.0,
@@ -9937,9 +9946,9 @@
           "Breakdown below Pivot S1 (Rs.59.1)",
           "Trading right at session lows (20% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-5.93% drag)"
+          "Severe Relative Weakness vs NIFTY (-5.95% drag)"
         ],
-        "relative_strength": -5.93,
+        "relative_strength": -5.95,
         "range_pos_pct": 20.3,
         "basis_pct": -0.17,
         "call_put_ratio": 0.99
@@ -10027,10 +10036,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.4,361.9)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.25% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.27% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.25,
+        "relative_strength": -2.27,
         "range_pos_pct": 73.4,
         "basis_pct": -0.56,
         "call_put_ratio": 0.6
@@ -10118,10 +10127,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.33,840.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.38% drag)",
+          "Underperforming NIFTY (-1.40% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.38,
+        "relative_strength": -1.4,
         "range_pos_pct": 30.3,
         "basis_pct": 0.84,
         "call_put_ratio": 0.71
@@ -10211,9 +10220,9 @@
           "Breakdown below Pivot S1 (Rs.152.4)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-5.05% drag)"
+          "Severe Relative Weakness vs NIFTY (-5.07% drag)"
         ],
-        "relative_strength": -5.05,
+        "relative_strength": -5.07,
         "range_pos_pct": 0.4,
         "basis_pct": -0.45,
         "call_put_ratio": 0.92
@@ -10302,9 +10311,9 @@
           "Breakdown below Pivot S1 (Rs.3,033.3)",
           "Trading right at session lows (23% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.65% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.67% drag)"
         ],
-        "relative_strength": -2.65,
+        "relative_strength": -2.67,
         "range_pos_pct": 22.7,
         "basis_pct": 0.07,
         "call_put_ratio": 1.6
@@ -10377,7 +10386,7 @@
       "symbol": "CHOLAFIN",
       "company_name": "Cholamandalam Investment and Finance Company",
       "spot": 1463.8,
-      "futures_current": 1456.7,
+      "futures_current": 1440.5,
       "lot_size": "625",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -10392,11 +10401,11 @@
           "Breakdown below Pivot S1 (Rs.1,491.7)",
           "Trading right at session lows (16% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.03% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.05% drag)"
         ],
-        "relative_strength": -4.03,
+        "relative_strength": -4.05,
         "range_pos_pct": 16.1,
-        "basis_pct": -0.49,
+        "basis_pct": -1.59,
         "call_put_ratio": 1.13
       },
       "short_term": {
@@ -10419,14 +10428,13 @@
         "oneliner": "Average Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "LOW",
-        "score": 5,
-        "badge_color": "#15803d",
-        "bg_color": "#f0fdf4",
+        "level": "MODERATE",
+        "score": 25,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 3.0,
         "flags": [
-          "Normal trading volatility within standard pivot boundaries",
-          "Healthy basis and orderly flow"
+          "Elevated futures basis dislocation (-1.59%)"
         ]
       },
       "pivot_points": {
@@ -10485,7 +10493,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.71,
+        "relative_strength": -0.73,
         "range_pos_pct": 49.7,
         "basis_pct": 0.11,
         "call_put_ratio": 0.69
@@ -10574,10 +10582,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.129.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.09% drag)",
+          "Underperforming NIFTY (-1.11% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.09,
+        "relative_strength": -1.11,
         "range_pos_pct": 68.0,
         "basis_pct": -0.55,
         "call_put_ratio": 0.45
@@ -10666,7 +10674,7 @@
           "Trading above Central Pivot (Rs.692.4)",
           "Call option premium skew (CE > PE)"
         ],
-        "relative_strength": 0.17,
+        "relative_strength": 0.15,
         "range_pos_pct": 64.0,
         "basis_pct": -0.09,
         "call_put_ratio": 1.4
@@ -10754,9 +10762,9 @@
           "Breakout above Pivot R1 (Rs.7,687.5)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "High Relative Outperformance vs NIFTY (+2.00% alpha)"
+          "High Relative Outperformance vs NIFTY (+1.98% alpha)"
         ],
-        "relative_strength": 2.0,
+        "relative_strength": 1.98,
         "range_pos_pct": 100.0,
         "basis_pct": -0.42,
         "call_put_ratio": 1.0
@@ -10838,17 +10846,17 @@
       "current_oi": 12333600.0,
       "previous_day_oi": 12333600.0,
       "intraday": {
-        "buy_score": 12.0,
-        "sell_score": 58.0,
+        "buy_score": 8.0,
+        "sell_score": 63.0,
         "signal": "SELL",
-        "confidence": 75.4,
+        "confidence": 86.0,
         "factors": [
           "Trading below Central Pivot (Rs.769.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Futures backwardation discount (-0.50% basis)",
-          "Put hedging demand skew (PE > CE)"
+          "Underperforming NIFTY (-0.77% drag)",
+          "Futures backwardation discount (-0.50% basis)"
         ],
-        "relative_strength": -0.75,
+        "relative_strength": -0.77,
         "range_pos_pct": 52.9,
         "basis_pct": -0.5,
         "call_put_ratio": 0.31
@@ -10923,39 +10931,39 @@
       "symbol": "VEDL",
       "company_name": "Vedanta",
       "spot": 226.5,
-      "futures_current": 224.5,
+      "futures_current": 226.0,
       "lot_size": "1150",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 41531100.0,
+      "current_oi": 22879250.0,
       "previous_day_oi": 41531100.0,
       "intraday": {
-        "buy_score": 2.0,
-        "sell_score": 80.0,
-        "signal": "STRONG SELL",
-        "confidence": 86.0,
+        "buy_score": 22.0,
+        "sell_score": 66.0,
+        "signal": "SELL",
+        "confidence": 73.6,
         "factors": [
           "Breakdown below Pivot S1 (Rs.228.3)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.21% drag)",
-          "Dragging down despite buoyant market"
+          "Severe Relative Weakness vs NIFTY (-3.23% drag)",
+          "Dragging down despite buoyant market",
+          "Futures backwardation discount (-0.22% basis)"
         ],
-        "relative_strength": -3.21,
+        "relative_strength": -3.23,
         "range_pos_pct": 34.9,
-        "basis_pct": -0.88,
+        "basis_pct": -0.22,
         "call_put_ratio": 0.79
       },
       "short_term": {
-        "buy_score": 31.3,
-        "sell_score": 58.7,
-        "signal": "SELL",
-        "confidence": 65.7,
+        "buy_score": 43.3,
+        "sell_score": 41.7,
+        "signal": "NEUTRAL",
+        "confidence": 21.4,
         "factors": [
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.88% basis)"
+          "Heavy short squeeze unwinding prior bears",
+          "Favorable valuation margin of safety (Val: 100)",
+          "Substantial hurdle-free runway to R2 (+5.3%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -44.9,
         "mc_total": 68.0,
         "mc_q": 57.0,
         "mc_g": 71.0,
@@ -11013,7 +11021,7 @@
       "symbol": "HAVELLS",
       "company_name": "Havells India",
       "spot": 1031.0,
-      "futures_current": 1027.6,
+      "futures_current": 1028.1,
       "lot_size": "500",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -11027,12 +11035,12 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,055.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.56% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.58% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.56,
+        "relative_strength": -3.58,
         "range_pos_pct": 32.0,
-        "basis_pct": -0.33,
+        "basis_pct": -0.28,
         "call_put_ratio": 0.91
       },
       "short_term": {
@@ -11044,7 +11052,7 @@
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.33% basis)"
+          "Persistent futures backwardation discount (-0.28% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 67.0,
@@ -11119,9 +11127,9 @@
           "Breakdown below Pivot S1 (Rs.294.8)",
           "Trading right at session lows (19% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.02% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.04% drag)"
         ],
-        "relative_strength": -2.02,
+        "relative_strength": -2.04,
         "range_pos_pct": 18.7,
         "basis_pct": -0.02,
         "call_put_ratio": 0.75
@@ -11208,10 +11216,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,620.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.38% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.40% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.38,
+        "relative_strength": -2.4,
         "range_pos_pct": 26.7,
         "basis_pct": -0.35,
         "call_put_ratio": 0.68
@@ -11302,7 +11310,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.18% basis)"
         ],
-        "relative_strength": 0.05,
+        "relative_strength": 0.03,
         "range_pos_pct": 1.9,
         "basis_pct": -0.18,
         "call_put_ratio": 1.02
@@ -11390,10 +11398,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.165.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.34% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.36% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.34,
+        "relative_strength": -2.36,
         "range_pos_pct": 46.9,
         "basis_pct": -0.31,
         "call_put_ratio": 0.41
@@ -11482,9 +11490,9 @@
           "Trading below Central Pivot (Rs.16,640.3)",
           "Trading right at session lows (22% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.84% drag)"
+          "Severe Relative Weakness vs NIFTY (-1.86% drag)"
         ],
-        "relative_strength": -1.84,
+        "relative_strength": -1.86,
         "range_pos_pct": 21.9,
         "basis_pct": -0.35,
         "call_put_ratio": 0.65
@@ -11558,7 +11566,7 @@
       "symbol": "HINDZINC",
       "company_name": "Hindustan Zinc",
       "spot": 496.0,
-      "futures_current": 496.7,
+      "futures_current": 497.35,
       "lot_size": "1225",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -11572,12 +11580,12 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.504.4)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.90% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.92% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.9,
+        "relative_strength": -3.92,
         "range_pos_pct": 27.1,
-        "basis_pct": 0.14,
+        "basis_pct": 0.27,
         "call_put_ratio": 0.55
       },
       "short_term": {
@@ -11588,7 +11596,7 @@
         "factors": [
           "Superior Quality & Growth profile (Q: 90, G: 91)",
           "Favorable valuation margin of safety (Val: 65)",
-          "Healthy futures carry contango (+0.14% premium)",
+          "Healthy futures carry contango (+0.27% premium)",
           "Substantial hurdle-free runway to R2 (+4.9%)"
         ],
         "oi_yest_pct": 0.0,
@@ -11666,7 +11674,7 @@
           "Futures backwardation discount (-2.03% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.42,
+        "relative_strength": -0.44,
         "range_pos_pct": 82.7,
         "basis_pct": -2.03,
         "call_put_ratio": 0.12
@@ -11757,9 +11765,9 @@
           "Breakdown below Pivot S1 (Rs.75.9)",
           "Trading right at session lows (11% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.68% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.70% drag)"
         ],
-        "relative_strength": -3.68,
+        "relative_strength": -3.7,
         "range_pos_pct": 11.4,
         "basis_pct": 0.24,
         "call_put_ratio": 1.17
@@ -11848,7 +11856,7 @@
           "Trading below Central Pivot (Rs.1,132.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.14,
+        "relative_strength": -0.16,
         "range_pos_pct": 42.0,
         "basis_pct": 0.01,
         "call_put_ratio": 0.81
@@ -11937,9 +11945,9 @@
           "Breakdown below Pivot S1 (Rs.1,616.4)",
           "Trading right at session lows (16% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.40% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.42% drag)"
         ],
-        "relative_strength": -4.4,
+        "relative_strength": -4.42,
         "range_pos_pct": 15.6,
         "basis_pct": 0.47,
         "call_put_ratio": 1.32
@@ -12029,7 +12037,7 @@
           "Futures backwardation discount (-0.55% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.52,
+        "relative_strength": -0.54,
         "range_pos_pct": 72.7,
         "basis_pct": -0.55,
         "call_put_ratio": 0.34
@@ -12117,10 +12125,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.456.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.96% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.98% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.96,
+        "relative_strength": -2.98,
         "range_pos_pct": 32.1,
         "basis_pct": -0.46,
         "call_put_ratio": 0.56
@@ -12210,7 +12218,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.17% basis)"
         ],
-        "relative_strength": 0.04,
+        "relative_strength": 0.02,
         "range_pos_pct": 47.4,
         "basis_pct": -0.17,
         "call_put_ratio": 0.9
@@ -12299,10 +12307,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.37.5)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.68% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.70% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.68,
+        "relative_strength": -2.7,
         "range_pos_pct": 26.9,
         "basis_pct": 0.43,
         "call_put_ratio": 2.38
@@ -12391,9 +12399,9 @@
           "Breakdown below Pivot S1 (Rs.101.6)",
           "Trading right at session lows (23% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.34% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.36% drag)"
         ],
-        "relative_strength": -2.34,
+        "relative_strength": -2.36,
         "range_pos_pct": 23.2,
         "basis_pct": -0.3,
         "call_put_ratio": 0.98
@@ -12483,7 +12491,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.47,
+        "relative_strength": -0.49,
         "range_pos_pct": 36.2,
         "basis_pct": 0.09,
         "call_put_ratio": 0.77
@@ -12572,9 +12580,9 @@
           "Breakdown below Pivot S1 (Rs.557.0)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.31% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.33% drag)"
         ],
-        "relative_strength": -3.31,
+        "relative_strength": -3.33,
         "range_pos_pct": 0.0,
         "basis_pct": 0.02,
         "call_put_ratio": 0.7
@@ -12662,11 +12670,11 @@
         "confidence": 45.7,
         "factors": [
           "Trading below Central Pivot (Rs.287.2)",
-          "Underperforming NIFTY (-1.06% drag)",
+          "Underperforming NIFTY (-1.08% drag)",
           "Dragging down despite buoyant market",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -1.06,
+        "relative_strength": -1.08,
         "range_pos_pct": 54.9,
         "basis_pct": 0.38,
         "call_put_ratio": 0.67
@@ -12740,38 +12748,38 @@
       "symbol": "TORNTPHARM",
       "company_name": "Torrent Pharmaceuticals",
       "spot": 4524.4,
-      "futures_current": 4482.8,
+      "futures_current": 4542.3,
       "lot_size": "125",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 2691250.0,
       "previous_day_oi": 2691250.0,
       "intraday": {
-        "buy_score": 5.0,
-        "sell_score": 69.5,
+        "buy_score": 10.0,
+        "sell_score": 64.5,
         "signal": "SELL",
         "confidence": 86.0,
         "factors": [
           "Trading below Central Pivot (Rs.4,581.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.62% drag)",
+          "Underperforming NIFTY (-1.64% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.62,
+        "relative_strength": -1.64,
         "range_pos_pct": 26.9,
-        "basis_pct": -0.92,
+        "basis_pct": 0.4,
         "call_put_ratio": 0.94
       },
       "short_term": {
-        "buy_score": 38.6,
-        "sell_score": 63.3,
-        "signal": "SELL",
-        "confidence": 70.2,
+        "buy_score": 53.6,
+        "sell_score": 48.3,
+        "signal": "NEUTRAL",
+        "confidence": 45.8,
         "factors": [
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Elevated valuation multiples / high derating risk (Val: 24)",
-          "Persistent futures backwardation discount (-0.92% basis)"
+          "Strong structural technical posture (Tech: 100/100)",
+          "Superior Quality & Growth profile (Q: 76, G: 94)",
+          "Healthy futures carry contango (+0.40% premium)",
+          "Substantial hurdle-free runway to R2 (+5.1%)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 74.0,
@@ -12831,7 +12839,7 @@
       "symbol": "LTM",
       "company_name": "LTM",
       "spot": 4134.0,
-      "futures_current": 4112.4,
+      "futures_current": 4042.5,
       "lot_size": "150",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -12846,11 +12854,11 @@
           "Breakdown below Pivot S1 (Rs.4,149.8)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.93% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.95% drag)"
         ],
-        "relative_strength": -2.93,
+        "relative_strength": -2.95,
         "range_pos_pct": 0.0,
-        "basis_pct": -0.52,
+        "basis_pct": -2.21,
         "call_put_ratio": 0.67
       },
       "short_term": {
@@ -12862,7 +12870,7 @@
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.52% basis)"
+          "Persistent futures backwardation discount (-2.21% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 68.0,
@@ -12873,13 +12881,14 @@
         "oneliner": "Superior Financial Strength, High Growth Trend Stock at Reasonable Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 35,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 55,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 5.8,
         "flags": [
-          "High intraday volatility (5.8% daily range)"
+          "High intraday volatility (5.8% daily range)",
+          "Elevated futures basis dislocation (-2.21%)"
         ]
       },
       "pivot_points": {
@@ -12922,7 +12931,7 @@
       "symbol": "ETERNAL",
       "company_name": "Eternal",
       "spot": 317.4,
-      "futures_current": 317.0,
+      "futures_current": 315.0,
       "lot_size": "2425",
       "signal": "LONG",
       "last_signal": "LONG",
@@ -12937,18 +12946,18 @@
           "Breakout above Pivot R1 (Rs.311.6)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "High Relative Outperformance vs NIFTY (+4.60% alpha)"
+          "High Relative Outperformance vs NIFTY (+4.58% alpha)"
         ],
-        "relative_strength": 4.6,
+        "relative_strength": 4.58,
         "range_pos_pct": 100.0,
-        "basis_pct": -0.13,
+        "basis_pct": -0.76,
         "call_put_ratio": 1.34
       },
       "short_term": {
         "buy_score": 61.4,
-        "sell_score": 28.1,
+        "sell_score": 33.1,
         "signal": "BUY",
-        "confidence": 78.0,
+        "confidence": 73.5,
         "factors": [
           "Strong structural technical posture (Tech: 100/100)",
           "Multi-day price base above Floor Pivot",
@@ -13030,7 +13039,7 @@
           "Futures backwardation discount (-0.52% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.56,
+        "relative_strength": -0.58,
         "range_pos_pct": 55.9,
         "basis_pct": -0.52,
         "call_put_ratio": 0.73
@@ -13120,7 +13129,7 @@
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
           "Futures carry premium (+0.07% basis)"
         ],
-        "relative_strength": 0.09,
+        "relative_strength": 0.07,
         "range_pos_pct": 73.1,
         "basis_pct": 0.07,
         "call_put_ratio": 1.21
@@ -13208,10 +13217,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.101.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.93% drag)",
+          "Severe Relative Weakness vs NIFTY (-1.95% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.93,
+        "relative_strength": -1.95,
         "range_pos_pct": 27.2,
         "basis_pct": 0.19,
         "call_put_ratio": 1.51
@@ -13299,10 +13308,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,574.9)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.08% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.10% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.08,
+        "relative_strength": -2.1,
         "range_pos_pct": 30.0,
         "basis_pct": -0.24,
         "call_put_ratio": 0.39
@@ -13390,10 +13399,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.164.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.84% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.86% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.84,
+        "relative_strength": -2.86,
         "range_pos_pct": 32.8,
         "basis_pct": -1.03,
         "call_put_ratio": 0.43
@@ -13482,9 +13491,9 @@
           "Breakdown below Pivot S1 (Rs.933.3)",
           "Trading right at session lows (16% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.89% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.91% drag)"
         ],
-        "relative_strength": -4.89,
+        "relative_strength": -4.91,
         "range_pos_pct": 16.4,
         "basis_pct": -0.3,
         "call_put_ratio": 1.56
@@ -13573,9 +13582,9 @@
           "Breakdown below Pivot S1 (Rs.2,493.7)",
           "Trading right at session lows (13% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.51% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.53% drag)"
         ],
-        "relative_strength": -2.51,
+        "relative_strength": -2.53,
         "range_pos_pct": 12.8,
         "basis_pct": 0.46,
         "call_put_ratio": 0.67
@@ -13664,9 +13673,9 @@
           "Breakdown below Pivot S1 (Rs.318.1)",
           "Trading right at session lows (9% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.98% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.00% drag)"
         ],
-        "relative_strength": -2.98,
+        "relative_strength": -3.0,
         "range_pos_pct": 8.8,
         "basis_pct": 0.08,
         "call_put_ratio": 1.21
@@ -13753,10 +13762,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.4,970.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.98% drag)",
+          "Underperforming NIFTY (-1.00% drag)",
           "Futures backwardation discount (-0.09% basis)"
         ],
-        "relative_strength": -0.98,
+        "relative_strength": -1.0,
         "range_pos_pct": 49.1,
         "basis_pct": -0.09,
         "call_put_ratio": 1.74
@@ -13844,9 +13853,9 @@
           "Breakdown below Pivot S1 (Rs.132.4)",
           "Trading right at session lows (5% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.47% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.49% drag)"
         ],
-        "relative_strength": -3.47,
+        "relative_strength": -3.49,
         "range_pos_pct": 4.7,
         "basis_pct": 0.7,
         "call_put_ratio": 1.74
@@ -13933,10 +13942,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.18,412.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.04% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.06% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.04,
+        "relative_strength": -3.06,
         "range_pos_pct": 25.7,
         "basis_pct": 0.25,
         "call_put_ratio": 1.6
@@ -14010,38 +14019,40 @@
       "symbol": "IDEA",
       "company_name": "Vodafone Idea",
       "spot": 11.36,
-      "futures_current": 11.38,
+      "futures_current": 11.34,
       "lot_size": "71475",
-      "signal": "LONG",
+      "signal": "UNWIND",
       "last_signal": "LONG",
-      "current_oi": 3981014550.0,
+      "current_oi": 2838629625.0,
       "previous_day_oi": 3981014550.0,
       "intraday": {
-        "buy_score": 41.0,
-        "sell_score": 39.0,
-        "signal": "NEUTRAL",
-        "confidence": 28.8,
+        "buy_score": 22.0,
+        "sell_score": 64.0,
+        "signal": "SELL",
+        "confidence": 78.8,
         "factors": [
-          "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Futures carry premium (+0.18% basis)",
-          "Call option premium skew (CE > PE)"
+          "Trading below Central Pivot (Rs.11.4)",
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Underperforming NIFTY (-1.14% drag)",
+          "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.12,
+        "relative_strength": -1.14,
         "range_pos_pct": 58.9,
-        "basis_pct": 0.18,
+        "basis_pct": -0.18,
         "call_put_ratio": 7.0
       },
       "short_term": {
-        "buy_score": 62.2,
-        "sell_score": 36.8,
-        "signal": "BUY",
-        "confidence": 56.9,
+        "buy_score": 30.2,
+        "sell_score": 63.8,
+        "signal": "SELL",
+        "confidence": 71.2,
         "factors": [
-          "Persistent Long buildup across cycles",
-          "Healthy futures carry contango (+0.18% premium)",
-          "Substantial hurdle-free runway to R2 (+5.1%)"
+          "Multi-day price breakdown below Floor Pivot",
+          "Exhaustion & heavy multi-day long unwinding",
+          "Elevated valuation multiples / high derating risk (Val: 35)",
+          "Persistent futures backwardation discount (-0.18% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -28.7,
         "mc_total": 62.0,
         "mc_q": 76.0,
         "mc_g": 63.0,
@@ -14050,14 +14061,13 @@
         "oneliner": "Superior Financial Strength, Average Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "ELEVATED",
-        "score": 55,
-        "badge_color": "#c2410c",
-        "bg_color": "#fff7ed",
+        "level": "MODERATE",
+        "score": 35,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 5.1,
         "flags": [
-          "High intraday volatility (5.1% daily range)",
-          "Conflicting multi-factor indicators (low confidence)"
+          "High intraday volatility (5.1% daily range)"
         ]
       },
       "pivot_points": {
@@ -14115,9 +14125,9 @@
           "Breakdown below Pivot S1 (Rs.376.5)",
           "Trading right at session lows (1% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.78% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.80% drag)"
         ],
-        "relative_strength": -4.78,
+        "relative_strength": -4.8,
         "range_pos_pct": 1.5,
         "basis_pct": -0.41,
         "call_put_ratio": 0.77
@@ -14191,40 +14201,39 @@
       "symbol": "INDUSINDBK",
       "company_name": "IndusInd Bank",
       "spot": 835.0,
-      "futures_current": 832.25,
+      "futures_current": 836.0,
       "lot_size": "700",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 27659800.0,
+      "current_oi": 18213300.0,
       "previous_day_oi": 27659800.0,
       "intraday": {
-        "buy_score": 4.5,
-        "sell_score": 74.0,
-        "signal": "STRONG SELL",
-        "confidence": 86.0,
+        "buy_score": 29.5,
+        "sell_score": 55.0,
+        "signal": "SELL",
+        "confidence": 57.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.837.5)",
           "Trading right at session lows (16% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.47% drag)"
+          "Underperforming NIFTY (-1.49% drag)",
+          "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.47,
+        "relative_strength": -1.49,
         "range_pos_pct": 16.2,
-        "basis_pct": -0.33,
+        "basis_pct": 0.12,
         "call_put_ratio": 1.21
       },
       "short_term": {
-        "buy_score": 19.5,
-        "sell_score": 71.2,
-        "signal": "STRONG SELL",
-        "confidence": 93.0,
+        "buy_score": 46.5,
+        "sell_score": 39.2,
+        "signal": "NEUTRAL",
+        "confidence": 33.6,
         "factors": [
-          "Deteriorating structural chart trend (Tech: 20/100)",
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.33% basis)"
+          "Heavy short squeeze unwinding prior bears",
+          "Healthy futures carry contango (+0.12% premium)",
+          "Substantial hurdle-free runway to R2 (+3.6%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -34.2,
         "mc_total": 42.0,
         "mc_q": 63.0,
         "mc_g": 23.0,
@@ -14283,7 +14292,7 @@
       "symbol": "NATIONALUM",
       "company_name": "National Aluminium Company",
       "spot": 301.75,
-      "futures_current": 300.7,
+      "futures_current": 300.0,
       "lot_size": "1875",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -14297,12 +14306,12 @@
         "factors": [
           "Trading below Central Pivot (Rs.302.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.59% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.61% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.59,
+        "relative_strength": -2.61,
         "range_pos_pct": 79.9,
-        "basis_pct": -0.35,
+        "basis_pct": -0.58,
         "call_put_ratio": 1.12
       },
       "short_term": {
@@ -14374,33 +14383,33 @@
       "symbol": "NMDC",
       "company_name": "NMDC",
       "spot": 66.35,
-      "futures_current": 66.3,
+      "futures_current": 66.62,
       "lot_size": "6750",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 301205250.0,
       "previous_day_oi": 301205250.0,
       "intraday": {
-        "buy_score": 7.0,
-        "sell_score": 79.0,
+        "buy_score": 12.0,
+        "sell_score": 74.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.66.8)",
           "Trading right at session lows (24% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.32% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.34% drag)"
         ],
-        "relative_strength": -3.32,
+        "relative_strength": -3.34,
         "range_pos_pct": 23.8,
-        "basis_pct": -0.08,
+        "basis_pct": 0.41,
         "call_put_ratio": 1.4
       },
       "short_term": {
-        "buy_score": 37.4,
-        "sell_score": 58.4,
-        "signal": "SELL",
-        "confidence": 59.9,
+        "buy_score": 47.4,
+        "sell_score": 48.4,
+        "signal": "NEUTRAL",
+        "confidence": 41.9,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
@@ -14481,7 +14490,7 @@
           "Trading right at session lows (8% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.53,
+        "relative_strength": -0.55,
         "range_pos_pct": 7.8,
         "basis_pct": 0.38,
         "call_put_ratio": 1.58
@@ -14568,10 +14577,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.399.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.92% drag)",
+          "Underperforming NIFTY (-0.94% drag)",
           "Futures backwardation discount (-0.26% basis)"
         ],
-        "relative_strength": -0.92,
+        "relative_strength": -0.94,
         "range_pos_pct": 51.2,
         "basis_pct": -0.26,
         "call_put_ratio": 1.83
@@ -14661,7 +14670,7 @@
           "Trading near session highs (97% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": 0.71,
+        "relative_strength": 0.69,
         "range_pos_pct": 97.3,
         "basis_pct": -0.2,
         "call_put_ratio": 1.01
@@ -14750,9 +14759,9 @@
           "Trading above Central Pivot (Rs.11,119.3)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Outperforming NIFTY (+0.89% alpha)"
+          "Outperforming NIFTY (+0.87% alpha)"
         ],
-        "relative_strength": 0.89,
+        "relative_strength": 0.87,
         "range_pos_pct": 100.0,
         "basis_pct": 0.2,
         "call_put_ratio": 1.24
@@ -14827,40 +14836,40 @@
       "symbol": "KEI",
       "company_name": "KEI Industries",
       "spot": 3725.0,
-      "futures_current": 3735.0,
+      "futures_current": 3689.6,
       "lot_size": "175",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 1505175.0,
+      "current_oi": 1179325.0,
       "previous_day_oi": 1505175.0,
       "intraday": {
-        "buy_score": 12.0,
-        "sell_score": 74.0,
+        "buy_score": 11.0,
+        "sell_score": 81.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.3,729.2)",
           "Trading right at session lows (19% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.47% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-3.49% drag)"
         ],
-        "relative_strength": -3.47,
+        "relative_strength": -3.49,
         "range_pos_pct": 18.8,
-        "basis_pct": 0.27,
+        "basis_pct": -0.95,
         "call_put_ratio": 1.46
       },
       "short_term": {
-        "buy_score": 43.3,
-        "sell_score": 58.2,
-        "signal": "NEUTRAL",
-        "confidence": 54.4,
+        "buy_score": 28.3,
+        "sell_score": 68.2,
+        "signal": "SELL",
+        "confidence": 76.9,
         "factors": [
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 24)",
-          "Significant downside room to S2 support (-3.7%)"
+          "Persistent futures backwardation discount (-0.95% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -21.6,
         "mc_total": 70.0,
         "mc_q": 86.0,
         "mc_g": 89.0,
@@ -14932,10 +14941,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.944.4)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-5.12% drag)",
+          "Severe Relative Weakness vs NIFTY (-5.14% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -5.12,
+        "relative_strength": -5.14,
         "range_pos_pct": 43.6,
         "basis_pct": 0.04,
         "call_put_ratio": 1.17
@@ -15009,38 +15018,38 @@
       "symbol": "POWERGRID",
       "company_name": "Power Grid Corporation of India",
       "spot": 247.4,
-      "futures_current": 247.5,
+      "futures_current": 246.05,
       "lot_size": "1900",
-      "signal": "LONG",
+      "signal": "UNWIND",
       "last_signal": "LONG",
-      "current_oi": 39501000.0,
+      "current_oi": 25047700.0,
       "previous_day_oi": 39501000.0,
       "intraday": {
-        "buy_score": 53.5,
-        "sell_score": 20.0,
+        "buy_score": 37.0,
+        "sell_score": 45.0,
         "signal": "NEUTRAL",
-        "confidence": 64.2,
+        "confidence": 34.2,
         "factors": [
-          "Trading above Central Pivot (Rs.246.4)",
-          "Trading near session highs (81% of range)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Futures backwardation discount (-0.55% basis)",
+          "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.05,
+        "relative_strength": -0.07,
         "range_pos_pct": 81.0,
-        "basis_pct": 0.04,
+        "basis_pct": -0.55,
         "call_put_ratio": 0.62
       },
       "short_term": {
-        "buy_score": 67.2,
-        "sell_score": 28.2,
-        "signal": "BUY",
-        "confidence": 69.1,
+        "buy_score": 40.2,
+        "sell_score": 50.2,
+        "signal": "NEUTRAL",
+        "confidence": 36.0,
         "factors": [
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles",
-          "Favorable valuation margin of safety (Val: 82)"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-0.55% basis)",
+          "Significant downside room to S2 support (-2.9%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -36.6,
         "mc_total": 67.0,
         "mc_q": 76.0,
         "mc_g": 46.0,
@@ -15049,14 +15058,13 @@
         "oneliner": "Superior Financial Strength, Average Growth Trend Stock at Attractive Valuations"
       },
       "risk": {
-        "level": "LOW",
-        "score": 5,
-        "badge_color": "#15803d",
-        "bg_color": "#f0fdf4",
+        "level": "MODERATE",
+        "score": 25,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 2.6,
         "flags": [
-          "Normal trading volatility within standard pivot boundaries",
-          "Healthy basis and orderly flow"
+          "Conflicting multi-factor indicators (low confidence)"
         ]
       },
       "pivot_points": {
@@ -15113,10 +15121,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,017.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.68% drag)",
+          "Underperforming NIFTY (-1.70% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.68,
+        "relative_strength": -1.7,
         "range_pos_pct": 36.3,
         "basis_pct": 0.5,
         "call_put_ratio": 0.67
@@ -15205,7 +15213,7 @@
           "Trading below Central Pivot (Rs.1,753.9)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)"
         ],
-        "relative_strength": -0.22,
+        "relative_strength": -0.24,
         "range_pos_pct": 36.0,
         "basis_pct": 0.17,
         "call_put_ratio": 1.71
@@ -15295,9 +15303,9 @@
           "Breakdown below Pivot S1 (Rs.70.4)",
           "Trading right at session lows (15% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.16% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.18% drag)"
         ],
-        "relative_strength": -3.16,
+        "relative_strength": -3.18,
         "range_pos_pct": 15.0,
         "basis_pct": -0.5,
         "call_put_ratio": 0.56
@@ -15371,40 +15379,40 @@
       "symbol": "SHRIRAMFIN",
       "company_name": "Shriram Finance",
       "spot": 865.0,
-      "futures_current": 860.95,
+      "futures_current": 831.0,
       "lot_size": "825",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 22552200.0,
+      "current_oi": 12449250.0,
       "previous_day_oi": 22552200.0,
       "intraday": {
-        "buy_score": 4.5,
-        "sell_score": 79.0,
+        "buy_score": 8.5,
+        "sell_score": 81.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.873.1)",
           "Trading right at session lows (0% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.63% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-3.65% drag)"
         ],
-        "relative_strength": -3.63,
+        "relative_strength": -3.65,
         "range_pos_pct": 0.0,
-        "basis_pct": -0.47,
+        "basis_pct": -3.93,
         "call_put_ratio": 1.2
       },
       "short_term": {
         "buy_score": 24.2,
-        "sell_score": 69.7,
+        "sell_score": 64.7,
         "signal": "SELL",
-        "confidence": 89.0,
+        "confidence": 77.5,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.47% basis)"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-3.93% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -44.8,
         "mc_total": 61.0,
         "mc_q": 69.0,
         "mc_g": 74.0,
@@ -15413,13 +15421,14 @@
         "oneliner": "Average Financial Strength, High Growth Trend Stock at Reasonable Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 35,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 55,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 6.1,
         "flags": [
-          "High intraday volatility (6.1% daily range)"
+          "High intraday volatility (6.1% daily range)",
+          "Elevated futures basis dislocation (-3.93%)"
         ]
       },
       "pivot_points": {
@@ -15462,38 +15471,39 @@
       "symbol": "PNBHOUSING",
       "company_name": "PNB Housing Finance",
       "spot": 1089.1,
-      "futures_current": 1092.5,
+      "futures_current": 1060.0,
       "lot_size": "650",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 7199400.0,
+      "current_oi": 3450200.0,
       "previous_day_oi": 7199400.0,
       "intraday": {
-        "buy_score": 12.0,
-        "sell_score": 74.0,
+        "buy_score": 11.0,
+        "sell_score": 81.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,100.8)",
           "Trading right at session lows (14% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.99% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-4.01% drag)"
         ],
-        "relative_strength": -3.99,
+        "relative_strength": -4.01,
         "range_pos_pct": 13.5,
-        "basis_pct": 0.31,
+        "basis_pct": -2.67,
         "call_put_ratio": 11.19
       },
       "short_term": {
-        "buy_score": 41.0,
-        "sell_score": 53.4,
-        "signal": "NEUTRAL",
-        "confidence": 45.2,
+        "buy_score": 26.0,
+        "sell_score": 63.4,
+        "signal": "SELL",
+        "confidence": 67.7,
         "factors": [
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles"
+          "Exhaustion & heavy multi-day long unwinding",
+          "Persistent futures backwardation discount (-2.67% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -52.1,
         "mc_total": 55.0,
         "mc_q": 43.0,
         "mc_g": 80.0,
@@ -15502,13 +15512,14 @@
         "oneliner": "Average Financial Strength, High Growth Trend Stock at Reasonable Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 35,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 55,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 5.2,
         "flags": [
-          "High intraday volatility (5.2% daily range)"
+          "High intraday volatility (5.2% daily range)",
+          "Elevated futures basis dislocation (-2.67%)"
         ]
       },
       "pivot_points": {
@@ -15565,10 +15576,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.2,059.2)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.80% drag)",
+          "Underperforming NIFTY (-0.82% drag)",
           "Futures backwardation discount (-0.09% basis)"
         ],
-        "relative_strength": -0.8,
+        "relative_strength": -0.82,
         "range_pos_pct": 49.5,
         "basis_pct": -0.09,
         "call_put_ratio": 0.82
@@ -15657,9 +15668,9 @@
           "Breakdown below Pivot S1 (Rs.75.2)",
           "Trading right at session lows (18% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.96% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.98% drag)"
         ],
-        "relative_strength": -2.96,
+        "relative_strength": -2.98,
         "range_pos_pct": 17.9,
         "basis_pct": 0.09,
         "call_put_ratio": 1.56
@@ -15747,10 +15758,10 @@
         "factors": [
           "Breakdown below Pivot S1 (Rs.1,600.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.16% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.18% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.16,
+        "relative_strength": -2.18,
         "range_pos_pct": 26.5,
         "basis_pct": 0.16,
         "call_put_ratio": 0.61
@@ -15839,10 +15850,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.521.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.12% drag)",
+          "Severe Relative Weakness vs NIFTY (-3.14% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.12,
+        "relative_strength": -3.14,
         "range_pos_pct": 32.4,
         "basis_pct": -0.39,
         "call_put_ratio": 1.19
@@ -15931,9 +15942,9 @@
           "Breakout above Pivot R1 (Rs.22,676.7)",
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "High Relative Outperformance vs NIFTY (+2.16% alpha)"
+          "High Relative Outperformance vs NIFTY (+2.14% alpha)"
         ],
-        "relative_strength": 2.16,
+        "relative_strength": 2.14,
         "range_pos_pct": 100.0,
         "basis_pct": 1.08,
         "call_put_ratio": 1.39
@@ -16019,10 +16030,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,891.9)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.62% drag)",
+          "Underperforming NIFTY (-1.64% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.62,
+        "relative_strength": -1.64,
         "range_pos_pct": 32.3,
         "basis_pct": 0.29,
         "call_put_ratio": 0.5
@@ -16111,9 +16122,9 @@
           "Breakdown below Pivot S1 (Rs.3,435.1)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.55% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.57% drag)"
         ],
-        "relative_strength": -2.55,
+        "relative_strength": -2.57,
         "range_pos_pct": 0.0,
         "basis_pct": 0.09,
         "call_put_ratio": 0.71
@@ -16200,10 +16211,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.2,174.4)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.10% drag)",
+          "Underperforming NIFTY (-1.12% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.1,
+        "relative_strength": -1.12,
         "range_pos_pct": 55.1,
         "basis_pct": -1.44,
         "call_put_ratio": 0.35
@@ -16293,9 +16304,9 @@
           "Breakdown below Pivot S1 (Rs.473.7)",
           "Trading right at session lows (17% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.65% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.67% drag)"
         ],
-        "relative_strength": -3.65,
+        "relative_strength": -3.67,
         "range_pos_pct": 17.0,
         "basis_pct": -0.52,
         "call_put_ratio": 0.85
@@ -16369,40 +16380,40 @@
       "symbol": "JIOFIN",
       "company_name": "Jio Financial Services",
       "spot": 205.03,
-      "futures_current": 204.7,
+      "futures_current": 204.1,
       "lot_size": "2350",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 133809000.0,
+      "current_oi": 105818150.0,
       "previous_day_oi": 133809000.0,
       "intraday": {
-        "buy_score": 2.0,
-        "sell_score": 81.5,
+        "buy_score": 6.0,
+        "sell_score": 83.5,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.205.8)",
           "Trading right at session lows (18% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.39% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-2.41% drag)"
         ],
-        "relative_strength": -2.39,
+        "relative_strength": -2.41,
         "range_pos_pct": 18.1,
-        "basis_pct": -0.16,
+        "basis_pct": -0.45,
         "call_put_ratio": 0.86
       },
       "short_term": {
         "buy_score": 19.1,
-        "sell_score": 73.8,
-        "signal": "STRONG SELL",
-        "confidence": 98.0,
+        "sell_score": 68.8,
+        "signal": "SELL",
+        "confidence": 92.7,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 35)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -20.9,
         "mc_total": 41.0,
         "mc_q": 44.0,
         "mc_g": 49.0,
@@ -16474,9 +16485,9 @@
         "factors": [
           "Trading above Central Pivot (Rs.959.3)",
           "Trading near session highs (75% of range)",
-          "Outperforming NIFTY (+0.78% alpha)"
+          "Outperforming NIFTY (+0.76% alpha)"
         ],
-        "relative_strength": 0.78,
+        "relative_strength": 0.76,
         "range_pos_pct": 75.3,
         "basis_pct": -0.72,
         "call_put_ratio": 0.6
@@ -16565,9 +16576,9 @@
           "Breakdown below Pivot S1 (Rs.1,509.8)",
           "Trading right at session lows (11% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.03% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.05% drag)"
         ],
-        "relative_strength": -4.03,
+        "relative_strength": -4.05,
         "range_pos_pct": 11.1,
         "basis_pct": 0.05,
         "call_put_ratio": 0.62
@@ -16657,7 +16668,7 @@
           "Futures carry premium (+0.27% basis)",
           "Call option premium skew (CE > PE)"
         ],
-        "relative_strength": 0.38,
+        "relative_strength": 0.36,
         "range_pos_pct": 40.5,
         "basis_pct": 0.27,
         "call_put_ratio": 2.14
@@ -16748,7 +16759,7 @@
           "Trading near session highs (100% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": -0.72,
+        "relative_strength": -0.74,
         "range_pos_pct": 100.0,
         "basis_pct": -0.24,
         "call_put_ratio": 0.71
@@ -16835,10 +16846,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.364.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.01% drag)",
+          "Underperforming NIFTY (-1.03% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.01,
+        "relative_strength": -1.03,
         "range_pos_pct": 48.8,
         "basis_pct": -0.61,
         "call_put_ratio": 0.26
@@ -16912,39 +16923,38 @@
       "symbol": "M&M",
       "company_name": "Mahindra and Mahindra",
       "spot": 2861.2,
-      "futures_current": 2845.0,
+      "futures_current": 2849.9,
       "lot_size": "200",
-      "signal": "LONG",
+      "signal": "COVER",
       "last_signal": "LONG",
-      "current_oi": 8109000.0,
+      "current_oi": 4929800.0,
       "previous_day_oi": 8109000.0,
       "intraday": {
-        "buy_score": 57.0,
-        "sell_score": 19.0,
+        "buy_score": 59.0,
+        "sell_score": 23.0,
         "signal": "BUY",
-        "confidence": 68.2,
+        "confidence": 66.4,
         "factors": [
           "Trading above Central Pivot (Rs.2,841.5)",
           "Trading near session highs (100% of range)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)"
+          "Short Covering Velocity (Short squeeze bounce)"
         ],
-        "relative_strength": 0.25,
+        "relative_strength": 0.23,
         "range_pos_pct": 100.0,
-        "basis_pct": -0.57,
+        "basis_pct": -0.39,
         "call_put_ratio": 0.56
       },
       "short_term": {
-        "buy_score": 52.3,
+        "buy_score": 47.3,
         "sell_score": 48.2,
         "signal": "NEUTRAL",
-        "confidence": 44.7,
+        "confidence": 34.8,
         "factors": [
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles",
-          "Superior Quality & Growth profile (Q: 76, G: 100)",
-          "Favorable valuation margin of safety (Val: 65)"
+          "Deteriorating structural chart trend (Tech: 20/100)",
+          "Persistent futures backwardation discount (-0.39% basis)",
+          "Significant downside room to S2 support (-2.6%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -39.2,
         "mc_total": 75.0,
         "mc_q": 76.0,
         "mc_g": 100.0,
@@ -17018,9 +17028,9 @@
           "Breakdown below Pivot S1 (Rs.1,711.9)",
           "Trading right at session lows (17% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.35% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.37% drag)"
         ],
-        "relative_strength": -2.35,
+        "relative_strength": -2.37,
         "range_pos_pct": 17.2,
         "basis_pct": 0.32,
         "call_put_ratio": 1.44
@@ -17108,10 +17118,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.121.3)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.39% drag)",
+          "Underperforming NIFTY (-1.41% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.39,
+        "relative_strength": -1.41,
         "range_pos_pct": 40.4,
         "basis_pct": -1.14,
         "call_put_ratio": 0.57
@@ -17200,7 +17210,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.38% basis)"
         ],
-        "relative_strength": -0.7,
+        "relative_strength": -0.72,
         "range_pos_pct": 73.3,
         "basis_pct": -0.38,
         "call_put_ratio": 1.09
@@ -17290,9 +17300,9 @@
           "Breakdown below Pivot S1 (Rs.344.5)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.63% drag)"
+          "Underperforming NIFTY (-1.65% drag)"
         ],
-        "relative_strength": -1.63,
+        "relative_strength": -1.65,
         "range_pos_pct": 0.0,
         "basis_pct": -0.22,
         "call_put_ratio": 1.19
@@ -17382,9 +17392,9 @@
           "Breakdown below Pivot S1 (Rs.1,861.6)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.05% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.07% drag)"
         ],
-        "relative_strength": -2.05,
+        "relative_strength": -2.07,
         "range_pos_pct": 0.0,
         "basis_pct": 0.16,
         "call_put_ratio": 18.88
@@ -17472,9 +17482,9 @@
           "Breakdown below Pivot S1 (Rs.231.9)",
           "Trading right at session lows (13% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.98% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.00% drag)"
         ],
-        "relative_strength": -1.98,
+        "relative_strength": -2.0,
         "range_pos_pct": 13.0,
         "basis_pct": -0.17,
         "call_put_ratio": 1.13
@@ -17563,9 +17573,9 @@
           "Breakdown below Pivot S1 (Rs.1,191.3)",
           "Trading right at session lows (5% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.20% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.22% drag)"
         ],
-        "relative_strength": -2.2,
+        "relative_strength": -2.22,
         "range_pos_pct": 4.8,
         "basis_pct": -0.13,
         "call_put_ratio": 1.14
@@ -17650,11 +17660,11 @@
         "confidence": 54.7,
         "factors": [
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.82% drag)",
+          "Underperforming NIFTY (-0.84% drag)",
           "Futures backwardation discount (-1.07% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.82,
+        "relative_strength": -0.84,
         "range_pos_pct": 72.2,
         "basis_pct": -1.07,
         "call_put_ratio": 0.62
@@ -17743,9 +17753,9 @@
           "Breakdown below Pivot S1 (Rs.656.8)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.73% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.75% drag)"
         ],
-        "relative_strength": -2.73,
+        "relative_strength": -2.75,
         "range_pos_pct": 0.0,
         "basis_pct": 0.76,
         "call_put_ratio": 1.21
@@ -17833,7 +17843,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-2.25% basis)"
         ],
-        "relative_strength": 0.35,
+        "relative_strength": 0.33,
         "range_pos_pct": 50.0,
         "basis_pct": -2.25,
         "call_put_ratio": 1.11
@@ -17907,7 +17917,7 @@
       "symbol": "SWIGGY",
       "company_name": "Swiggy",
       "spot": 176.0,
-      "futures_current": 175.4,
+      "futures_current": 175.35,
       "lot_size": "1825",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -17922,11 +17932,11 @@
           "Breakdown below Pivot S1 (Rs.188.9)",
           "Trading right at session lows (3% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-16.40% drag)"
+          "Severe Relative Weakness vs NIFTY (-16.42% drag)"
         ],
-        "relative_strength": -16.4,
+        "relative_strength": -16.42,
         "range_pos_pct": 3.4,
-        "basis_pct": -0.34,
+        "basis_pct": -0.37,
         "call_put_ratio": 1.51
       },
       "short_term": {
@@ -17938,7 +17948,7 @@
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
           "Continuous Short buildup across cycles",
-          "Persistent futures backwardation discount (-0.34% basis)"
+          "Persistent futures backwardation discount (-0.37% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 46.0,
@@ -17998,40 +18008,39 @@
       "symbol": "IDFCFIRSTB",
       "company_name": "IDFC First Bank",
       "spot": 72.3,
-      "futures_current": 72.48,
+      "futures_current": 72.49,
       "lot_size": "9275",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 249107950.0,
+      "current_oi": 160123600.0,
       "previous_day_oi": 249107950.0,
       "intraday": {
-        "buy_score": 9.5,
-        "sell_score": 74.0,
-        "signal": "STRONG SELL",
-        "confidence": 86.0,
+        "buy_score": 29.5,
+        "sell_score": 60.0,
+        "signal": "SELL",
+        "confidence": 61.5,
         "factors": [
           "Breakdown below Pivot S1 (Rs.72.6)",
           "Trading right at session lows (22% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.11% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.13% drag)",
+          "Dragging down despite buoyant market"
         ],
-        "relative_strength": -3.11,
+        "relative_strength": -3.13,
         "range_pos_pct": 21.5,
-        "basis_pct": 0.25,
+        "basis_pct": 0.26,
         "call_put_ratio": 1.21
       },
       "short_term": {
-        "buy_score": 43.7,
-        "sell_score": 53.9,
-        "signal": "NEUTRAL",
-        "confidence": 50.2,
+        "buy_score": 55.7,
+        "sell_score": 36.9,
+        "signal": "BUY",
+        "confidence": 43.9,
         "factors": [
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Elevated valuation multiples / high derating risk (Val: 24)",
-          "Significant downside room to S2 support (-2.7%)"
+          "Heavy short squeeze unwinding prior bears",
+          "Healthy futures carry contango (+0.26% premium)",
+          "Substantial hurdle-free runway to R2 (+6.9%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -35.7,
         "mc_total": 59.0,
         "mc_q": 94.0,
         "mc_g": 34.0,
@@ -18104,9 +18113,9 @@
           "Breakdown below Pivot S1 (Rs.281.1)",
           "Trading right at session lows (14% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.86% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.88% drag)"
         ],
-        "relative_strength": -3.86,
+        "relative_strength": -3.88,
         "range_pos_pct": 14.4,
         "basis_pct": -0.11,
         "call_put_ratio": 0.73
@@ -18194,10 +18203,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,723.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.36% drag)",
+          "Underperforming NIFTY (-1.38% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.36,
+        "relative_strength": -1.38,
         "range_pos_pct": 44.5,
         "basis_pct": -0.39,
         "call_put_ratio": 0.42
@@ -18286,7 +18295,7 @@
           "Trading above Central Pivot (Rs.144.8)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": -0.39,
+        "relative_strength": -0.41,
         "range_pos_pct": 69.6,
         "basis_pct": -0.09,
         "call_put_ratio": 0.98
@@ -18378,7 +18387,7 @@
           "Futures backwardation discount (-0.25% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.59,
+        "relative_strength": -0.61,
         "range_pos_pct": 47.6,
         "basis_pct": -0.25,
         "call_put_ratio": 0.55
@@ -18468,9 +18477,9 @@
           "Breakdown below Pivot S1 (Rs.1,877.5)",
           "Trading right at session lows (11% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.89% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.91% drag)"
         ],
-        "relative_strength": -2.89,
+        "relative_strength": -2.91,
         "range_pos_pct": 10.8,
         "basis_pct": -0.39,
         "call_put_ratio": 0.82
@@ -18561,7 +18570,7 @@
           "Futures backwardation discount (-0.27% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.63,
+        "relative_strength": -0.65,
         "range_pos_pct": 39.7,
         "basis_pct": -0.27,
         "call_put_ratio": 0.52
@@ -18651,9 +18660,9 @@
           "Breakdown below Pivot S1 (Rs.2,680.2)",
           "Trading right at session lows (23% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.66% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.68% drag)"
         ],
-        "relative_strength": -3.66,
+        "relative_strength": -3.68,
         "range_pos_pct": 23.0,
         "basis_pct": -0.69,
         "call_put_ratio": 13.11
@@ -18742,7 +18751,7 @@
           "Trading near session highs (91% of range)",
           "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": 0.51,
+        "relative_strength": 0.49,
         "range_pos_pct": 91.4,
         "basis_pct": -0.28,
         "call_put_ratio": 0.37
@@ -18815,40 +18824,40 @@
       "symbol": "MANAPPURAM",
       "company_name": "Manappuram Finance",
       "spot": 286.1,
-      "futures_current": 282.5,
+      "futures_current": 282.3,
       "lot_size": "3000",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 47085000.0,
+      "current_oi": 33174000.0,
       "previous_day_oi": 47085000.0,
       "intraday": {
-        "buy_score": 4.5,
-        "sell_score": 79.0,
+        "buy_score": 8.5,
+        "sell_score": 81.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.292.0)",
           "Trading right at session lows (1% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.88% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-4.90% drag)"
         ],
-        "relative_strength": -4.88,
+        "relative_strength": -4.9,
         "range_pos_pct": 1.5,
-        "basis_pct": -1.26,
+        "basis_pct": -1.33,
         "call_put_ratio": 1.14
       },
       "short_term": {
         "buy_score": 31.8,
-        "sell_score": 61.8,
+        "sell_score": 56.8,
         "signal": "SELL",
-        "confidence": 75.0,
+        "confidence": 63.5,
         "factors": [
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 29)",
-          "Persistent futures backwardation discount (-1.26% basis)"
+          "Persistent futures backwardation discount (-1.33% basis)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -29.5,
         "mc_total": 57.0,
         "mc_q": 69.0,
         "mc_g": 51.0,
@@ -18864,7 +18873,7 @@
         "range_span_pct": 4.8,
         "flags": [
           "Moderate range expansion (4.8%)",
-          "Elevated futures basis dislocation (-1.26%)"
+          "Elevated futures basis dislocation (-1.33%)"
         ]
       },
       "pivot_points": {
@@ -18922,9 +18931,9 @@
           "Breakdown below Pivot S1 (Rs.3,741.7)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.47% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.49% drag)"
         ],
-        "relative_strength": -3.47,
+        "relative_strength": -3.49,
         "range_pos_pct": 0.0,
         "basis_pct": 1.05,
         "call_put_ratio": 1.54
@@ -19014,7 +19023,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.48% basis)"
         ],
-        "relative_strength": 0.12,
+        "relative_strength": 0.1,
         "range_pos_pct": 0.0,
         "basis_pct": -0.48,
         "call_put_ratio": 1.1
@@ -19104,7 +19113,7 @@
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
           "Futures backwardation discount (-0.21% basis)"
         ],
-        "relative_strength": -0.43,
+        "relative_strength": -0.45,
         "range_pos_pct": 0.0,
         "basis_pct": -0.21,
         "call_put_ratio": 0.63
@@ -19194,7 +19203,7 @@
           "Futures backwardation discount (-0.84% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": 0.28,
+        "relative_strength": 0.26,
         "range_pos_pct": 57.9,
         "basis_pct": -0.84,
         "call_put_ratio": 0.43
@@ -19269,7 +19278,7 @@
       "symbol": "TMPV",
       "company_name": "Tata Motors Passenger Vehicles",
       "spot": 264.6,
-      "futures_current": 264.2,
+      "futures_current": 264.0,
       "lot_size": "1600",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -19283,12 +19292,12 @@
         "factors": [
           "Trading below Central Pivot (Rs.267.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.65% drag)",
+          "Underperforming NIFTY (-1.67% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.65,
+        "relative_strength": -1.67,
         "range_pos_pct": 40.5,
-        "basis_pct": -0.15,
+        "basis_pct": -0.23,
         "call_put_ratio": 0.6
       },
       "short_term": {
@@ -19375,9 +19384,9 @@
           "Breakdown below Pivot S1 (Rs.1,259.4)",
           "Trading right at session lows (15% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.18% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.20% drag)"
         ],
-        "relative_strength": -2.18,
+        "relative_strength": -2.2,
         "range_pos_pct": 14.7,
         "basis_pct": -0.16,
         "call_put_ratio": 0.42
@@ -19451,40 +19460,40 @@
       "symbol": "INDIANB",
       "company_name": "Indian Bank",
       "spot": 837.15,
-      "futures_current": 838.55,
+      "futures_current": 836.0,
       "lot_size": "1000",
-      "signal": "SHORT",
+      "signal": "UNWIND",
       "last_signal": "SHORT",
-      "current_oi": 6611000.0,
+      "current_oi": 3931000.0,
       "previous_day_oi": 6611000.0,
       "intraday": {
-        "buy_score": 7.0,
-        "sell_score": 79.0,
+        "buy_score": 6.0,
+        "sell_score": 86.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.839.4)",
           "Trading right at session lows (18% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-1.82% drag)"
+          "Long Unwinding Pressure (Buyer capitulation)",
+          "Severe Relative Weakness vs NIFTY (-1.84% drag)"
         ],
-        "relative_strength": -1.82,
+        "relative_strength": -1.84,
         "range_pos_pct": 17.8,
-        "basis_pct": 0.17,
+        "basis_pct": -0.14,
         "call_put_ratio": 0.6
       },
       "short_term": {
-        "buy_score": 39.4,
-        "sell_score": 56.2,
+        "buy_score": 24.4,
+        "sell_score": 61.2,
         "signal": "SELL",
-        "confidence": 63.1,
+        "confidence": 74.1,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
+          "Exhaustion & heavy multi-day long unwinding",
           "Elevated valuation multiples / high derating risk (Val: 29)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -40.5,
         "mc_total": 66.0,
         "mc_q": 84.0,
         "mc_g": 80.0,
@@ -19556,10 +19565,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.4,561.1)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-0.76% drag)",
+          "Underperforming NIFTY (-0.78% drag)",
           "Futures backwardation discount (-0.38% basis)"
         ],
-        "relative_strength": -0.76,
+        "relative_strength": -0.78,
         "range_pos_pct": 57.8,
         "basis_pct": -0.38,
         "call_put_ratio": 0.56
@@ -19648,9 +19657,9 @@
           "Breakdown below Pivot S1 (Rs.957.8)",
           "Trading right at session lows (11% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.60% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.62% drag)"
         ],
-        "relative_strength": -3.6,
+        "relative_strength": -3.62,
         "range_pos_pct": 11.1,
         "basis_pct": -0.04,
         "call_put_ratio": 1.83
@@ -19737,10 +19746,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.283.5)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.39% drag)",
+          "Underperforming NIFTY (-1.41% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.39,
+        "relative_strength": -1.41,
         "range_pos_pct": 52.4,
         "basis_pct": -0.34,
         "call_put_ratio": 1.11
@@ -19829,9 +19838,9 @@
           "Breakdown below Pivot S1 (Rs.7,501.2)",
           "Trading right at session lows (15% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.66% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.68% drag)"
         ],
-        "relative_strength": -2.66,
+        "relative_strength": -2.68,
         "range_pos_pct": 14.6,
         "basis_pct": -0.07,
         "call_put_ratio": 1.58
@@ -19904,7 +19913,7 @@
       "symbol": "BSE",
       "company_name": "BSE Limited",
       "spot": 3230.8,
-      "futures_current": 3227.1,
+      "futures_current": 3229.8,
       "lot_size": "200",
       "signal": "SHORT",
       "last_signal": "SHORT",
@@ -19912,25 +19921,24 @@
       "previous_day_oi": 8683200.0,
       "intraday": {
         "buy_score": 9.0,
-        "sell_score": 63.0,
+        "sell_score": 60.5,
         "signal": "SELL",
         "confidence": 79.0,
         "factors": [
           "Trading below Central Pivot (Rs.3,250.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Futures backwardation discount (-0.11% basis)",
           "Put hedging demand skew (PE > CE)"
         ],
-        "relative_strength": -0.7,
+        "relative_strength": -0.72,
         "range_pos_pct": 36.2,
-        "basis_pct": -0.11,
+        "basis_pct": -0.03,
         "call_put_ratio": 0.5
       },
       "short_term": {
-        "buy_score": 23.9,
+        "buy_score": 28.9,
         "sell_score": 67.7,
         "signal": "SELL",
-        "confidence": 87.4,
+        "confidence": 82.9,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
@@ -20011,9 +20019,9 @@
           "Breakdown below Pivot S1 (Rs.414.4)",
           "Trading right at session lows (4% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-3.05% drag)"
+          "Severe Relative Weakness vs NIFTY (-3.07% drag)"
         ],
-        "relative_strength": -3.05,
+        "relative_strength": -3.07,
         "range_pos_pct": 3.6,
         "basis_pct": -0.55,
         "call_put_ratio": 0.75
@@ -20102,9 +20110,9 @@
           "Breakdown below Pivot S1 (Rs.4,798.2)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.73% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.75% drag)"
         ],
-        "relative_strength": -2.73,
+        "relative_strength": -2.75,
         "range_pos_pct": 0.0,
         "basis_pct": -0.06,
         "call_put_ratio": 2.15
@@ -20191,10 +20199,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.2,382.5)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.39% drag)",
+          "Underperforming NIFTY (-1.41% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.39,
+        "relative_strength": -1.41,
         "range_pos_pct": 59.8,
         "basis_pct": -0.02,
         "call_put_ratio": 1.56
@@ -20282,10 +20290,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.391.8)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.51% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.53% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.51,
+        "relative_strength": -2.53,
         "range_pos_pct": 46.7,
         "basis_pct": 0.01,
         "call_put_ratio": 1.0
@@ -20359,36 +20367,35 @@
       "symbol": "LT",
       "company_name": "Larsen and Toubro",
       "spot": 3647.0,
-      "futures_current": 3654.3,
+      "futures_current": 3641.0,
       "lot_size": "175",
       "signal": "LONG",
       "last_signal": "LONG",
       "current_oi": 9021425.0,
       "previous_day_oi": 9021425.0,
       "intraday": {
-        "buy_score": 58.0,
-        "sell_score": 14.0,
-        "signal": "BUY",
-        "confidence": 73.6,
+        "buy_score": 53.0,
+        "sell_score": 19.0,
+        "signal": "NEUTRAL",
+        "confidence": 64.6,
         "factors": [
           "Trading above Central Pivot (Rs.3,633.0)",
-          "Institutional Long Buildup (Price \u2191, OI \u2191)",
-          "Futures carry premium (+0.20% basis)"
+          "Institutional Long Buildup (Price \u2191, OI \u2191)"
         ],
-        "relative_strength": 0.59,
+        "relative_strength": 0.57,
         "range_pos_pct": 74.8,
-        "basis_pct": 0.2,
+        "basis_pct": -0.16,
         "call_put_ratio": 0.74
       },
       "short_term": {
-        "buy_score": 59.3,
-        "sell_score": 30.9,
-        "signal": "BUY",
-        "confidence": 66.6,
+        "buy_score": 44.3,
+        "sell_score": 45.9,
+        "signal": "NEUTRAL",
+        "confidence": 42.4,
         "factors": [
-          "Multi-day price base above Floor Pivot",
-          "Persistent Long buildup across cycles",
-          "Healthy futures carry contango (+0.20% premium)"
+          "Deteriorating structural chart trend (Tech: 20/100)",
+          "Elevated valuation multiples / high derating risk (Val: 29)",
+          "Persistent futures backwardation discount (-0.16% basis)"
         ],
         "oi_yest_pct": 0.0,
         "mc_total": 47.0,
@@ -20449,39 +20456,39 @@
       "symbol": "KOTAKBANK",
       "company_name": "Kotak Mahindra Bank",
       "spot": 430.5,
-      "futures_current": 430.55,
+      "futures_current": 443.8,
       "lot_size": "2000",
-      "signal": "SHORT",
+      "signal": "COVER",
       "last_signal": "SHORT",
-      "current_oi": 85746000.0,
+      "current_oi": 56048000.0,
       "previous_day_oi": 85746000.0,
       "intraday": {
-        "buy_score": 4.5,
-        "sell_score": 71.5,
-        "signal": "STRONG SELL",
-        "confidence": 86.0,
+        "buy_score": 27.0,
+        "sell_score": 57.5,
+        "signal": "SELL",
+        "confidence": 61.5,
         "factors": [
           "Breakdown below Pivot S1 (Rs.431.5)",
           "Trading right at session lows (6% of range)",
-          "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.14% drag)"
+          "Underperforming NIFTY (-1.16% drag)",
+          "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.14,
+        "relative_strength": -1.16,
         "range_pos_pct": 6.3,
-        "basis_pct": 0.01,
+        "basis_pct": 3.09,
         "call_put_ratio": 0.95
       },
       "short_term": {
-        "buy_score": 42.1,
-        "sell_score": 51.6,
+        "buy_score": 54.1,
+        "sell_score": 29.6,
         "signal": "NEUTRAL",
-        "confidence": 49.5,
+        "confidence": 49.0,
         "factors": [
-          "Multi-day price breakdown below Floor Pivot",
-          "Continuous Short buildup across cycles",
-          "Elevated valuation multiples / high derating risk (Val: 35)"
+          "Heavy short squeeze unwinding prior bears",
+          "Superior Quality & Growth profile (Q: 100, G: 60)",
+          "Substantial hurdle-free runway to R2 (+3.4%)"
         ],
-        "oi_yest_pct": 0.0,
+        "oi_yest_pct": -34.6,
         "mc_total": 71.0,
         "mc_q": 100.0,
         "mc_g": 60.0,
@@ -20490,14 +20497,13 @@
         "oneliner": "Superior Financial Strength, Average Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "LOW",
-        "score": 5,
-        "badge_color": "#15803d",
-        "bg_color": "#f0fdf4",
+        "level": "MODERATE",
+        "score": 25,
+        "badge_color": "#b45309",
+        "bg_color": "#fffbeb",
         "range_span_pct": 2.2,
         "flags": [
-          "Normal trading volatility within standard pivot boundaries",
-          "Healthy basis and orderly flow"
+          "Elevated futures basis dislocation (+3.09%)"
         ]
       },
       "pivot_points": {
@@ -20540,33 +20546,33 @@
       "symbol": "LTF",
       "company_name": "L&T Finance",
       "spot": 237.5,
-      "futures_current": 237.65,
+      "futures_current": 234.6,
       "lot_size": "2250",
       "signal": "SHORT",
       "last_signal": "SHORT",
       "current_oi": 38972250.0,
       "previous_day_oi": 38972250.0,
       "intraday": {
-        "buy_score": 12.0,
-        "sell_score": 70.0,
+        "buy_score": 7.0,
+        "sell_score": 75.0,
         "signal": "STRONG SELL",
         "confidence": 86.0,
         "factors": [
           "Breakdown below Pivot S1 (Rs.237.7)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.35% drag)",
+          "Severe Relative Weakness vs NIFTY (-2.37% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -2.35,
+        "relative_strength": -2.37,
         "range_pos_pct": 28.6,
-        "basis_pct": 0.06,
+        "basis_pct": -1.22,
         "call_put_ratio": 2.24
       },
       "short_term": {
-        "buy_score": 31.1,
-        "sell_score": 64.9,
-        "signal": "SELL",
-        "confidence": 78.4,
+        "buy_score": 21.1,
+        "sell_score": 79.9,
+        "signal": "STRONG SELL",
+        "confidence": 98.0,
         "factors": [
           "Deteriorating structural chart trend (Tech: 20/100)",
           "Multi-day price breakdown below Floor Pivot",
@@ -20582,13 +20588,14 @@
         "oneliner": "Average Financial Strength, High Growth Trend Stock Priced at High Valuations"
       },
       "risk": {
-        "level": "MODERATE",
-        "score": 20,
-        "badge_color": "#b45309",
-        "bg_color": "#fffbeb",
+        "level": "ELEVATED",
+        "score": 40,
+        "badge_color": "#c2410c",
+        "bg_color": "#fff7ed",
         "range_span_pct": 4.2,
         "flags": [
-          "Moderate range expansion (4.2%)"
+          "Moderate range expansion (4.2%)",
+          "Elevated futures basis dislocation (-1.22%)"
         ]
       },
       "pivot_points": {
@@ -20647,7 +20654,7 @@
           "Institutional Long Buildup (Price \u2191, OI \u2191)",
           "Call option premium skew (CE > PE)"
         ],
-        "relative_strength": 0.11,
+        "relative_strength": 0.09,
         "range_pos_pct": 73.2,
         "basis_pct": -0.05,
         "call_put_ratio": 1.98
@@ -20736,9 +20743,9 @@
           "Breakdown below Pivot S1 (Rs.3,221.9)",
           "Trading right at session lows (8% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-2.87% drag)"
+          "Severe Relative Weakness vs NIFTY (-2.89% drag)"
         ],
-        "relative_strength": -2.87,
+        "relative_strength": -2.89,
         "range_pos_pct": 7.7,
         "basis_pct": 1.63,
         "call_put_ratio": 1.56
@@ -20826,10 +20833,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.352.0)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.11% drag)",
+          "Underperforming NIFTY (-1.13% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.11,
+        "relative_strength": -1.13,
         "range_pos_pct": 42.7,
         "basis_pct": -0.79,
         "call_put_ratio": 0.74
@@ -20917,10 +20924,10 @@
         "factors": [
           "Trading below Central Pivot (Rs.1,151.6)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Underperforming NIFTY (-1.71% drag)",
+          "Underperforming NIFTY (-1.73% drag)",
           "Dragging down despite buoyant market"
         ],
-        "relative_strength": -1.71,
+        "relative_strength": -1.73,
         "range_pos_pct": 35.3,
         "basis_pct": 0.32,
         "call_put_ratio": 1.09
@@ -21009,9 +21016,9 @@
           "Breakdown below Pivot S1 (Rs.1,020.4)",
           "Trading right at session lows (0% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-4.42% drag)"
+          "Severe Relative Weakness vs NIFTY (-4.44% drag)"
         ],
-        "relative_strength": -4.42,
+        "relative_strength": -4.44,
         "range_pos_pct": 0.0,
         "basis_pct": -0.11,
         "call_put_ratio": 0.87
@@ -21099,9 +21106,9 @@
           "Breakdown below Pivot S1 (Rs.1,236.3)",
           "Trading right at session lows (11% of range)",
           "Aggressive Short Buildup (Price \u2193, OI \u2191)",
-          "Severe Relative Weakness vs NIFTY (-5.47% drag)"
+          "Severe Relative Weakness vs NIFTY (-5.49% drag)"
         ],
-        "relative_strength": -5.47,
+        "relative_strength": -5.49,
         "range_pos_pct": 10.9,
         "basis_pct": -0.53,
         "call_put_ratio": 0.77
