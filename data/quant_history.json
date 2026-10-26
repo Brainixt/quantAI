@@ -1,5 +1,22 @@
 [
   {
+    "id": 10,
+    "symbol": "AUBANK",
+    "company": "AU Small Finance Bank",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 878.7,
+    "exit_price": 859.5,
+    "pnl_pct": 2.19,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "TARGET HIT (+1.95%)",
+    "is_win": true,
+    "entry_time": "2026-10-26T09:57:05.949347+05:30",
+    "exit_time": "2026-10-26T11:12:07.549325+05:30"
+  },
+  {
     "id": 9,
     "symbol": "AMBUJACEM",
     "company": "Ambuja Cements",
