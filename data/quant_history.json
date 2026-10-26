@@ -1,5 +1,22 @@
 [
   {
+    "id": 6,
+    "symbol": "POWERINDIA",
+    "company": "Hitachi Energy India",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 25965.0,
+    "exit_price": 26385.0,
+    "pnl_pct": -1.62,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T09:30:02.688731+05:30",
+    "exit_time": "2026-10-26T09:57:05.946045+05:30"
+  },
+  {
     "id": 5,
     "symbol": "PGEL",
     "company": "PG Electroplast",
