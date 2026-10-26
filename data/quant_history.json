@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "id": 2,
+    "symbol": "VMM",
+    "company": "Vishal Mega Mart",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 85.85,
+    "exit_price": 87.35,
+    "pnl_pct": -1.75,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T08:51:37.823481+05:30",
+    "exit_time": "2026-10-26T09:02:47.853963+05:30"
+  },
+  {
+    "id": 1,
+    "symbol": "TIINDIA",
+    "company": "Tube Investments of India Ltd",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 2057.8,
+    "exit_price": 2080.0,
+    "pnl_pct": -1.08,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-26T08:51:37.823481+05:30",
+    "exit_time": "2026-10-26T09:02:47.836628+05:30"
+  }
+]
