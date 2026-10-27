@@ -1,5 +1,22 @@
 [
   {
+    "id": 24,
+    "symbol": "APLAPOLLO",
+    "company": "APL Apollo Tubes",
+    "direction": "LONG",
+    "mode": "MIS",
+    "entry_price": 2163.3,
+    "exit_price": 2207.0,
+    "pnl_pct": 2.02,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "TARGET HIT (+1.95%)",
+    "is_win": true,
+    "entry_time": "2026-10-27T11:06:54.249201+05:30",
+    "exit_time": "2026-10-27T12:46:36.745773+05:30"
+  },
+  {
     "id": 23,
     "symbol": "MCX",
     "company": "Multi Commodity Exchange of India",
