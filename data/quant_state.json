@@ -9,16 +9,16 @@
   },
   "active_pick": null,
   "nifty50": {
-    "price": "22760.7500",
-    "change": "7.5500",
-    "change_percent": "0.0300",
+    "price": "22749.7500",
+    "change": "-3.4500",
+    "change_percent": "-0.0200",
     "direction": "NA"
   },
   "macro_filter": {
-    "regime": "BULLISH",
+    "regime": "NEUTRAL_BULLISH",
     "allowed_direction": "LONG",
-    "rationale": "Macro Index Bullish (NIFTY +0.03%, Buys: 140 vs Sells: 32) -> BUY (Long MIS) Only",
-    "updated_at": "2026-10-27T15:30:28.175709+05:30"
+    "rationale": "Macro Index Neutral-Bullish (NIFTY -0.02%, Buys: 134 >= Sells: 45) -> BUY (Long MIS) Favored",
+    "updated_at": "2026-10-27T15:31:35.097425+05:30"
   },
-  "timestamp": "2026-10-27T15:30:28.175709+05:30"
+  "timestamp": "2026-10-27T15:31:35.097425+05:30"
 }
