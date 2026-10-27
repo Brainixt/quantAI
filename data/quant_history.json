@@ -1,5 +1,22 @@
 [
   {
+    "id": 25,
+    "symbol": "TECHM",
+    "company": "Tech Mahindra",
+    "direction": "SHORT",
+    "mode": "MIS",
+    "entry_price": 1781.9,
+    "exit_price": 1801.1,
+    "pnl_pct": -1.08,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "STOP LOSS HIT (-0.95%)",
+    "is_win": false,
+    "entry_time": "2026-10-27T09:30:31.869229+05:30",
+    "exit_time": "2026-10-27T14:42:35.306306+05:30"
+  },
+  {
     "id": 24,
     "symbol": "APLAPOLLO",
     "company": "APL Apollo Tubes",
