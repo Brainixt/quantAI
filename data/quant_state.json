@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": 4.25
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T14:38:59.223981+05:30",
+      "last_updated": "2026-10-27T14:40:05.579690+05:30",
       "order_placed": true,
       "quantity": 7,
       "trade_id": "TRD_QUANTAI_LONG_DRREDDY_1793072057642",
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": 2.89
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T14:38:59.223981+05:30",
+      "last_updated": "2026-10-27T14:40:05.579690+05:30",
       "order_placed": true,
       "quantity": 8,
       "trade_id": "TRD_QUANTAI_LONG_ZYDUSLIFE_1793072057735",
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": -0.11
       },
       "entry_time": "2026-10-27T09:30:31.869229+05:30",
-      "last_updated": "2026-10-27T14:38:59.223981+05:30",
+      "last_updated": "2026-10-27T14:40:05.579690+05:30",
       "order_placed": true,
       "quantity": 5,
       "trade_id": "TRD_QUANTAI_SHORT_TECHM_1793073631871",
@@ -213,7 +213,7 @@
         "distance_to_pivot_pct": 1.7
       },
       "entry_time": "2026-10-27T11:24:31.605478+05:30",
-      "last_updated": "2026-10-27T14:38:59.223981+05:30",
+      "last_updated": "2026-10-27T14:40:05.579690+05:30",
       "order_placed": true,
       "quantity": 34,
       "trade_id": "TRD_QUANTAI_LONG_PETRONET_1793080471605",
@@ -268,7 +268,7 @@
         "distance_to_pivot_pct": 2.21
       },
       "entry_time": "2026-10-27T12:46:36.745773+05:30",
-      "last_updated": "2026-10-27T14:38:59.223981+05:30",
+      "last_updated": "2026-10-27T14:40:05.579690+05:30",
       "order_placed": true,
       "quantity": 2,
       "trade_id": "TRD_QUANTAI_LONG_HAL_1793085396745",
@@ -341,7 +341,7 @@
       "distance_to_pivot_pct": 4.25
     },
     "entry_time": "2026-10-27T09:04:17.642199+05:30",
-    "last_updated": "2026-10-27T14:38:59.223981+05:30",
+    "last_updated": "2026-10-27T14:40:05.579690+05:30",
     "order_placed": true,
     "quantity": 7,
     "trade_id": "TRD_QUANTAI_LONG_DRREDDY_1793072057642",
@@ -358,7 +358,7 @@
     "regime": "BEARISH",
     "allowed_direction": "SHORT",
     "rationale": "Macro Index Bearish (NIFTY -0.32%, Sells: 41 vs Buys: 135) -> SELL (Short MIS) Only",
-    "updated_at": "2026-10-27T14:38:59.223981+05:30"
+    "updated_at": "2026-10-27T14:40:05.579690+05:30"
   },
-  "timestamp": "2026-10-27T14:38:59.223981+05:30"
+  "timestamp": "2026-10-27T14:40:05.579690+05:30"
 }
