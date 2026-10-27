@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27T15:45:52.674751",
+  "timestamp": "2026-10-27T15:51:54.459056",
   "nifty50": {
     "price": "22749.7500",
     "change": "-3.4500",
@@ -114,7 +114,7 @@
         "futures_current": 332.8,
         "lot_size": "2500",
         "signal": "COVER",
-        "last_signal": "LONG",
+        "last_signal": "COVER",
         "current_oi": 10662500.0,
         "previous_day_oi": 26132500.0,
         "intraday": {
@@ -205,7 +205,7 @@
         "futures_current": 2511.1,
         "lot_size": "250",
         "signal": "COVER",
-        "last_signal": "UNWIND",
+        "last_signal": "COVER",
         "current_oi": 466500.0,
         "previous_day_oi": 1714000.0,
         "intraday": {
@@ -297,7 +297,7 @@
         "futures_current": 297.7,
         "lot_size": "1900",
         "signal": "COVER",
-        "last_signal": "LONG",
+        "last_signal": "COVER",
         "current_oi": 1863900.0,
         "previous_day_oi": 6758300.0,
         "intraday": {
@@ -388,7 +388,7 @@
         "futures_current": 173.1,
         "lot_size": "4700",
         "signal": "COVER",
-        "last_signal": "SHORT",
+        "last_signal": "COVER",
         "current_oi": 15007100.0,
         "previous_day_oi": 60940200.0,
         "intraday": {
@@ -572,7 +572,7 @@
         "futures_current": 10635.0,
         "lot_size": "75",
         "signal": "UNWIND",
-        "last_signal": "COVER",
+        "last_signal": "UNWIND",
         "current_oi": 133725.0,
         "previous_day_oi": 138000.0,
         "intraday": {
@@ -753,7 +753,7 @@
         "futures_current": 512.35,
         "lot_size": "1100",
         "signal": "UNWIND",
-        "last_signal": "SHORT",
+        "last_signal": "UNWIND",
         "current_oi": 7041100.0,
         "previous_day_oi": 18095000.0,
         "intraday": {
@@ -845,7 +845,7 @@
         "futures_current": 499.25,
         "lot_size": "1350",
         "signal": "UNWIND",
-        "last_signal": "SHORT",
+        "last_signal": "UNWIND",
         "current_oi": 3743550.0,
         "previous_day_oi": 10451700.0,
         "intraday": {
@@ -938,7 +938,7 @@
         "futures_current": 398.5,
         "lot_size": "1350",
         "signal": "COVER",
-        "last_signal": "SHORT",
+        "last_signal": "COVER",
         "current_oi": 6926850.0,
         "previous_day_oi": 58133700.0,
         "intraday": {
@@ -1028,7 +1028,7 @@
         "futures_current": 2511.1,
         "lot_size": "250",
         "signal": "COVER",
-        "last_signal": "UNWIND",
+        "last_signal": "COVER",
         "current_oi": 466500.0,
         "previous_day_oi": 1714000.0,
         "intraday": {
@@ -1120,7 +1120,7 @@
         "futures_current": 297.7,
         "lot_size": "1900",
         "signal": "COVER",
-        "last_signal": "LONG",
+        "last_signal": "COVER",
         "current_oi": 1863900.0,
         "previous_day_oi": 6758300.0,
         "intraday": {
@@ -1211,7 +1211,7 @@
         "futures_current": 288.0,
         "lot_size": "3000",
         "signal": "COVER",
-        "last_signal": "LONG",
+        "last_signal": "COVER",
         "current_oi": 4605000.0,
         "previous_day_oi": 31326000.0,
         "intraday": {
@@ -1302,7 +1302,7 @@
         "futures_current": 227.5,
         "lot_size": "1150",
         "signal": "COVER",
-        "last_signal": "SHORT",
+        "last_signal": "COVER",
         "current_oi": 9369050.0,
         "previous_day_oi": 22816000.0,
         "intraday": {
@@ -1395,7 +1395,7 @@
         "futures_current": 344.0,
         "lot_size": "1200",
         "signal": "UNWIND",
-        "last_signal": "SHORT",
+        "last_signal": "UNWIND",
         "current_oi": 21260400.0,
         "previous_day_oi": 40491600.0,
         "intraday": {
@@ -1487,7 +1487,7 @@
         "futures_current": 404.3,
         "lot_size": "925",
         "signal": "UNWIND",
-        "last_signal": "SHORT",
+        "last_signal": "UNWIND",
         "current_oi": 2335625.0,
         "previous_day_oi": 5859875.0,
         "intraday": {
@@ -1671,7 +1671,7 @@
         "futures_current": 1590.9,
         "lot_size": "725",
         "signal": "UNWIND",
-        "last_signal": "SHORT",
+        "last_signal": "UNWIND",
         "current_oi": 4404375.0,
         "previous_day_oi": 7167350.0,
         "intraday": {
@@ -1856,7 +1856,7 @@
       "futures_current": 888.9,
       "lot_size": "700",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 3960600.0,
       "previous_day_oi": 15660400.0,
       "intraday": {
@@ -1947,7 +1947,7 @@
       "futures_current": 2271.5,
       "lot_size": "250",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 692250.0,
       "previous_day_oi": 3621250.0,
       "intraday": {
@@ -2038,7 +2038,7 @@
       "futures_current": 1453.2,
       "lot_size": "500",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 386500.0,
       "previous_day_oi": 1967000.0,
       "intraday": {
@@ -2220,7 +2220,7 @@
       "futures_current": 5196.0,
       "lot_size": "150",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 954000.0,
       "previous_day_oi": 1630350.0,
       "intraday": {
@@ -2310,7 +2310,7 @@
       "futures_current": 28295.0,
       "lot_size": "25",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 47350.0,
       "previous_day_oi": 231850.0,
       "intraday": {
@@ -2401,7 +2401,7 @@
       "futures_current": 171.3,
       "lot_size": "2750",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 41753250.0,
       "previous_day_oi": 130974250.0,
       "intraday": {
@@ -2583,7 +2583,7 @@
       "futures_current": 9427.0,
       "lot_size": "100",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 406200.0,
       "previous_day_oi": 2456300.0,
       "intraday": {
@@ -2674,7 +2674,7 @@
       "futures_current": 344.0,
       "lot_size": "1200",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 21260400.0,
       "previous_day_oi": 40491600.0,
       "intraday": {
@@ -2766,7 +2766,7 @@
       "futures_current": 2289.6,
       "lot_size": "300",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 867000.0,
       "previous_day_oi": 2585700.0,
       "intraday": {
@@ -2947,7 +2947,7 @@
       "futures_current": 516.9,
       "lot_size": "1000",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 2136000.0,
       "previous_day_oi": 9892000.0,
       "intraday": {
@@ -3039,7 +3039,7 @@
       "futures_current": 87.56,
       "lot_size": "4850",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 3977000.0,
       "previous_day_oi": 13686700.0,
       "intraday": {
@@ -3220,7 +3220,7 @@
       "futures_current": 1216.5,
       "lot_size": "475",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1269200.0,
       "previous_day_oi": 4824575.0,
       "intraday": {
@@ -3310,7 +3310,7 @@
       "futures_current": 1811.6,
       "lot_size": "300",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 2414400.0,
       "previous_day_oi": 9175200.0,
       "intraday": {
@@ -3489,7 +3489,7 @@
       "futures_current": 860.0,
       "lot_size": "650",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1439100.0,
       "previous_day_oi": 3532100.0,
       "intraday": {
@@ -3580,7 +3580,7 @@
       "futures_current": 911.4,
       "lot_size": "750",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 6006000.0,
       "previous_day_oi": 23617500.0,
       "intraday": {
@@ -3764,7 +3764,7 @@
       "futures_current": 366.4,
       "lot_size": "1425",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 11464125.0,
       "previous_day_oi": 34278375.0,
       "intraday": {
@@ -3945,7 +3945,7 @@
       "futures_current": 336.45,
       "lot_size": "3125",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 4090625.0,
       "previous_day_oi": 21581250.0,
       "intraday": {
@@ -4035,7 +4035,7 @@
       "futures_current": 2136.5,
       "lot_size": "850",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1686400.0,
       "previous_day_oi": 4885800.0,
       "intraday": {
@@ -4126,7 +4126,7 @@
       "futures_current": 1256.4,
       "lot_size": "675",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1864350.0,
       "previous_day_oi": 12327525.0,
       "intraday": {
@@ -4308,7 +4308,7 @@
       "futures_current": 1966.4,
       "lot_size": "475",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 11936275.0,
       "previous_day_oi": 22040000.0,
       "intraday": {
@@ -4488,7 +4488,7 @@
       "futures_current": 1284.9,
       "lot_size": "600",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1201800.0,
       "previous_day_oi": 6309000.0,
       "intraday": {
@@ -4670,7 +4670,7 @@
       "futures_current": 257.05,
       "lot_size": "1725",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 29833875.0,
       "previous_day_oi": 90034650.0,
       "intraday": {
@@ -4761,7 +4761,7 @@
       "futures_current": 10635.0,
       "lot_size": "75",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 133725.0,
       "previous_day_oi": 138000.0,
       "intraday": {
@@ -4851,7 +4851,7 @@
       "futures_current": 226.8,
       "lot_size": "2250",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 12874500.0,
       "previous_day_oi": 31763250.0,
       "intraday": {
@@ -5032,7 +5032,7 @@
       "futures_current": 1201.0,
       "lot_size": "500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 17149500.0,
       "previous_day_oi": 58171500.0,
       "intraday": {
@@ -5123,7 +5123,7 @@
       "futures_current": 4340.0,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 644700.0,
       "previous_day_oi": 2497600.0,
       "intraday": {
@@ -5304,7 +5304,7 @@
       "futures_current": 1306.0,
       "lot_size": "625",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1693125.0,
       "previous_day_oi": 7693750.0,
       "intraday": {
@@ -5395,7 +5395,7 @@
       "futures_current": 6007.5,
       "lot_size": "100",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 234100.0,
       "previous_day_oi": 358700.0,
       "intraday": {
@@ -5487,7 +5487,7 @@
       "futures_current": 304.45,
       "lot_size": "1500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 18921000.0,
       "previous_day_oi": 56925000.0,
       "intraday": {
@@ -5668,7 +5668,7 @@
       "futures_current": 155.97,
       "lot_size": "6150",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 7853550.0,
       "previous_day_oi": 51168000.0,
       "intraday": {
@@ -5759,7 +5759,7 @@
       "futures_current": 851.1,
       "lot_size": "1000",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 1905000.0,
       "previous_day_oi": 7378000.0,
       "intraday": {
@@ -5940,7 +5940,7 @@
       "futures_current": 384.9,
       "lot_size": "1400",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 7294000.0,
       "previous_day_oi": 25683000.0,
       "intraday": {
@@ -6031,7 +6031,7 @@
       "futures_current": 949.0,
       "lot_size": "750",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 11616000.0,
       "previous_day_oi": 41346750.0,
       "intraday": {
@@ -6123,7 +6123,7 @@
       "futures_current": 1148.5,
       "lot_size": "400",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 10469600.0,
       "previous_day_oi": 68254800.0,
       "intraday": {
@@ -6396,7 +6396,7 @@
       "futures_current": 410.5,
       "lot_size": "1275",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 6503775.0,
       "previous_day_oi": 31107450.0,
       "intraday": {
@@ -6579,7 +6579,7 @@
       "futures_current": 452.35,
       "lot_size": "1400",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 4326000.0,
       "previous_day_oi": 5469800.0,
       "intraday": {
@@ -6850,7 +6850,7 @@
       "futures_current": 385.25,
       "lot_size": "1700",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 12513700.0,
       "previous_day_oi": 32905200.0,
       "intraday": {
@@ -7033,7 +7033,7 @@
       "futures_current": 338.95,
       "lot_size": "1450",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 7302200.0,
       "previous_day_oi": 48676500.0,
       "intraday": {
@@ -7124,7 +7124,7 @@
       "futures_current": 2903.1,
       "lot_size": "250",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 840000.0,
       "previous_day_oi": 1866750.0,
       "intraday": {
@@ -7214,7 +7214,7 @@
       "futures_current": 348.7,
       "lot_size": "2025",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 3802950.0,
       "previous_day_oi": 17119350.0,
       "intraday": {
@@ -7306,7 +7306,7 @@
       "futures_current": 993.7,
       "lot_size": "425",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 954550.0,
       "previous_day_oi": 2221050.0,
       "intraday": {
@@ -7579,7 +7579,7 @@
       "futures_current": 117.25,
       "lot_size": "6750",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 27634500.0,
       "previous_day_oi": 174879000.0,
       "intraday": {
@@ -7671,7 +7671,7 @@
       "futures_current": 1657.6,
       "lot_size": "300",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1227600.0,
       "previous_day_oi": 3836100.0,
       "intraday": {
@@ -7763,7 +7763,7 @@
       "futures_current": 868.0,
       "lot_size": "575",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 311075.0,
       "previous_day_oi": 1172425.0,
       "intraday": {
@@ -7852,7 +7852,7 @@
       "futures_current": 351.55,
       "lot_size": "3175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 6724650.0,
       "previous_day_oi": 18319750.0,
       "intraday": {
@@ -7943,7 +7943,7 @@
       "futures_current": 182.0,
       "lot_size": "1925",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 4456375.0,
       "previous_day_oi": 10446975.0,
       "intraday": {
@@ -8031,7 +8031,7 @@
       "futures_current": 11063.0,
       "lot_size": "50",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 168450.0,
       "previous_day_oi": 750550.0,
       "intraday": {
@@ -8213,7 +8213,7 @@
       "futures_current": 7083.0,
       "lot_size": "100",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 377300.0,
       "previous_day_oi": 1343900.0,
       "intraday": {
@@ -8305,7 +8305,7 @@
       "futures_current": 6483.0,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 192250.0,
       "previous_day_oi": 1003625.0,
       "intraday": {
@@ -8396,7 +8396,7 @@
       "futures_current": 4543.7,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 122750.0,
       "previous_day_oi": 852625.0,
       "intraday": {
@@ -8486,7 +8486,7 @@
       "futures_current": 1321.7,
       "lot_size": "425",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 1402925.0,
       "previous_day_oi": 2672400.0,
       "intraday": {
@@ -8576,7 +8576,7 @@
       "futures_current": 332.8,
       "lot_size": "2500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 10662500.0,
       "previous_day_oi": 26132500.0,
       "intraday": {
@@ -8757,7 +8757,7 @@
       "futures_current": 1505.5,
       "lot_size": "325",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1002950.0,
       "previous_day_oi": 2303275.0,
       "intraday": {
@@ -8848,7 +8848,7 @@
       "futures_current": 1979.3,
       "lot_size": "475",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 975175.0,
       "previous_day_oi": 7889750.0,
       "intraday": {
@@ -8939,7 +8939,7 @@
       "futures_current": 2511.6,
       "lot_size": "225",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 5208525.0,
       "previous_day_oi": 7281900.0,
       "intraday": {
@@ -9031,7 +9031,7 @@
       "futures_current": 1078.2,
       "lot_size": "550",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 272250.0,
       "previous_day_oi": 1569700.0,
       "intraday": {
@@ -9211,7 +9211,7 @@
       "futures_current": 725.9,
       "lot_size": "775",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1157850.0,
       "previous_day_oi": 3995125.0,
       "intraday": {
@@ -9303,7 +9303,7 @@
       "futures_current": 69.69,
       "lot_size": "6500",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 9763000.0,
       "previous_day_oi": 42289000.0,
       "intraday": {
@@ -9394,7 +9394,7 @@
       "futures_current": 995.4,
       "lot_size": "350",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 2182600.0,
       "previous_day_oi": 8272600.0,
       "intraday": {
@@ -9485,7 +9485,7 @@
       "futures_current": 15.7,
       "lot_size": "31100",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 234151900.0,
       "previous_day_oi": 615842200.0,
       "intraday": {
@@ -9575,7 +9575,7 @@
       "futures_current": 2511.1,
       "lot_size": "250",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 466500.0,
       "previous_day_oi": 1714000.0,
       "intraday": {
@@ -9667,7 +9667,7 @@
       "futures_current": 2820.5,
       "lot_size": "225",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1645650.0,
       "previous_day_oi": 4150575.0,
       "intraday": {
@@ -9757,7 +9757,7 @@
       "futures_current": 1219.5,
       "lot_size": "625",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 6810000.0,
       "previous_day_oi": 32953750.0,
       "intraday": {
@@ -9936,7 +9936,7 @@
       "futures_current": 56.31,
       "lot_size": "8000",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 6336000.0,
       "previous_day_oi": 22192000.0,
       "intraday": {
@@ -10027,7 +10027,7 @@
       "futures_current": 4492.3,
       "lot_size": "200",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 755000.0,
       "previous_day_oi": 2316800.0,
       "intraday": {
@@ -10209,7 +10209,7 @@
       "futures_current": 154.35,
       "lot_size": "3600",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 11386800.0,
       "previous_day_oi": 54579600.0,
       "intraday": {
@@ -10301,7 +10301,7 @@
       "futures_current": 3152.2,
       "lot_size": "225",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1467000.0,
       "previous_day_oi": 3771225.0,
       "intraday": {
@@ -10482,7 +10482,7 @@
       "futures_current": 514.0,
       "lot_size": "1355",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 2926800.0,
       "previous_day_oi": 11339995.0,
       "intraday": {
@@ -10573,7 +10573,7 @@
       "futures_current": 130.1,
       "lot_size": "4875",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 14054625.0,
       "previous_day_oi": 52435500.0,
       "intraday": {
@@ -10664,7 +10664,7 @@
       "futures_current": 681.65,
       "lot_size": "650",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 39239200.0,
       "previous_day_oi": 112123700.0,
       "intraday": {
@@ -10756,7 +10756,7 @@
       "futures_current": 7674.0,
       "lot_size": "125",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 353500.0,
       "previous_day_oi": 820375.0,
       "intraday": {
@@ -10938,7 +10938,7 @@
       "futures_current": 227.5,
       "lot_size": "1150",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 9369050.0,
       "previous_day_oi": 22816000.0,
       "intraday": {
@@ -11211,7 +11211,7 @@
       "futures_current": 1590.9,
       "lot_size": "725",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 4404375.0,
       "previous_day_oi": 7167350.0,
       "intraday": {
@@ -11393,7 +11393,7 @@
       "futures_current": 167.47,
       "lot_size": "3550",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 16614000.0,
       "previous_day_oi": 55085350.0,
       "intraday": {
@@ -11483,7 +11483,7 @@
       "futures_current": 17229.0,
       "lot_size": "25",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 22125.0,
       "previous_day_oi": 80850.0,
       "intraday": {
@@ -11574,7 +11574,7 @@
       "futures_current": 494.0,
       "lot_size": "1225",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 3886925.0,
       "previous_day_oi": 12792675.0,
       "intraday": {
@@ -11664,7 +11664,7 @@
       "futures_current": 1604.8,
       "lot_size": "350",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 259000.0,
       "previous_day_oi": 2028250.0,
       "intraday": {
@@ -11753,7 +11753,7 @@
       "futures_current": 80.0,
       "lot_size": "6500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 6162000.0,
       "previous_day_oi": 17842500.0,
       "intraday": {
@@ -11844,7 +11844,7 @@
       "futures_current": 1171.7,
       "lot_size": "900",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 786600.0,
       "previous_day_oi": 3464100.0,
       "intraday": {
@@ -12025,7 +12025,7 @@
       "futures_current": 512.35,
       "lot_size": "1100",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 7041100.0,
       "previous_day_oi": 18095000.0,
       "intraday": {
@@ -12117,7 +12117,7 @@
       "futures_current": 463.45,
       "lot_size": "1075",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 5123450.0,
       "previous_day_oi": 14499600.0,
       "intraday": {
@@ -12210,7 +12210,7 @@
       "futures_current": 1385.5,
       "lot_size": "700",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 10714200.0,
       "previous_day_oi": 36565900.0,
       "intraday": {
@@ -12302,7 +12302,7 @@
       "futures_current": 36.85,
       "lot_size": "12700",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 32194500.0,
       "previous_day_oi": 118465600.0,
       "intraday": {
@@ -12485,7 +12485,7 @@
       "futures_current": 10496.0,
       "lot_size": "75",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 460725.0,
       "previous_day_oi": 651225.0,
       "intraday": {
@@ -12666,7 +12666,7 @@
       "futures_current": 297.7,
       "lot_size": "1900",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1863900.0,
       "previous_day_oi": 6758300.0,
       "intraday": {
@@ -12757,7 +12757,7 @@
       "futures_current": 4593.3,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 493625.0,
       "previous_day_oi": 1718875.0,
       "intraday": {
@@ -12848,7 +12848,7 @@
       "futures_current": 4078.0,
       "lot_size": "150",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 907650.0,
       "previous_day_oi": 1935300.0,
       "intraday": {
@@ -12939,7 +12939,7 @@
       "futures_current": 330.4,
       "lot_size": "2425",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 19938350.0,
       "previous_day_oi": 51315425.0,
       "intraday": {
@@ -13030,7 +13030,7 @@
       "futures_current": 2197.0,
       "lot_size": "350",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1534750.0,
       "previous_day_oi": 6697600.0,
       "intraday": {
@@ -13121,7 +13121,7 @@
       "futures_current": 3181.6,
       "lot_size": "150",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 966600.0,
       "previous_day_oi": 1909050.0,
       "intraday": {
@@ -13212,7 +13212,7 @@
       "futures_current": 99.3,
       "lot_size": "4525",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 5009175.0,
       "previous_day_oi": 14556925.0,
       "intraday": {
@@ -13303,7 +13303,7 @@
       "futures_current": 1626.9,
       "lot_size": "550",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1055450.0,
       "previous_day_oi": 4517150.0,
       "intraday": {
@@ -13395,7 +13395,7 @@
       "futures_current": 173.1,
       "lot_size": "4700",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 15007100.0,
       "previous_day_oi": 60940200.0,
       "intraday": {
@@ -13576,7 +13576,7 @@
       "futures_current": 2468.8,
       "lot_size": "309",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 2607960.0,
       "previous_day_oi": 8230215.0,
       "intraday": {
@@ -13935,7 +13935,7 @@
       "futures_current": 19250.0,
       "lot_size": "50",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 99650.0,
       "previous_day_oi": 270900.0,
       "intraday": {
@@ -14025,7 +14025,7 @@
       "futures_current": 12.05,
       "lot_size": "71475",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 453294450.0,
       "previous_day_oi": 2649149400.0,
       "intraday": {
@@ -14114,7 +14114,7 @@
       "futures_current": 381.45,
       "lot_size": "2075",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 4567075.0,
       "previous_day_oi": 15902800.0,
       "intraday": {
@@ -14204,7 +14204,7 @@
       "futures_current": 830.1,
       "lot_size": "700",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 6435800.0,
       "previous_day_oi": 19075000.0,
       "intraday": {
@@ -14296,7 +14296,7 @@
       "futures_current": 312.0,
       "lot_size": "1875",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 13785000.0,
       "previous_day_oi": 21315000.0,
       "intraday": {
@@ -14388,7 +14388,7 @@
       "futures_current": 67.2,
       "lot_size": "6750",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 29436750.0,
       "previous_day_oi": 153987750.0,
       "intraday": {
@@ -14480,7 +14480,7 @@
       "futures_current": 2315.5,
       "lot_size": "200",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 528400.0,
       "previous_day_oi": 1704400.0,
       "intraday": {
@@ -14570,7 +14570,7 @@
       "futures_current": 398.5,
       "lot_size": "1350",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 6926850.0,
       "previous_day_oi": 58133700.0,
       "intraday": {
@@ -14751,7 +14751,7 @@
       "futures_current": 11200.0,
       "lot_size": "50",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 897200.0,
       "previous_day_oi": 1621100.0,
       "intraday": {
@@ -14842,7 +14842,7 @@
       "futures_current": 3837.0,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 389375.0,
       "previous_day_oi": 1183350.0,
       "intraday": {
@@ -15023,7 +15023,7 @@
       "futures_current": 250.15,
       "lot_size": "1900",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 9118100.0,
       "previous_day_oi": 26598100.0,
       "intraday": {
@@ -15114,7 +15114,7 @@
       "futures_current": 1070.9,
       "lot_size": "625",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1619375.0,
       "previous_day_oi": 6322500.0,
       "intraday": {
@@ -15204,7 +15204,7 @@
       "futures_current": 1758.4,
       "lot_size": "350",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1642900.0,
       "previous_day_oi": 5615750.0,
       "intraday": {
@@ -15295,7 +15295,7 @@
       "futures_current": 72.43,
       "lot_size": "6950",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 13462150.0,
       "previous_day_oi": 37835800.0,
       "intraday": {
@@ -15476,7 +15476,7 @@
       "futures_current": 1079.0,
       "lot_size": "650",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 691600.0,
       "previous_day_oi": 3709550.0,
       "intraday": {
@@ -15566,7 +15566,7 @@
       "futures_current": 2072.4,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 299250.0,
       "previous_day_oi": 883050.0,
       "intraday": {
@@ -15656,7 +15656,7 @@
       "futures_current": 74.35,
       "lot_size": "5425",
       "signal": "UNWIND",
-      "last_signal": "COVER",
+      "last_signal": "UNWIND",
       "current_oi": 9542575.0,
       "previous_day_oi": 32886350.0,
       "intraday": {
@@ -15744,7 +15744,7 @@
       "futures_current": 1594.3,
       "lot_size": "325",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 1048775.0,
       "previous_day_oi": 2832700.0,
       "intraday": {
@@ -15835,7 +15835,7 @@
       "futures_current": 499.25,
       "lot_size": "1350",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 3743550.0,
       "previous_day_oi": 10451700.0,
       "intraday": {
@@ -16017,7 +16017,7 @@
       "futures_current": 1884.6,
       "lot_size": "350",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 186900.0,
       "previous_day_oi": 826000.0,
       "intraday": {
@@ -16108,7 +16108,7 @@
       "futures_current": 3263.6,
       "lot_size": "175",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 417725.0,
       "previous_day_oi": 1328950.0,
       "intraday": {
@@ -16290,7 +16290,7 @@
       "futures_current": 499.0,
       "lot_size": "950",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 1813550.0,
       "previous_day_oi": 7878350.0,
       "intraday": {
@@ -16381,7 +16381,7 @@
       "futures_current": 207.75,
       "lot_size": "2350",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 27809900.0,
       "previous_day_oi": 87857100.0,
       "intraday": {
@@ -16472,7 +16472,7 @@
       "futures_current": 997.2,
       "lot_size": "550",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 969650.0,
       "previous_day_oi": 6213350.0,
       "intraday": {
@@ -16651,7 +16651,7 @@
       "futures_current": 46000.0,
       "lot_size": "25",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 12200.0,
       "previous_day_oi": 66300.0,
       "intraday": {
@@ -16743,7 +16743,7 @@
       "futures_current": 3982.0,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 524250.0,
       "previous_day_oi": 1688875.0,
       "intraday": {
@@ -17013,7 +17013,7 @@
       "futures_current": 1745.9,
       "lot_size": "475",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1529975.0,
       "previous_day_oi": 5051150.0,
       "intraday": {
@@ -17104,7 +17104,7 @@
       "futures_current": 120.12,
       "lot_size": "8000",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 47728000.0,
       "previous_day_oi": 92448000.0,
       "intraday": {
@@ -17193,7 +17193,7 @@
       "futures_current": 4260.0,
       "lot_size": "150",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 254250.0,
       "previous_day_oi": 533250.0,
       "intraday": {
@@ -17284,7 +17284,7 @@
       "futures_current": 344.0,
       "lot_size": "2500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 16670000.0,
       "previous_day_oi": 39307500.0,
       "intraday": {
@@ -17376,7 +17376,7 @@
       "futures_current": 1858.0,
       "lot_size": "275",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 742775.0,
       "previous_day_oi": 1833425.0,
       "intraday": {
@@ -17557,7 +17557,7 @@
       "futures_current": 1210.3,
       "lot_size": "550",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 845350.0,
       "previous_day_oi": 6529050.0,
       "intraday": {
@@ -17646,7 +17646,7 @@
       "futures_current": 88.8,
       "lot_size": "6975",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 24475275.0,
       "previous_day_oi": 56092950.0,
       "intraday": {
@@ -17737,7 +17737,7 @@
       "futures_current": 685.0,
       "lot_size": "825",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 862950.0,
       "previous_day_oi": 3164700.0,
       "intraday": {
@@ -17828,7 +17828,7 @@
       "futures_current": 404.3,
       "lot_size": "925",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 2335625.0,
       "previous_day_oi": 5859875.0,
       "intraday": {
@@ -17919,7 +17919,7 @@
       "futures_current": 189.3,
       "lot_size": "1825",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 14895650.0,
       "previous_day_oi": 37485500.0,
       "intraday": {
@@ -18010,7 +18010,7 @@
       "futures_current": 71.77,
       "lot_size": "9275",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 26517225.0,
       "previous_day_oi": 152777800.0,
       "intraday": {
@@ -18101,7 +18101,7 @@
       "futures_current": 287.95,
       "lot_size": "2500",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 5202500.0,
       "previous_day_oi": 26540000.0,
       "intraday": {
@@ -18192,7 +18192,7 @@
       "futures_current": 1767.3,
       "lot_size": "500",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 735000.0,
       "previous_day_oi": 2989000.0,
       "intraday": {
@@ -18284,7 +18284,7 @@
       "futures_current": 141.12,
       "lot_size": "5000",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 24655000.0,
       "previous_day_oi": 58980000.0,
       "intraday": {
@@ -18375,7 +18375,7 @@
       "futures_current": 669.15,
       "lot_size": "950",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 4676850.0,
       "previous_day_oi": 11636550.0,
       "intraday": {
@@ -18559,7 +18559,7 @@
       "futures_current": 1229.3,
       "lot_size": "400",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 760400.0,
       "previous_day_oi": 3756000.0,
       "intraday": {
@@ -18650,7 +18650,7 @@
       "futures_current": 2844.4,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 149625.0,
       "previous_day_oi": 352100.0,
       "intraday": {
@@ -18740,7 +18740,7 @@
       "futures_current": 4063.0,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1061025.0,
       "previous_day_oi": 3862775.0,
       "intraday": {
@@ -18829,7 +18829,7 @@
       "futures_current": 288.0,
       "lot_size": "3000",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 4605000.0,
       "previous_day_oi": 31326000.0,
       "intraday": {
@@ -18920,7 +18920,7 @@
       "futures_current": 3714.0,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 229000.0,
       "previous_day_oi": 649750.0,
       "intraday": {
@@ -19011,7 +19011,7 @@
       "futures_current": 5835.5,
       "lot_size": "125",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 569750.0,
       "previous_day_oi": 1366750.0,
       "intraday": {
@@ -19102,7 +19102,7 @@
       "futures_current": 2535.6,
       "lot_size": "275",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 424325.0,
       "previous_day_oi": 1774025.0,
       "intraday": {
@@ -19193,7 +19193,7 @@
       "futures_current": 809.95,
       "lot_size": "1000",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 2636000.0,
       "previous_day_oi": 10470000.0,
       "intraday": {
@@ -19283,7 +19283,7 @@
       "futures_current": 260.9,
       "lot_size": "1600",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 15358400.0,
       "previous_day_oi": 42878400.0,
       "intraday": {
@@ -19375,7 +19375,7 @@
       "futures_current": 1282.0,
       "lot_size": "400",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 869600.0,
       "previous_day_oi": 2798000.0,
       "intraday": {
@@ -19466,7 +19466,7 @@
       "futures_current": 835.5,
       "lot_size": "1000",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 1450000.0,
       "previous_day_oi": 3574000.0,
       "intraday": {
@@ -19647,7 +19647,7 @@
       "futures_current": 940.1,
       "lot_size": "375",
       "signal": "UNWIND",
-      "last_signal": "SHORT",
+      "last_signal": "UNWIND",
       "current_oi": 2428875.0,
       "previous_day_oi": 5859750.0,
       "intraday": {
@@ -19736,7 +19736,7 @@
       "futures_current": 293.0,
       "lot_size": "1975",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 5158700.0,
       "previous_day_oi": 22139750.0,
       "intraday": {
@@ -20008,7 +20008,7 @@
       "futures_current": 423.0,
       "lot_size": "1250",
       "signal": "COVER",
-      "last_signal": "LONG",
+      "last_signal": "COVER",
       "current_oi": 3847500.0,
       "previous_day_oi": 10422500.0,
       "intraday": {
@@ -20099,7 +20099,7 @@
       "futures_current": 4797.6,
       "lot_size": "150",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 870750.0,
       "previous_day_oi": 2320050.0,
       "intraday": {
@@ -20371,7 +20371,7 @@
       "futures_current": 3656.0,
       "lot_size": "175",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 2343600.0,
       "previous_day_oi": 6830075.0,
       "intraday": {
@@ -20461,7 +20461,7 @@
       "futures_current": 439.4,
       "lot_size": "2000",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 30512000.0,
       "previous_day_oi": 49784000.0,
       "intraday": {
@@ -20552,7 +20552,7 @@
       "futures_current": 238.9,
       "lot_size": "2250",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 6419250.0,
       "previous_day_oi": 20063250.0,
       "intraday": {
@@ -20643,7 +20643,7 @@
       "futures_current": 824.1,
       "lot_size": "525",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1381800.0,
       "previous_day_oi": 5766075.0,
       "intraday": {
@@ -20734,7 +20734,7 @@
       "futures_current": 3340.2,
       "lot_size": "150",
       "signal": "COVER",
-      "last_signal": "UNWIND",
+      "last_signal": "COVER",
       "current_oi": 544050.0,
       "previous_day_oi": 1601850.0,
       "intraday": {
@@ -20823,7 +20823,7 @@
       "futures_current": 344.45,
       "lot_size": "1075",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 4727850.0,
       "previous_day_oi": 17448325.0,
       "intraday": {
@@ -21006,7 +21006,7 @@
       "futures_current": 973.0,
       "lot_size": "500",
       "signal": "UNWIND",
-      "last_signal": "LONG",
+      "last_signal": "UNWIND",
       "current_oi": 1298500.0,
       "previous_day_oi": 2105500.0,
       "intraday": {
@@ -21097,7 +21097,7 @@
       "futures_current": 1298.6,
       "lot_size": "675",
       "signal": "COVER",
-      "last_signal": "SHORT",
+      "last_signal": "COVER",
       "current_oi": 1416825.0,
       "previous_day_oi": 6286275.0,
       "intraday": {
