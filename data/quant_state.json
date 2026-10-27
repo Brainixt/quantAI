@@ -48,7 +48,7 @@
         "distance_to_pivot_pct": 4.25
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T10:04:26.401825+05:30",
+      "last_updated": "2026-10-27T10:05:31.689160+05:30",
       "order_placed": true,
       "quantity": 7,
       "trade_id": "TRD_QUANTAI_LONG_DRREDDY_1793072057642",
@@ -103,7 +103,7 @@
         "distance_to_pivot_pct": 0.61
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T10:04:26.401825+05:30",
+      "last_updated": "2026-10-27T10:05:31.689160+05:30",
       "order_placed": true,
       "quantity": 2,
       "trade_id": "TRD_QUANTAI_LONG_RADICO_1793072057673",
@@ -158,7 +158,7 @@
         "distance_to_pivot_pct": 2.89
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T10:04:26.401825+05:30",
+      "last_updated": "2026-10-27T10:05:31.704785+05:30",
       "order_placed": true,
       "quantity": 8,
       "trade_id": "TRD_QUANTAI_LONG_ZYDUSLIFE_1793072057735",
@@ -213,7 +213,7 @@
         "distance_to_pivot_pct": 2.13
       },
       "entry_time": "2026-10-27T09:04:17.642199+05:30",
-      "last_updated": "2026-10-27T10:04:26.401825+05:30",
+      "last_updated": "2026-10-27T10:05:31.704785+05:30",
       "order_placed": true,
       "quantity": 3,
       "trade_id": "TRD_QUANTAI_LONG_MCX_1793072057797",
@@ -268,7 +268,7 @@
         "distance_to_pivot_pct": -0.11
       },
       "entry_time": "2026-10-27T09:30:31.869229+05:30",
-      "last_updated": "2026-10-27T10:04:26.401825+05:30",
+      "last_updated": "2026-10-27T10:05:31.704785+05:30",
       "order_placed": true,
       "quantity": 5,
       "trade_id": "TRD_QUANTAI_SHORT_TECHM_1793073631871",
@@ -341,7 +341,7 @@
       "distance_to_pivot_pct": 4.25
     },
     "entry_time": "2026-10-27T09:04:17.642199+05:30",
-    "last_updated": "2026-10-27T10:04:26.401825+05:30",
+    "last_updated": "2026-10-27T10:05:31.689160+05:30",
     "order_placed": true,
     "quantity": 7,
     "trade_id": "TRD_QUANTAI_LONG_DRREDDY_1793072057642",
@@ -358,7 +358,7 @@
     "regime": "NEUTRAL_BULLISH",
     "allowed_direction": "LONG",
     "rationale": "Macro Index Neutral-Bullish (NIFTY -0.03%, Buys: 136 >= Sells: 28) -> BUY (Long MIS) Favored",
-    "updated_at": "2026-10-27T10:04:26.401825+05:30"
+    "updated_at": "2026-10-27T10:05:31.704785+05:30"
   },
-  "timestamp": "2026-10-27T10:04:26.401825+05:30"
+  "timestamp": "2026-10-27T10:05:31.704785+05:30"
 }
