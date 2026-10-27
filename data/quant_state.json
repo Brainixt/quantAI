@@ -17,8 +17,8 @@
   "macro_filter": {
     "regime": "NEUTRAL_BULLISH",
     "allowed_direction": "LONG",
-    "rationale": "Macro Index Neutral-Bullish (NIFTY -0.02%, Buys: 134 >= Sells: 45) -> BUY (Long MIS) Favored",
-    "updated_at": "2026-10-27T15:35:03.378635+05:30"
+    "rationale": "Macro Index Neutral-Bullish (NIFTY -0.02%, Buys: 133 >= Sells: 30) -> BUY (Long MIS) Favored",
+    "updated_at": "2026-10-27T15:36:09.579323+05:30"
   },
-  "timestamp": "2026-10-27T15:35:03.378635+05:30"
+  "timestamp": "2026-10-27T15:36:09.579323+05:30"
 }
