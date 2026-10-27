@@ -1,5 +1,22 @@
 [
   {
+    "id": 23,
+    "symbol": "MCX",
+    "company": "Multi Commodity Exchange of India",
+    "direction": "LONG",
+    "mode": "MIS",
+    "entry_price": 3111.8,
+    "exit_price": 3173.9,
+    "pnl_pct": 2.0,
+    "target_pct": 1.95,
+    "sl_pct": 0.95,
+    "rr_ratio": 2.05,
+    "outcome": "TARGET HIT (+1.95%)",
+    "is_win": true,
+    "entry_time": "2026-10-27T09:04:17.642199+05:30",
+    "exit_time": "2026-10-27T11:24:31.605478+05:30"
+  },
+  {
     "id": 22,
     "symbol": "RADICO",
     "company": "Radico Khaitan",
